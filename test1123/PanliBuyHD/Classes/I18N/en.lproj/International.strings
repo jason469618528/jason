@@ -1,0 +1,1768 @@
+/* 
+  International.strings
+  PanliBuyHD
+
+  Created by ZhaoFucheng on 14-10-30.
+  Copyright (c) 2014年 Panli. All rights reserved.
+*/
+
+/* Indicates an approximate number */
+"About" = "About";
+
+/* 客服: */
+"AboutViewController_labService" = "客服:";
+
+/* Panli代购-移动版 */
+"AboutViewController_labTitle" = "Panli代购-移动版";
+
+/* 官网: */
+"AboutViewController_labUrl" = "官网:";
+
+/* 版本: */
+"AboutViewController_labVersion" = "版本:";
+
+/* 关于软件 */
+"AboutViewController_Nav_Title" = "关于软件";
+
+/* 您的Panli账户未激活! */
+"ActiveViewController_labfirstLine" = "您的Panli账户未激活!";
+
+/* 若需帮助请发送邮件至service@panli.com */
+"ActiveViewController_labFourthLine" = "若需帮助请发送邮件至service@panli.com";
+
+/* 请前往您的注册邮箱查收激活邮件 */
+"ActiveViewController_labSecondLine" = "请前往您的注册邮箱查收激活邮件";
+
+/* 激活账户可享受完整的Panli服务 */
+"ActiveViewController_labThirdLine" = "激活账户可享受完整的Panli服务";
+
+/* 激活Panli账户 */
+"ActiveViewController_Nav_Title" = "激活Panli账户";
+
+/* 注册Panli账户 */
+"ActiveViewController_WebView_Title" = "注册Panli账户";
+
+/* 保存成功 */
+"AddChangeAddressRequest_ErrorInfo_API_SUCCESS" = "保存成功";
+
+/* 保存运送方式失败 */
+"AddChangeAddressRequest_ErrorInfo_code6" = "保存运送方式失败";
+
+/* 地址过长，保存失败 */
+"AddChangeAddressRequest_ErrorInfo_code7" = "地址过长，保存失败";
+
+/* 添加成功 */
+"AddProductToCartRequest_ErrorInfo_API_SUCCESS" = "添加成功";
+
+/* 请求超时 */
+"AddProductToCartRequest_ErrorInfo_code11" = "请求超时";
+
+/* 添加失败 */
+"AddProductToCartRequest_ErrorInfo_code2" = "添加失败";
+
+/* 点击选择运送区域 */
+"AddShipAddressViewController_btnCountry1" = "点击选择运送区域";
+
+/* 点击选择运送区域或国家 */
+"AddShipAddressViewController_btnCountry2" = "点击选择运送区域或国家";
+
+/* 请填写收货地址 */
+"AddShipAddressViewController_HUDErrorMessage1" = "请填写收货地址";
+
+/* 请选择国家地区 */
+"AddShipAddressViewController_HUDErrorMessage2" = "请选择国家地区";
+
+/* 正在加载... */
+"AddShipAddressViewController_HUDMsg" = "正在加载...";
+
+/* 填写收货地址 */
+"AddShipAddressViewController_NavItem1_Title" = "填写收货地址";
+
+/* 1/3填写收货地址 */
+"AddShipAddressViewController_NavItem2_Title" = "1/3填写收货地址";
+
+/* Denotes past dates */
+"ago" = "ago";
+
+/* Indicates an approaching number */
+"Almost" = "Almost";
+
+/* 保存失败 */
+"AlterOrderRemarkRequest_ErrorInfo_code2" = "保存失败";
+
+/* 商品ID无效 */
+"AlterOrderRemarkRequest_ErrorInfo_code3" = "商品ID无效";
+
+/* 该商品不能修改备注 */
+"AlterOrderRemarkRequest_ErrorInfo_code4" = "该商品不能修改备注";
+
+/* 服务器状态码解析错误，请重试。 */
+"BaseHttpRequest_ErrorInfo_CODE_ERROR" = "服务器状态码解析错误，请重试。";
+
+/* 参数解析错误 */
+"BaseHttpRequest_ErrorInfo_codeMinus1" = "参数解析错误";
+
+/* 请求服务器失败,请重试 */
+"BaseHttpRequest_ErrorInfo_codeMinus2" = "请求服务器失败,请重试";
+
+/* 返回值解析错误 */
+"BaseHttpRequest_ErrorInfo_codeMinus3" = "返回值解析错误";
+
+/* 客户端配置文件需要更新,是否立即更新. */
+"BaseHttpRequest_ErrorInfo_CONFIG_LOW" = "客户端配置文件需要更新,是否立即更新.";
+
+/* 服务器无法连接或网络异常 */
+"BaseHttpRequest_ErrorInfo_NETWORK_ERROR" = "服务器无法连接或网络异常";
+
+/* 服务器响应错误,请重试. */
+"BaseHttpRequest_ErrorInfo_SERVER_ERROR" = "服务器响应错误,请重试.";
+
+/* 服务器响应错误，请重试 */
+"BaseHttpRequest_ErrorInfo_SERVER_EXCEPTION" = "服务器响应错误，请重试";
+
+/* 服务器响应正常 */
+"BaseHttpRequest_ErrorInfo_SERVER_SUCCESS" = "服务器响应正常";
+
+/* 请求超时，请重试 */
+"BaseHttpRequest_ErrorInfo_TIMEOUT_ERROR" = "请求超时，请重试";
+
+/* 未经过授权认证,请重新登录. */
+"BaseHttpRequest_ErrorInfo_UNAUTHORIZED" = "未经过授权认证,请重新登录.";
+
+/* 账号未激活,请立即激活. */
+"BaseHttpRequest_ErrorInfo_USER_UNACTIVE" = "账号未激活,请立即激活.";
+
+/* 客户端与当前服务器不匹配,请立即更新. */
+"BaseHttpRequest_ErrorInfo_VERSION_ERROR" = "客户端与当前服务器不匹配,请立即更新.";
+
+/* 客户端版本需要更新,是否立即更新? */
+"BaseHttpRequest_ErrorInfo_VERSION_LOW" = "客户端版本需要更新,是否立即更新?";
+
+/* 运单编号无效 */
+"CancelOrderRequest_ErrorInfo_code3" = "运单编号无效";
+
+/* 撤销运单失败 */
+"CancelShipRequest_ErrorInfo_code12" = "撤销运单失败";
+
+/* 运单编号无效 */
+"CancelShipRequest_ErrorInfo_code3" = "运单编号无效";
+
+/* 删除商品失败 */
+"CartDeleteProductRequest_ErrorInfo_code10000" = "删除商品失败";
+
+/* 商品ID无效 */
+"CartDeleteProductRequest_ErrorInfo_code3" = "商品ID无效";
+
+/* 该商品不能撤销 */
+"CartDeleteProductRequest_ErrorInfo_code4" = "该商品不能撤销";
+
+/* 请输入用当前密码和新密码 */
+"ChangePasswordViewController_HUDErrMsg1" = "请输入用当前密码和新密码";
+
+/* 请输入当前密码 */
+"ChangePasswordViewController_HUDErrMsg2" = "请输入当前密码";
+
+/* 请输入新密码 */
+"ChangePasswordViewController_HUDErrMsg3" = "请输入新密码";
+
+/* 当前密码与新密码相同，请修改 */
+"ChangePasswordViewController_HUDErrMsg4" = "当前密码与新密码相同，请修改";
+
+/* 密码加密失败，请重试或反馈 */
+"ChangePasswordViewController_HUDErrMsg5" = "密码加密失败，请重试或反馈";
+
+/* 密码加密失败，请重试或反馈 */
+"ChangePasswordViewController_HUDErrMsg6" = "密码加密失败，请重试或反馈";
+
+/* 正在验证密码... */
+"ChangePasswordViewController_HUDIndMsg" = "正在验证密码...";
+
+/* 修改密码成功! */
+"ChangePasswordViewController_HUDSucMsg" = "修改密码成功!";
+
+/* 当前密码: */
+"ChangePasswordViewController_labCurrentPassword" = "当前密码:";
+
+/* 密码由6-20位大小写英文字母、数字组成 */
+"ChangePasswordViewController_labExplain" = "密码由6-20位大小写英文字母、数字组成";
+
+/* 显示密码 */
+"ChangePasswordViewController_labIsDisplay" = "显示密码";
+
+/* 新密码: */
+"ChangePasswordViewController_labNewPassword" = "新密码:";
+
+/* 修改登录密码 */
+"ChangePasswordViewController_Nav_Title" = "修改登录密码";
+
+/* 新密码为空 */
+"ChangePasswordViewController_strNewPWWarning1" = "新密码为空";
+
+/* 新密码格式错误 */
+"ChangePasswordViewController_strNewPWWarning2" = "新密码格式错误";
+
+/* 取消 */
+"Common_Btn_Cancel" = "取消";
+
+/* 确定 */
+"Common_Btn_Sure" = "确定";
+
+/* 失败 */
+"Common_ErrorInfo_API_Failure" = "失败";
+
+/* 成功 */
+"Common_ErrorInfo_API_SUCCESS" = "成功";
+
+/* 无效用户 */
+"Common_ErrorInfo_code5" = "无效用户";
+
+/* 余额不足 */
+"Common_ErrorInfo_code6" = "余额不足";
+
+/* 接口状态码解析错误 */
+"Common_ErrorInfo_CODE_ERROR" = "接口状态码解析错误";
+
+/* 未知错误，请重试 */
+"Common_ErrorInfo_Long99" = "未知错误，请重试";
+
+/* 未知错误 */
+"Common_ErrorInfo_Short99" = "未知错误";
+
+/* 确认收货失败 */
+"ConfimReceivedRequest_ErrorInfo_code12" = "确认收货失败";
+
+/* 该运单不允许确认收货 */
+"ConfimReceivedRequest_ErrorInfo_code13" = "该运单不允许确认收货";
+
+/* 运单编号无效 */
+"ConfimReceivedRequest_ErrorInfo_code3" = "运单编号无效";
+
+/* 最近刷新：yyyy-MM-dd HH:mm */
+"CustomLoadingView_dateFormatter" = "最近刷新：yyyy-MM-dd HH:mm";
+
+/* 下拉刷新... */
+"CustomLoadingView_tipLabel1" = "下拉刷新...";
+
+/* 上拉载入更多... */
+"CustomLoadingView_tipLabel2" = "上拉载入更多...";
+
+/* 松开刷新... */
+"CustomLoadingView_tipLabel3" = "松开刷新...";
+
+/* 松开载入更多... */
+"CustomLoadingView_tipLabel4" = "松开载入更多...";
+
+/* 正在刷新... */
+"CustomLoadingView_tipLabel5" = "正在刷新...";
+
+/* 正在载入更多... */
+"CustomLoadingView_tipLabel6" = "正在载入更多...";
+
+/*  (错误代码:%d)  */
+"CustomTableViewController_errorLabelBottom" = "(错误代码:%d)";
+
+/* 网络异常  轻击刷新 */
+"CustomTableViewController_errorLabelTop" = "网络异常  轻击刷新";
+
+/* 暂无相关数据 */
+"CustomTableViewController_labelNoData" = "暂无相关数据";
+
+/* One day in time */
+"day" = "day";
+
+/* More than one day in time */
+"days" = "days";
+
+/* 删除失败 */
+"DeleteUserAddressRequest_ErrorInfo_code2" = "删除失败";
+
+/* 获取运送方案失败 */
+"DeliverySolutionRequest_ErrorInfo_code12" = "获取运送方案失败";
+
+/* 报关费 */
+"EstimateListCell_labEntryPriceStr" = "报关费";
+
+/* 运费 */
+"EstimateListCell_labFreightStr" = "运费";
+
+/* 服务费 */
+"EstimateListCell_labServerPriceStr" = "服务费";
+
+/* 总计￥ */
+"EstimateListCell_labSumPriceStr" = "总计￥";
+
+/* 正在加载... */
+"EstimateListViewController_HUDIndMsg" = "正在加载...";
+
+/* 商品价值%@元 */
+"EstimateListViewController_labPrice" = "商品价值%@元";
+
+/* 估算结果 */
+"EstimateListViewController_Nav_Title" = "估算结果";
+
+/* 代购 */
+"EstimateListViewController_params" = "代购";
+
+/* %@克运单, */
+"EstimateListViewController_strWeight" = "%@克运单,";
+
+/* 内容无效 */
+"EstimatesRequest_ErrorInfo_code2" = "内容无效";
+
+/* 感谢您的评价,额外赠送您100积分!愿我们的服务能让您享更多! */
+"EvaluateSucceedViewController_displaytext" = "感谢您的评价,额外赠送您100积分!愿我们的服务能让您享更多!";
+
+/* 运单评价成功 */
+"EvaluateSucceedViewController_Nav_Title" = "运单评价成功";
+
+/* 运单评价成功! */
+"EvaluateSucceedViewController_textlist" = "运单评价成功!";
+
+/* 余额:￥%.2f */
+"ExpenditureDetailViewController_labBalance" = "余额:￥%.2f";
+
+/* %.2f元 */
+"ExpenditureDetailViewController_labMoney" = "%.2f元";
+
+/* 收入 */
+"ExpenditureDetailViewController_labStateTXT1" = "收入";
+
+/* 支出 */
+"ExpenditureDetailViewController_labStateTXT2" = "支出";
+
+/* 收支详情 */
+"ExpenditureDetailViewController_Nav_Title" = "收支详情";
+
+/* 全部消费记录 */
+"ExpenditureViewController_btnNavOrder" = "全部消费记录";
+
+/* 全部消费记录 */
+"ExpenditureViewController_btnNavOrder1" = "全部消费记录";
+
+/* 收入 */
+"ExpenditureViewController_btnNavOrder2" = "收入";
+
+/* 支出 */
+"ExpenditureViewController_btnNavOrder3" = "支出";
+
+/* 暂时没有消费记录 */
+"ExpenditureViewController_exceptionView1" = "暂时没有消费记录";
+
+/* 暂时没有收入记录 */
+"ExpenditureViewController_exceptionView2" = "暂时没有收入记录";
+
+/* 暂时没有支出记录 */
+"ExpenditureViewController_exceptionView3" = "暂时没有支出记录";
+
+/* 全部消费记录 */
+"ExpenditureViewController_itemArray_item1" = "全部消费记录";
+
+/* 收入 */
+"ExpenditureViewController_itemArray_item2" = "收入";
+
+/* 支出 */
+"ExpenditureViewController_itemArray_item3" = "支出";
+
+/* %.2f元 */
+"ExpenditureViewController_lab_Money" = "%.2f元";
+
+/* 余额:￥%.2f */
+"ExpenditureViewController_labBalance" = "余额:￥%.2f";
+
+/* 收入 */
+"ExpenditureViewController_labState1" = "收入";
+
+/* 支出 */
+"ExpenditureViewController_labState2" = "支出";
+
+/* 商品 */
+"FavoriteHomeViewController_FAVORITE_PRODUCT" = "商品";
+
+/* 店铺 */
+"FavoriteHomeViewController_FAVORITE_SHOP" = "店铺";
+
+/* 还没有关注过商品 */
+"FavoriteHomeViewController_infoExceptionView1" = "还没有关注过商品";
+
+/* 还没有关注过店铺 */
+"FavoriteHomeViewController_infoExceptionView2" = "还没有关注过店铺";
+
+/* 收藏夹 */
+"FavoriteHomeViewController_Title" = "收藏夹";
+
+/* 取消关注 */
+"FavoriteHomeViewController_titleForDeleteConfirmationButton" = "取消关注";
+
+/* 请输入内容 */
+"FeedBackViewController_HUDErrMsg" = "请输入内容";
+
+/* 正在提交... */
+"FeedBackViewController_HUDIndMsg" = "正在提交...";
+
+/* 意见反馈 */
+"FeedBackViewController_Nav_Title" = "意见反馈";
+
+/* 您的建议,就是我们前进的动力! */
+"FeedBackViewController_txtFeedBack" = "您的建议,就是我们前进的动力!";
+
+/* Denotes future dates */
+"from now" = "from now";
+
+/* 运单编号无效 */
+"GetReviewRequest_ErrorInfo_code3" = "运单编号无效";
+
+/* 商品ID无效 */
+"GetShipCountryRequest_ErrorInfo_code2" = "商品ID无效";
+
+/* 无效用户 */
+"GetShoppingCartNumRequest_ErrorInfo_code5" = "无效用户";
+
+/* 余额不足 */
+"GetShoppingCartNumRequest_ErrorInfo_code6" = "余额不足";
+
+/* 用户不存在 */
+"GetUserInfoRequest_ErrorInfo_code4" = "用户不存在";
+
+/* 商品id无效 */
+"GetUserProductRequest_ErrorInfo_code2" = "商品id无效";
+
+/* 正在加载... */
+"GuideDetailViewController_HUDIndMsg" = "正在加载...";
+
+/* 加载错误,请点击刷新! */
+"HelpBuyProductDetail_btnBack" = "加载错误,请点击刷新!";
+
+/* 请选择款式 */
+"HelpBuyProductDetail_HUDErrMsg1" = "请选择款式";
+
+/* 商品库存不足,请选择其他款式 */
+"HelpBuyProductDetail_HUDErrMsg2" = "商品库存不足,请选择其他款式";
+
+/* 数量 */
+"HelpBuyProductDetail_labCount" = "数量";
+
+/* 备注 */
+"HelpBuyProductDetail_labRemark" = "备注";
+
+/* 商品不存在 */
+"HelpBuyProductsDetailRequest_ErrorInfo_code3" = "商品不存在";
+
+/* 商品已下架 */
+"HelpBuyProductsDetailRequest_ErrorInfo_code5" = "商品已下架";
+
+/* 汇率查询 */
+"HelpViewController_webViewController1" = "汇率查询";
+
+/* 在线客服 */
+"HelpViewController_webViewController2" = "在线客服";
+
+/* One hour in time */
+"hour" = "hour";
+
+/* More than one hour in time */
+"hours" = "hours";
+
+/* 淘宝 */
+"IndexViewController_arrName_item1" = "淘宝";
+
+/* 京东商城 */
+"IndexViewController_arrName_item2" = "京东商城";
+
+/* 当当网 */
+"IndexViewController_arrName_item3" = "当当网";
+
+/* 易讯网 */
+"IndexViewController_arrName_item4" = "易讯网";
+
+/* 亚马逊 */
+"IndexViewController_arrName_item5" = "亚马逊";
+
+/* 拍拍 */
+"IndexViewController_arrName_item6" = "拍拍";
+
+/* 唯品会 */
+"IndexViewController_arrName_item7" = "唯品会";
+
+/* 该商品已下架 */
+"IndexViewController_HUDErrMsg" = "该商品已下架";
+
+/* 正在提交代购... */
+"IndexViewController_HUDIndMsg" = "正在提交代购...";
+
+/* 代购成功 */
+"IndexViewController_HUDSucMsg" = "代购成功";
+
+/* 当前积分:%d */
+"IntegralHomeViewController_labUserBalance" = "当前积分:%d";
+
+/* 我的积分 */
+"IntegralHomeViewController_Nav_Title" = "我的积分";
+
+/* 全部积分记录 */
+"IntegralListViewController_btnNavOrder1" = "全部积分记录";
+
+/* 获得积分 */
+"IntegralListViewController_btnNavOrder2" = "获得积分";
+
+/* 消耗积分 */
+"IntegralListViewController_btnNavOrder3" = "消耗积分";
+
+/* 暂时没有消费记录 */
+"IntegralListViewController_exceptionViewScore1" = "暂时没有消费记录";
+
+/* 暂时没有收入记录 */
+"IntegralListViewController_exceptionViewScore2" = "暂时没有收入记录";
+
+/* 暂时没有支出记录 */
+"IntegralListViewController_exceptionViewScore3" = "暂时没有支出记录";
+
+/* 全部积分记录 */
+"IntegralListViewController_itemArray_item1" = "全部积分记录";
+
+/* 获得积分 */
+"IntegralListViewController_itemArray_item2" = "获得积分";
+
+/* 消耗积分 */
+"IntegralListViewController_itemArray_item3" = "消耗积分";
+
+/* Indicates a less-than number */
+"Less than" = "Less than";
+
+/* 用户名不能为空 */
+"LoginRequest_ErrorInfo_code2" = "用户名不能为空";
+
+/* 密码不能为空 */
+"LoginRequest_ErrorInfo_code3" = "密码不能为空";
+
+/* 用户名或密码错误 */
+"LoginRequest_ErrorInfo_code5" = "用户名或密码错误";
+
+/* 账号未激活 */
+"LoginRequest_ErrorInfo_USER_UNACTIVE" = "账号未激活";
+
+/* 请输入用户名和密码 */
+"LoginViewController_HUDErrMsg1" = "请输入用户名和密码";
+
+/* 请输入用户名 */
+"LoginViewController_HUDErrMsg2" = "请输入用户名";
+
+/* 请输入密码 */
+"LoginViewController_HUDErrMsg3" = "请输入密码";
+
+/* 密码加密失败，请重试或反馈 */
+"LoginViewController_HUDErrMsg4" = "密码加密失败，请重试或反馈";
+
+/* 账户未激活 */
+"LoginViewController_HUDErrMsg5" = "账户未激活";
+
+/* 正在验证... */
+"LoginViewController_HUDIndMsg2" = "正在验证...";
+
+/* 其它登录方式 */
+"LoginViewController_labFaceBook" = "其它登录方式";
+
+/* 登录 */
+"LoginViewController_Nav_Title" = "登录";
+
+/* 密码 */
+"LoginViewController_txtPassword" = "密码";
+
+/* 用户名 */
+"LoginViewController_txtUserName" = "用户名";
+
+/* 分享失败 */
+"MakeShareRequest_ErrorInfo_code2" = "分享失败";
+
+/* 亲,忘了评价哦 */
+"MakeShareRequest_ErrorInfo_code3" = "亲,忘了评价哦";
+
+/* %d张可用 */
+"MenuTableViewCell_labMessage" = "%d张可用";
+
+/* %@已发货 */
+"MenuTableViewCell_msgArray_item1" = "%@已发货";
+
+/* %@存在异常 */
+"MenuTableViewCell_msgArray_item2" = "%@存在异常";
+
+/* 从相册中选取美照 */
+"MenuViewController_ActionSheet_OthBtn1" = "从相册中选取美照";
+
+/* 立即拍摄美照 */
+"MenuViewController_ActionSheet_OthBtn2" = "立即拍摄美照";
+
+/* 选择头像来源 */
+"MenuViewController_ActionSheet_Title" = "选择头像来源";
+
+/* 环境配置 */
+"MenuViewController_arrDebug_item1" = "环境配置";
+
+/* 通知 */
+"MenuViewController_arrMessage_item1" = "通知";
+
+/* 我抱的团 */
+"MenuViewController_arrMessage_item2" = "我抱的团";
+
+/* 宝贝分享 */
+"MenuViewController_arrMessage_item3" = "宝贝分享";
+
+/* 运单 */
+"MenuViewController_arrOrder_item1" = "运单";
+
+/* Panli RMB账户 */
+"MenuViewController_arrRmb_item1" = "Panli RMB账户";
+
+/* 优惠券 */
+"MenuViewController_arrRmb_item2" = "优惠券";
+
+/* 积分 */
+"MenuViewController_arrRmb_item3" = "积分";
+
+/* 刷新用户信息失败 */
+"MenuViewController_HUDErrMsg" = "刷新用户信息失败";
+
+/* 欢迎来到Panli */
+"MenuViewController_labUserName" = "欢迎来到Panli";
+
+/* 我 */
+"MessageDetailCell_labNickName" = "我";
+
+/* 短信主题ID无效 */
+"MessageDetailRequest_ErrorInfo_code2" = "短信主题ID无效";
+
+/* 请输入短信内容 */
+"MessageDetailViewController_HUDErrMsg" = "请输入短信内容";
+
+/* 正在提交... */
+"MessageDetailViewController_HUDIndMsg" = "正在提交...";
+
+/* 发送成功 */
+"MessageDetailViewController_HUDSucMsg" = "发送成功";
+
+/* 短信详情 */
+"MessageDetailViewController_Nav_Title" = "短信详情";
+
+/* 访问链接 */
+"MessageTopicCell_btnClickUrl" = "访问链接";
+
+/* 用户间私信 */
+"MessageTopicCell_strMsgTitle1" = "用户间私信";
+
+/* 网站公告 */
+"MessageTopicCell_strMsgTitle2" = "网站公告";
+
+/* 团购通知 */
+"MessageTopicCell_strMsgTitle3" = "团购通知";
+
+/* 优惠券通知 */
+"MessageTopicCell_strMsgTitle4" = "优惠券通知";
+
+/* 线下充值审核通知 */
+"MessageTopicCell_strMsgTitle5" = "线下充值审核通知";
+
+/* 其它通知 */
+"MessageTopicCell_strMsgTitle6" = "其它通知";
+
+/* 短信箱 */
+"MessageUserNoteViewController_msgExceptionView_Detail" = "短信箱";
+
+/* 暂时没有短信 */
+"MessageUserNoteViewController_msgExceptionView_Title" = "暂时没有短信";
+
+/* 短信箱 */
+"MessageUserNoteViewController_Nav_Title" = "短信箱";
+
+/* One minute in time */
+"minute" = "minute";
+
+/* More than one minute in time */
+"minutes" = "minutes";
+
+/* 当前密码错误 */
+"ModifyPasswordRequest_ErrorInfo_code2" = "当前密码错误";
+
+/* 新密码格式错误 */
+"ModifyPasswordRequest_ErrorInfo_code3" = "新密码格式错误";
+
+/* 请输入数字! */
+"MoneyEstimateViewController_AlertView1_Msg" = "请输入数字!";
+
+/* 提示 */
+"MoneyEstimateViewController_AlertView1_Title" = "提示";
+
+/* 请输入数字(不能有小数点)! */
+"MoneyEstimateViewController_AlertView2_Msg" = "请输入数字(不能有小数点)!";
+
+/* 提示 */
+"MoneyEstimateViewController_AlertView2_Title" = "提示";
+
+/* 点击选择运送国家 */
+"MoneyEstimateViewController_btnArea" = "点击选择运送国家";
+
+/* 点击选择运送国家 */
+"MoneyEstimateViewController_defaultCountry" = "点击选择运送国家";
+
+/* 请输入完整信息 */
+"MoneyEstimateViewController_HUDErrMsg" = "请输入完整信息";
+
+/* 收货区域: */
+"MoneyEstimateViewController_labArea" = "收货区域:";
+
+/* 商品价格: */
+"MoneyEstimateViewController_labPrice" = "商品价格:";
+
+/* 商品重量: */
+"MoneyEstimateViewController_labWeight" = "商品重量:";
+
+/* 元 */
+"MoneyEstimateViewController_labYuan" = "元";
+
+/* 费用估算 */
+"MoneyEstimateViewController_Nav_Title" = "费用估算";
+
+/* One month in time */
+"month" = "month";
+
+/* More than one month in time */
+"months" = "months";
+
+/* 下单时间 */
+"MsgProductDetailViewController_arrTitle_item1" = "下单时间";
+
+/* 商品价格 */
+"MsgProductDetailViewController_arrTitle_item2" = "商品价格";
+
+/* 购买数量 */
+"MsgProductDetailViewController_arrTitle_item3" = "购买数量";
+
+/* 商品款式 */
+"MsgProductDetailViewController_arrTitle_item4" = "商品款式";
+
+/* 商品状态 */
+"MsgProductDetailViewController_arrTitle_item5" = "商品状态";
+
+/* 商品备注 */
+"MsgProductDetailViewController_arrTitle_item6" = "商品备注";
+
+/* 网络不给力 */
+"MsgProductDetailViewController_exceptionView" = "网络不给力";
+
+/* 正在加载... */
+"MsgProductDetailViewController_HUDIndMsg" = "正在加载...";
+
+/* 无 */
+"MsgProductDetailViewController_mProduct_none" = "无";
+
+/* 商品信息 */
+"MsgProductDetailViewController_Nav_Title" = "商品信息";
+
+/* 无需展示状态 */
+"MsgProductDetailViewController_status1" = "无需展示状态";
+
+/* 退换货处理中 */
+"MsgProductDetailViewController_status10" = "退换货处理中";
+
+/* 联系卖家中 */
+"MsgProductDetailViewController_status11" = "联系卖家中";
+
+/* 已到panli */
+"MsgProductDetailViewController_status12" = "已到panli";
+
+/* 拼单失败 */
+"MsgProductDetailViewController_status2" = "拼单失败";
+
+/* 未处理 */
+"MsgProductDetailViewController_status3" = "未处理";
+
+/* 处理中 */
+"MsgProductDetailViewController_status4" = "处理中";
+
+/* 订购中 */
+"MsgProductDetailViewController_status5" = "订购中";
+
+/* 已订购 */
+"MsgProductDetailViewController_status6" = "已订购";
+
+/* 无货 */
+"MsgProductDetailViewController_status7" = "无货";
+
+/* 无效商品 */
+"MsgProductDetailViewController_status8" = "无效商品";
+
+/* 问题商品 */
+"MsgProductDetailViewController_status9" = "问题商品";
+
+/* 复制 */
+"MyCouponViewController_AlertView_OthBtn" = "复制";
+
+/* 优惠券信息 */
+"MyCouponViewController_AlertView_Title" = "优惠券信息";
+
+/* 积分兑换 */
+"MyCouponViewController_CouponSource1" = "积分兑换";
+
+/* 注册赠送 */
+"MyCouponViewController_CouponSource10" = "注册赠送";
+
+/* 系统赠送 */
+"MyCouponViewController_CouponSource11" = "系统赠送";
+
+/* 活动发放 */
+"MyCouponViewController_CouponSource12" = "活动发放";
+
+/* 商城购买 */
+"MyCouponViewController_CouponSource2" = "商城购买";
+
+/* 活动发放 */
+"MyCouponViewController_CouponSource3" = "活动发放";
+
+/* 他人赠送 */
+"MyCouponViewController_CouponSource4" = "他人赠送";
+
+/* 抽奖获得 */
+"MyCouponViewController_CouponSource5" = "抽奖获得";
+
+/* 抽奖获得 */
+"MyCouponViewController_CouponSource6" = "抽奖获得";
+
+/* 优秀分享 */
+"MyCouponViewController_CouponSource7" = "优秀分享";
+
+/* 活动发放 */
+"MyCouponViewController_CouponSource8" = "活动发放";
+
+/* 活动发放 */
+"MyCouponViewController_CouponSource9" = "活动发放";
+
+/* 您还没有优惠券 */
+"MyCouponViewController_exceptionView" = "您还没有优惠券";
+
+/* 正在加载... */
+"MyCouponViewController_HUDIndMsg" = "正在加载...";
+
+/* 编号:%@ */
+"MyCouponViewController_labCouponCode" = "编号:%@";
+
+/* 此优惠券有效期至yyyy-MM-dd */
+"MyCouponViewController_labValidity" = "此优惠券有效期至yyyy-MM-dd";
+
+/* 我的优惠券 */
+"MyCouponViewController_Nav_Title1" = "我的优惠券";
+
+/* 我的优惠券(%d) */
+"MyCouponViewController_Nav_Title2" = "我的优惠券(%d)";
+
+/* 此优惠券编号为:%@,是否要复制? */
+"MyCouponViewController_strMessage" = "此优惠券编号为:%@,是否要复制?";
+
+/* 正在加载... */
+"MyGroupBuyViewController_HUDIndMsg" = "正在加载...";
+
+/* 暂时没有抱的团 */
+"MyGroupBuyViewController_JoinExceptionView" = "暂时没有抱的团";
+
+/* 我抱的团 */
+"MyGroupBuyViewController_Nav_Title" = "我抱的团";
+
+/* 备注:%@ */
+"MyGroupBuyViewController_strSkuRemark" = "备注:%@";
+
+/* 备注:%@ */
+"MyJoinCell_labProductRemark" = "备注:%@";
+
+/* 暂无 */
+"MyJoinCell_mJoinProduct" = "暂无";
+
+/* 备注:%@ */
+"MyJoinCell_strSkuRemark" = "备注:%@ ";
+
+/* 账户余额:%@ */
+"MyPanliRMBViewController_labUserBalance" = "账户余额:%@";
+
+/* Panli RMB账户 */
+"MyPanliRMBViewController_Nav_Title" = "Panli RMB账户";
+
+/* 全选 */
+"OrderHomeViewController_btnCheck1" = "全选";
+
+/* 全不选 */
+"OrderHomeViewController_btnCheck2" = "全不选";
+
+/* 共%d件商品 */
+"OrderHomeViewController_formatCount" = "共%d件商品";
+
+/* 重量共计%d克 */
+"OrderHomeViewController_formatWeight" = "重量共计%d克";
+
+/* 正在加载... */
+"OrderHomeViewController_HUDIndMsg" = "正在加载...";
+
+/* 已到panli */
+"OrderHomeViewController_orderStatusDataSource_item1" = "已到panli";
+
+/* 问题商品 */
+"OrderHomeViewController_orderStatusDataSource_item2" = "问题商品";
+
+/* 处理中 */
+"OrderHomeViewController_orderStatusDataSource_item3" = "处理中";
+
+/* 已订购 */
+"OrderHomeViewController_orderStatusDataSource_item4" = "已订购";
+
+/* 未处理 */
+"OrderHomeViewController_orderStatusDataSource_item5" = "未处理";
+
+/* 无效订单 */
+"OrderHomeViewController_orderStatusDataSource_item6" = "无效订单";
+
+/* 送货车 */
+"OrderHomeViewController_Title" = "送货车";
+
+/* 数量:%d */
+"OrderProCell_labNumber1" = "数量:%d";
+
+/* 数量:%d（%d克） */
+"OrderProCell_labNumber2" = "数量:%d（%d克）";
+
+/* X%d（%d克） */
+"OrderProInfoView_labCount" = "X%d（%d克）";
+
+/* 商品备注 */
+"OrderProInfoView_remakView" = "商品备注";
+
+/* 代购进度 */
+"OrderProInfoView_scheduleView" = "代购进度";
+
+/* 国内物流 */
+"OrderProInfoView_transFlowView" = "国内物流";
+
+/* Indicates an exceeding number */
+"Over" = "Over";
+
+/* x%d(%d克) */
+"ProductCell_labProductCount" = "x%d(%d克)";
+
+/* 物流地址无效 */
+"ProductExpressRequest_ErrorInfo_code3" = "物流地址无效";
+
+/* 物流编号无效 */
+"ProductExpressRequest_ErrorInfo_code4" = "物流编号无效";
+
+/* 商品ID无效 */
+"ProductRecordRequest_ErrorInfo_code2" = "商品ID无效";
+
+/* 正在加载... */
+"PushNotificationViewController_HUDIndMsg1" = "正在加载...";
+
+/* 正在提交... */
+"PushNotificationViewController_HUDIndMsg2" = "正在提交...";
+
+/* 修改成功 */
+"PushNotificationViewController_HUDSucMsg" = "修改成功";
+
+/* 现在无法及时提醒哦,可在ios的\"设置\"-\"通知中心\"找到\"Panli代购\",开启后即可重新接收通知 */
+"PushNotificationViewController_labRemark" = "现在无法及时提醒哦,可在ios的\"设置\"-\"通知中心\"找到\"Panli代购\",开启后即可重新接收通知";
+
+/* 消息设置 */
+"PushNotificationViewController_Nav_Title" = "消息设置";
+
+/* 运单已评价 */
+"RateRequest_ErrorInfo_code10" = "运单已评价";
+
+/* 运单不允许评价 */
+"RateRequest_ErrorInfo_code11" = "运单不允许评价";
+
+/* 运单评价失败 */
+"RateRequest_ErrorInfo_code12" = "运单评价失败";
+
+/* 运单编号无效 */
+"RateRequest_ErrorInfo_code3" = "运单编号无效";
+
+/* 返回MyPanli */
+"RechargeFaildViewController_btnBack" = "返回MyPanli";
+
+/* 提示 */
+"RechargeFaildViewController_Nav_Title" = "提示";
+
+/* 正在处理中,记得保持关注哦!\n\n若有疑问,请发送邮件至service@panli.com\n\n我们会尽快与您取得联系。 */
+"RechargeFaildViewController_strMessage" = "正在处理中,记得保持关注哦!\n\n若有疑问,请发送邮件至service@panli.com\n\n我们会尽快与您取得联系。";
+
+/* Paypal充值功能关闭 */
+"RechargeInfoRequest_ErrorInfo_code99" = "Paypal充值功能关闭";
+
+/* 充值方式错误 */
+"RechargeOrCreateRequest_ErrorInfo_code8" = "充值方式错误";
+
+/* 订单生成失败 */
+"RechargeOrCreateRequest_ErrorInfo_code9" = "订单生成失败";
+
+/* 恭喜您,成功提交充值信息! */
+"RechargeSuccessViewController_labTitle" = "恭喜您,成功提交充值信息!";
+
+/* 充值成功 */
+"RechargeSuccessViewController_Nav_Title" = "充值成功";
+
+/* 充值金额会在30分钟内到账,请耐心等待。\n\n若有疑问,请发送邮件至service@panli.com\n\n我们会尽快与您取得联系。 */
+"RechargeSuccessViewController_strMessage" = "充值金额会在30分钟内到账,请耐心等待。\n\n若有疑问,请发送邮件至service@panli.com\n\n我们会尽快与您取得联系。";
+
+/* 请输入数字! */
+"RechargeViewController_AlertView_Msg" = "请输入数字!";
+
+/* 服务器维护中，暂时无法充值 */
+"RechargeViewController_AlertView_Msg1" = "服务器维护中，暂时无法充值";
+
+/* panli提醒 */
+"RechargeViewController_AlertView_Title1" = "panli提醒";
+
+/* 提示 */
+"RechargeViewController_AlertView_Title2" = "提示";
+
+/* 完成 */
+"RechargeViewController_BarButtonItem_Title" = "完成";
+
+/* Paypal充值失败 */
+"RechargeViewController_HUDErrMsg1" = "Paypal充值失败";
+
+/* 请输入正确充值金额... */
+"RechargeViewController_HUDErrMsg2" = "请输入正确充值金额...";
+
+/* 获取计算汇率失败! */
+"RechargeViewController_HUDErrMsg3" = "获取计算汇率失败!";
+
+/* 获取汇率失败,请稍候再试 */
+"RechargeViewController_HUDErrMsg4" = "获取汇率失败,请稍候再试";
+
+/* Paypal充值组件加载失败,请重试... */
+"RechargeViewController_HUDErrMsg5" = "Paypal充值组件加载失败,请重试...";
+
+/* 正在提交... */
+"RechargeViewController_HUDIndMsg1" = "正在提交...";
+
+/* 正在同步国际汇率... */
+"RechargeViewController_HUDIndMsg2" = "正在同步国际汇率...";
+
+/* 正在加载... */
+"RechargeViewController_HUDIndMsg3" = "正在加载...";
+
+/* 正在与服务器对账... */
+"RechargeViewController_HUDIndMsg4" = "正在与服务器对账...";
+
+/* 正在发送支付请求... */
+"RechargeViewController_HUDIndMsg5" = "正在发送支付请求...";
+
+/* 账户余额 : ￥%.2f */
+"RechargeViewController_labBalance" = "账户余额 : ￥%.2f";
+
+/* 充值金额 ￥ */
+"RechargeViewController_labInput" = "充值金额 ￥";
+
+/* 还需支付 :  */
+"RechargeViewController_labLittleMoneyTxt" = "还需支付 :";
+
+/* Panli RMB账户余额支付 */
+"RechargeViewController_labPayDetail" = "Panli RMB账户余额支付";
+
+/* 支付方式 */
+"RechargeViewController_labPayMode" = "支付方式";
+
+/* 应付总额 : ￥%.2f */
+"RechargeViewController_labPayMoney" = "应付总额 : ￥%.2f";
+
+/* 更多支付方式陆续开通,目前可使用网页版进行。 */
+"RechargeViewController_labPayMore" = "更多支付方式陆续开通,目前可使用网页版进行。";
+
+/* 结算信息 */
+"RechargeViewController_labPayMsg" = "结算信息";
+
+/* 支付 */
+"RechargeViewController_Nav_Title1" = "支付";
+
+/* 充值 */
+"RechargeViewController_Nav_Title2" = "充值";
+
+/* Panli充值 */
+"RechargeViewController_PayPalItem_Name" = "Panli充值";
+
+/* 用户:%@,充值金额:$%.2f,充值流水号:%@ */
+"RechargeViewController_shortDescription" = "用户:%@,充值金额:$%.2f,充值流水号:%@";
+
+/* 实际支付 : $%.2f */
+"RechargeViewController_strMoney" = "实际支付 : $%.2f";
+
+/* 实际支付 : $ */
+"RechargeViewController_strMoneyTemp" = "实际支付 : $";
+
+/* 当前汇率 美元:人民币元=1:%.2f手续费 :%@+$%@ */
+"RechargeViewController_strMsg" = "当前汇率 美元:人民币元=1:%.2f手续费 :%@+$%@";
+
+/* 无效的邮箱地址 */
+"RegisterRequest_ErrorInfo_code21" = "无效的邮箱地址";
+
+/* 邮箱已存在 */
+"RegisterRequest_ErrorInfo_code22" = "邮箱已存在";
+
+/* 昵称只能是2-8个汉字或4-16个字符 */
+"RegisterRequest_ErrorInfo_code23" = "昵称只能是2-8个汉字或4-16个字符";
+
+/* 用户名已存在 */
+"RegisterRequest_ErrorInfo_code24" = "用户名已存在";
+
+/* 激活邮件发送失败,请再次注册或联系客服 */
+"RegisterRequest_ErrorInfo_code26" = "激活邮件发送失败,请再次注册或联系客服";
+
+/* 恭喜您,提交注册信息成功! */
+"RegistResponseViewController_labMainTitle1" = "恭喜您,提交注册信息成功!";
+
+/* 恭喜您激活成功! */
+"RegistResponseViewController_labMainTitle2" = "恭喜您激活成功!";
+
+/* 很抱歉,账户激活失败! */
+"RegistResponseViewController_labMainTitle3" = "很抱歉,账户激活失败!";
+
+/* 请前往您的注册邮箱查收激活邮件, */
+"RegistResponseViewController_labSubTitleOne1" = "请前往您的注册邮箱查收激活邮件,";
+
+/* 欢迎加入Panli大家庭, */
+"RegistResponseViewController_labSubTitleOne2" = "欢迎加入Panli大家庭,";
+
+/* 您的账户激活链接可能失效了, */
+"RegistResponseViewController_labSubTitleOne3" = "您的账户激活链接可能失效了,";
+
+/* 激活账户可享受完整的Panli服务. */
+"RegistResponseViewController_labSubTitleTwo1" = "激活账户可享受完整的Panli服务.";
+
+/* 现在您可以体验Panli的完整服务. */
+"RegistResponseViewController_labSubTitleTwo2" = "现在您可以体验Panli的完整服务.";
+
+/* 请重新登录,我们将给您再次发送激活邮件. */
+"RegistResponseViewController_labSubTitleTwo3" = "请重新登录,我们将给您再次发送激活邮件.";
+
+/* 注册Panli会员 */
+"RegistResponseViewController_Nav_Title" = "注册Panli会员";
+
+/* 激活Panli账户 */
+"RegistResponseViewController_webViewController" = "激活Panli账户";
+
+/* 请填写您的常用邮箱 */
+"RegistViewController_HUDErrMsg1" = "请填写您的常用邮箱";
+
+/* 请填写用户名 */
+"RegistViewController_HUDErrMsg2" = "请填写用户名";
+
+/* 请输入密码 */
+"RegistViewController_HUDErrMsg3" = "请输入密码";
+
+/* 密码必须为6-20位的数字或字母 */
+"RegistViewController_HUDErrMsg4" = "密码必须为6-20位的数字或字母";
+
+/* 正在提交... */
+"RegistViewController_HUDIndMsg" = "正在提交...";
+
+/* 注册Panli会员 */
+"RegistViewController_Nav_Title" = "注册Panli会员";
+
+/* 密码必须为6-20位的数字或字母 */
+"RegistViewController_strPasswordWarning" = "密码必须为6-20位的数字或字母";
+
+/* 请填写常用邮箱 */
+"RegistViewController_txtEmail" = "请填写常用邮箱";
+
+/* 密码为6-20个字母或数字组成 */
+"RegistViewController_txtPassword" = "密码为6-20个字母或数字组成";
+
+/* 请填写您的用户名 */
+"RegistViewController_txtUserName" = "请填写您的用户名";
+
+/* 登录 */
+"RootViewController_labLogin" = "登录";
+
+/* 扫一扫 */
+"ScanCodeViewController_Nav_Title" = "扫一扫";
+
+/* 积分不足 */
+"ScoreExchangeRequest_ErrorInfo_code2" = "积分不足";
+
+/* 服务费已全免,现在无需兑换优惠券 */
+"ScoreExchangeRequest_ErrorInfo_code3" = "服务费已全免,现在无需兑换优惠券";
+
+/* 不用 */
+"ScoreExchangeViewController_AlertView_CanBtn" = "不用";
+
+/* 兑换 */
+"ScoreExchangeViewController_AlertView_OthBtn" = "兑换";
+
+/* 积分兑换优惠券 */
+"ScoreExchangeViewController_AlertView_Title" = "积分兑换优惠券";
+
+/* 正在加载... */
+"ScoreExchangeViewController_HUDIndMsg" = "正在加载...";
+
+/* 兑换成功 */
+"ScoreExchangeViewController_HUDSucMsg" = "兑换成功";
+
+/* 需消耗 : %d积分 */
+"ScoreExchangeViewController_labEx" = "需消耗 : %d积分";
+
+/* 积分兑换优惠券 */
+"ScoreExchangeViewController_Nav_Title" = "积分兑换优惠券";
+
+/* 使用%d积分换取这张%d元优惠券吗? */
+"ScoreExchangeViewController_strMessage" = "使用%d积分换取这张%d元优惠券吗?";
+
+/* More than one second in time */
+"seconds" = "seconds";
+
+/* 确定要删除该地址? */
+"SelectAddressViewController_AlertView_Msg" = "确定要删除该地址?";
+
+/* Panli提醒 */
+"SelectAddressViewController_AlertView_Title" = "Panli提醒";
+
+/* 请选择国家地区 */
+"SelectAddressViewController_HUDErrMsg" = "请选择国家地区";
+
+/* 正在删除... */
+"SelectAddressViewController_HUDIndMsg1" = "正在删除...";
+
+/* 正在加载收货地址... */
+"SelectAddressViewController_HUDIndMsg2" = "正在加载收货地址...";
+
+/* 正在加载... */
+"SelectAddressViewController_HUDIndMsg3" = "正在加载...";
+
+/* 删除成功 */
+"SelectAddressViewController_HUDSucMsg" = "删除成功";
+
+/* 1/3填写收货地址 */
+"SelectAddressViewController_Nav_Title1" = "1/3填写收货地址";
+
+/* 收货地址薄 */
+"SelectAddressViewController_Nav_Title2" = "收货地址薄";
+
+/* 请输入国家或地区名 */
+"SelectShipCountryViewController_barSearchShipCountry" = "请输入国家或地区名";
+
+/* 正在加载... */
+"SelectShipCountryViewController_HUDIndMsg" = "正在加载...";
+
+/* 正在定位中... */
+"SelectShipCountryViewController_mShipCountry1" = "正在定位中...";
+
+/* 定位失败 */
+"SelectShipCountryViewController_mShipCountry2" = "定位失败";
+
+/* 国家列表 */
+"SelectShipCountryViewController_Nav_Title" = "国家列表";
+
+/* 内容无效 */
+"SendFeedBackRequest_ErrorInfo_code2" = "内容无效";
+
+/* 发送失败 */
+"SendFeedBackRequest_ErrorInfo_code3" = "发送失败";
+
+/* 短信内容为空 */
+"SendMsgByObjectIdRequest_ErrorInfo_code3" = "短信内容为空";
+
+/* 对象ID无效 */
+"SendMsgByObjectIdRequest_ErrorInfo_code4" = "对象ID无效";
+
+/* 发送失败 */
+"SendMsgByObjectIdRequest_ErrorInfo_code5" = "发送失败";
+
+/* 短信主题ID无效 */
+"SendMsgByTopicIdRequest_ErrorInfo_code2" = "短信主题ID无效";
+
+/* 短信内容为空 */
+"SendMsgByTopicIdRequest_ErrorInfo_code3" = "短信内容为空";
+
+/* 对象ID无效 */
+"SendMsgByTopicIdRequest_ErrorInfo_code4" = "对象ID无效";
+
+/* 发送失败 */
+"SendMsgByTopicIdRequest_ErrorInfo_code5" = "发送失败";
+
+/* 修改数量失败 */
+"SetCartProductCountRequest_ErrorInfo_code10000" = "修改数量失败";
+
+/* 商品ID无效 */
+"SetCartProductCountRequest_ErrorInfo_code3" = "商品ID无效";
+
+/* 该商品不能修改 */
+"SetCartProductCountRequest_ErrorInfo_code4" = "该商品不能修改";
+
+/* 商品ID无效 */
+"SetCartProductRemarkRequest_ErrorInfo_code3" = "商品ID无效";
+
+/* 该商品不能修改 */
+"SetCartProductRemarkRequest_ErrorInfo_code4" = "该商品不能修改";
+
+/* TopicId无效 */
+"SetSysMsgIsReadRequest_ErrorInfo_code2" = "TopicId无效";
+
+/* 暂时没有分享详情 */
+"ShareBuyDetailViewController_exceptionViewShareBuyDetail1" = "暂时没有分享详情";
+
+/* 网络不给力 */
+"ShareBuyDetailViewController_exceptionViewShareBuyDetail2" = "网络不给力";
+
+/* 正在加载... */
+"ShareBuyDetailViewController_HUDIndMsg" = "正在加载...";
+
+/* 分享详情 */
+"ShareBuyDetailViewController_Nav_Title" = "分享详情";
+
+/* 亲,赞过了 */
+"ShareBuyPraiseRequest_ErrorInfo_code4" = "亲,赞过了";
+
+/* 商品ID出错 */
+"ShareBuyPraiseRequest_ErrorInfo_code5" = "商品ID出错";
+
+/* 商品清单 */
+"ShipDetailOrdersCell_labTitle" = "商品清单";
+
+/* 无效的运单编号 */
+"ShipDetailRequest_ErrorInfo_code3" = "无效的运单编号";
+
+/* 你确定撤消此运单吗? */
+"ShipDetailViewController_AlertView_Msg" = "你确定撤消此运单吗?";
+
+/* Panli提醒 */
+"ShipDetailViewController_AlertView_Title" = "Panli提醒";
+
+/* 已经收到这个包裹了吗! */
+"ShipDetailViewController_CustomAlertView_Msg" = "已经收到这个包裹了吗!";
+
+/* 网络不给力 */
+"ShipDetailViewController_exceptionView" = "网络不给力";
+
+/* 正在加载... */
+"ShipDetailViewController_HUDIndMsg1" = "正在加载...";
+
+/* 正在提交... */
+"ShipDetailViewController_HUDIndMsg2" = "正在提交...";
+
+/* 删除成功 */
+"ShipDetailViewController_HUDSucMsg" = "删除成功";
+
+/* 暂时没有相关物流信息 */
+"ShipDetailViewController_label" = "暂时没有相关物流信息";
+
+/* 暂无相关信息 */
+"ShipDetailViewController_labTitle1" = "暂无相关信息";
+
+/* 暂时没有物流信息哦! */
+"ShipDetailViewController_labTitle2" = "暂时没有物流信息哦!";
+
+/* 收货人:%@ */
+"ShipDetailViewController_marrShipDetail_item1" = "收货人:%@";
+
+/* 地址:%@ */
+"ShipDetailViewController_marrShipDetail_item2" = "地址:%@";
+
+/* 国家:%@ */
+"ShipDetailViewController_marrShipDetail_item3" = "国家:%@";
+
+/* 收货人电话:%@ */
+"ShipDetailViewController_marrShipDetail_item4" = "收货人电话:%@";
+
+/* 邮编:%@ */
+"ShipDetailViewController_marrShipDetail_item5" = "邮编:%@";
+
+/* 所在城市:%@ */
+"ShipDetailViewController_marrShipDetail_item6" = "所在城市:%@";
+
+/* 运单详情 */
+"ShipDetailViewController_Nav_Title" = "运单详情";
+
+/* 关于运单(%@)的短信 */
+"ShipDetailViewController_vMsgDetail" = "关于运单(%@)的短信";
+
+/* 暂无代购进度 */
+"ShipDownListCell_cell_textLabel1" = "暂无代购进度";
+
+/* 暂无国际物流 */
+"ShipDownListCell_cell_textLabel2" = "暂无国际物流";
+
+/* 承运商:%@ */
+"ShipDownListCell_labLogisticsDealer1" = "承运商:%@";
+
+/* 暂无承运商 */
+"ShipDownListCell_labLogisticsDealer2" = "暂无承运商";
+
+/* 包裹处理 */
+"ShipDownListCell_labTitle1" = "包裹处理";
+
+/* 国际物流 */
+"ShipDownListCell_labTitle2" = "国际物流";
+
+/* 物流单号:%@ */
+"ShipDownListCell_txtLogisticsNo1" = "物流单号:%@";
+
+/* 暂无物流单号 */
+"ShipDownListCell_txtLogisticsNo2" = "暂无物流单号";
+
+/* 请为服务评分 */
+"ShipEvaluateViewController_HUDErrMsg" = "请为服务评分";
+
+/* 整体情况: */
+"ShipEvaluateViewController_labAll" = "整体情况:";
+
+/* 客服效率: */
+"ShipEvaluateViewController_labService" = "客服效率:";
+
+/* 商品验货: */
+"ShipEvaluateViewController_labSh" = "商品验货:";
+
+/* 配送速度: */
+"ShipEvaluateViewController_labSpeed" = "配送速度:";
+
+/* 您的评价是我们前进的动力,请对本次服务进行评价! */
+"ShipEvaluateViewController_labTitle" = "您的评价是我们前进的动力,请对本次服务进行评价!";
+
+/* 运单评价 */
+"ShipEvaluateViewController_Nav_Title" = "运单评价";
+
+/* 恭喜您获取%@积分奖励! */
+"ShipEvaluateViewController_textlist" = "恭喜您获取%@积分奖励!";
+
+/* 若对Panli有其它意见，请在此留言 */
+"ShipEvaluateViewController_textRateText" = "若对Panli有其它意见，请在此留言";
+
+/* 无效的物流地址 */
+"ShipExpressRequest_ErrorInfo_code4" = "无效的物流地址";
+
+/* 无效的物流编号 */
+"ShipExpressRequest_ErrorInfo_code5" = "无效的物流编号";
+
+/* EMS无法查询 */
+"ShipExpressRequest_ErrorInfo_code6" = "EMS无法查询";
+
+/* DHL无法查询 */
+"ShipExpressRequest_ErrorInfo_code7" = "DHL无法查询";
+
+/* Air无法查询 */
+"ShipExpressRequest_ErrorInfo_code8" = "Air无法查询";
+
+/* 亲,暂时没有运单喔! */
+"ShipListViewController_AllShipExceptionView" = "亲,暂时没有运单喔!";
+
+/* 网络不给力 */
+"ShipListViewController_AllShipExceptionView2" = "网络不给力";
+
+/* 读取更多... */
+"ShipListViewController_cell_textLabel" = "读取更多...";
+
+/* 正在加载... */
+"ShipListViewController_HUDIndMsg" = "正在加载...";
+
+/* 正在读取... */
+"ShipListViewController_loadMoreCell" = "正在读取...";
+
+/* 我的运单 */
+"ShipListViewController_Nav_Title" = "我的运单";
+
+/* 关于运单(%@)的短信 */
+"ShipListViewController_vMsgDetail" = "关于运单(%@)的短信";
+
+/* 运单状态无效 */
+"ShipOrdersRequest_ErrorInfo_code2" = "运单状态无效";
+
+/* 运单编号无效 */
+"ShipRecordRequest_ErrorInfo_code3" = "运单编号无效";
+
+/* 运单号码:%@ */
+"ShipStatusDetailCell_labShipID" = "运单号码:%@";
+
+/* 运单状态:%@ */
+"ShipStatusDetailCell_labShipStatus" = "运单状态:%@";
+
+/* 提交时间:%@ */
+"ShipStatusDetailCell_labShipTime" = "提交时间:%@";
+
+/* 未处理 */
+"ShipStatusDetailCell_ShipStatsu1" = "未处理";
+
+/* 二次免费重发 */
+"ShipStatusDetailCell_ShipStatsu10" = "二次免费重发";
+
+/* 包裹二次退回 */
+"ShipStatusDetailCell_ShipStatsu11" = "包裹二次退回";
+
+/* 处理中 */
+"ShipStatusDetailCell_ShipStatsu12" = "处理中";
+
+/* 运输方式错误 */
+"ShipStatusDetailCell_ShipStatsu13" = "运输方式错误";
+
+/* 确认收包 */
+"ShipStatusDetailCell_ShipStatsu14" = "确认收包";
+
+/* 取消 */
+"ShipStatusDetailCell_ShipStatsu15" = "取消";
+
+/* 财务审核完成 */
+"ShipStatusDetailCell_ShipStatsu16" = "财务审核完成";
+
+/* 状态出错 */
+"ShipStatusDetailCell_ShipStatsu17" = "状态出错";
+
+/* 状态出错 */
+"ShipStatusDetailCell_ShipStatsu18" = "状态出错";
+
+/* 已接单 */
+"ShipStatusDetailCell_ShipStatsu2" = "已接单";
+
+/* 发货中 */
+"ShipStatusDetailCell_ShipStatsu3" = "发货中";
+
+/* 已发货 */
+"ShipStatusDetailCell_ShipStatsu4" = "已发货";
+
+/* 信息错误 */
+"ShipStatusDetailCell_ShipStatsu5" = "信息错误";
+
+/* 已出关退包 */
+"ShipStatusDetailCell_ShipStatsu6" = "已出关退包";
+
+/* 未出关退包 */
+"ShipStatusDetailCell_ShipStatsu7" = "未出关退包";
+
+/* 重发 */
+"ShipStatusDetailCell_ShipStatsu8" = "重发";
+
+/* 付费重发 */
+"ShipStatusDetailCell_ShipStatsu9" = "付费重发";
+
+/* 全不选 */
+"ShoppingcartHomeViewController_BTN_ALL_SELECT1" = "全不选";
+
+/* 全选 */
+"ShoppingcartHomeViewController_BTN_ALL_SELECT2" = "全选";
+
+/* 请选择商品 */
+"ShoppingcartHomeViewController_HUDErrMsg" = "请选择商品";
+
+/* 正在加载购物车... */
+"ShoppingcartHomeViewController_HUDIndMsg1" = "正在加载购物车...";
+
+/* 正在提交... */
+"ShoppingcartHomeViewController_HUDIndMsg2" = "正在提交...";
+
+/* 删除成功 */
+"ShoppingcartHomeViewController_HUDSucMsg1" = "删除成功";
+
+/* 修改数量成功 */
+"ShoppingcartHomeViewController_HUDSucMsg2" = "修改数量成功";
+
+/* 修改备注成功 */
+"ShoppingcartHomeViewController_HUDSucMsg3" = "修改备注成功";
+
+/* 提交成功 */
+"ShoppingcartHomeViewController_HUDSucMsg4" = "提交成功";
+
+/* 数量(件) */
+"ShoppingcartHomeViewController_labCount" = "数量(件)";
+
+/* 商品总价(元) */
+"ShoppingcartHomeViewController_labPrice" = "商品总价(元)";
+
+/* 商品备注(100字内) */
+"ShoppingcartHomeViewController_labRemark" = "商品备注(100字内)";
+
+/* 店铺:%@ */
+"ShoppingcartHomeViewController_labShopName1" = "店铺:%@";
+
+/* 店铺:%@(运费:￥%.f) */
+"ShoppingcartHomeViewController_labShopName2" = "店铺:%@(运费:￥%.f)";
+
+/* 您的购物车暂时为空 */
+"ShoppingcartHomeViewController_labTitle" = "您的购物车暂时为空";
+
+/* 共计(含运费￥%.2f) : ￥%.2f */
+"ShoppingcartHomeViewController_strTotal" = "共计(含运费￥%.2f) : ￥%.2f";
+
+/* 支付失败 */
+"SubmitOrderRequest_ErrorInfo_code12" = "支付失败";
+
+/* 余额不足 */
+"SubmitOrderRequest_ErrorInfo_code14" = "余额不足";
+
+/* 无效优惠券 */
+"SubmitOrderRequest_ErrorInfo_code15" = "无效优惠券";
+
+/* 免费赠品无效 */
+"SubmitOrderRequest_ErrorInfo_code16" = "免费赠品无效";
+
+/* 缺少用户积分 */
+"SubmitOrderRequest_ErrorInfo_code17" = "缺少用户积分";
+
+/* 运送方案无效 */
+"SubmitOrderRequest_ErrorInfo_code9" = "运送方案无效";
+
+/* 无效输入 */
+"SubmitOrderRequest_ErrorInfo_code98" = "无效输入";
+
+/* 复制链接 */
+"SVWebViewController_pageActionSheet_btn1" = "复制链接";
+
+/* 在Safari浏览器中打开 */
+"SVWebViewController_pageActionSheet_btn2" = "在Safari浏览器中打开";
+
+/* Mail Link to this Page */
+"SVWebViewController_pageActionSheet_btn3" = "Mail Link to this Page";
+
+/* 图文详情 */
+"SVWebViewController_Title" = "图文详情";
+
+/* 在Safari浏览器中打开 */
+"SVWebViewController_Title1" = "在Safari浏览器中打开";
+
+/* 复制连接 */
+"SVWebViewController_Title2" = "复制连接";
+
+/* Mail Link to this Page */
+"SVWebViewController_Title3" = "Mail Link to this Page";
+
+/* 系统通知 */
+"SysMessageUserNoteViewController_Nav_Title" = "系统通知";
+
+/* 轻击刷新 */
+"SysMessageUserNoteViewController_sysExceptionView_Detail" = "轻击刷新";
+
+/* 暂时没有系统通知 */
+"SysMessageUserNoteViewController_sysExceptionView_Title" = "暂时没有系统通知";
+
+/* 短信详情 */
+"SysMsgDetailViewController_Nav_Title" = "短信详情";
+
+/* 分享商品 */
+"UserShareFilterView_cell_textLabel1" = "分享商品";
+
+/* 已分享的商品 */
+"UserShareFilterView_cell_textLabel2" = "已分享的商品";
+
+/* 赞过的商品 */
+"UserShareFilterView_cell_textLabel3" = "赞过的商品";
+
+/* 给栗%d人 */
+"UserShareHomeTwoCell_praiseCountStr" = "给栗%d人";
+
+/* 分享商品 */
+"UserShareHomeViewController_btnNavMenu" = "分享商品";
+
+/* 已分享的商品 */
+"UserShareHomeViewController_btnNavMenu2" = "已分享的商品";
+
+/* 赞过的商品 */
+"UserShareHomeViewController_btnNavMenu3" = "赞过的商品";
+
+/* 您可以将已确认收货运单内的商品分享给大家! */
+"UserShareHomeViewController_exceptionView1_detail" = "您可以将已确认收货运单内的商品分享给大家!";
+
+/* 暂时没有可以分享的商品! */
+"UserShareHomeViewController_exceptionView1_title" = "暂时没有可以分享的商品!";
+
+/* 暂时还没有分享过的商品! */
+"UserShareHomeViewController_exceptionView2_title" = "暂时还没有分享过的商品!";
+
+/* 去分享购逛逛,送出您给栗! */
+"UserShareHomeViewController_exceptionView3_detail" = "去分享购逛逛,送出您给栗!";
+
+/* 您还没有发现给栗的商品! */
+"UserShareHomeViewController_exceptionView3_title" = "您还没有发现给栗的商品!";
+
+/* 分享商品成功! */
+"UserShareResultViewController_labTitle" = "分享商品成功!";
+
+/* 从相册中选取美照 */
+"UserShareViewController_ActionSheet_OthBtn1" = "从相册中选取美照";
+
+/* 立即拍摄美照 */
+"UserShareViewController_ActionSheet_OthBtn2" = "立即拍摄美照";
+
+/* 删除 */
+"UserShareViewController_ActionSheet_OthBtn3" = "删除";
+
+/* 上传图片 */
+"UserShareViewController_ActionSheet_Title" = "上传图片";
+
+/* 请为您的商品评分 */
+"UserShareViewController_HUDErrMsg1" = "请为您的商品评分";
+
+/* 请填写分享内容 */
+"UserShareViewController_HUDErrMsg2" = "请填写分享内容";
+
+/* 正在提交... */
+"UserShareViewController_HUDIndMsg" = "正在提交...";
+
+/* 商品评分: */
+"UserShareViewController_labRate" = "商品评分:";
+
+/* 分享商品 */
+"UserShareViewController_Nav_Title" = "分享商品";
+
+/* 否 */
+"UserToolHomeViewController_AlertView_CanBtn" = "否";
+
+/* 是否注销当前账号? */
+"UserToolHomeViewController_AlertView_Msg" = "是否注销当前账号?";
+
+/* 是 */
+"UserToolHomeViewController_AlertView_OthBtn" = "是";
+
+/* Panli提示 */
+"UserToolHomeViewController_AlertView_Title" = "Panli提示";
+
+/* 使用指南 */
+"UserToolHomeViewController_arrHint_item1" = "使用指南";
+
+/* 意见反馈 */
+"UserToolHomeViewController_arrHint_item2" = "意见反馈";
+
+/* 为我们打分鼓励 */
+"UserToolHomeViewController_arrHint_item3" = "为我们打分鼓励";
+
+/* 关于 Panli App */
+"UserToolHomeViewController_arrHint_item4" = "关于 Panli App";
+
+/* 检查更新 */
+"UserToolHomeViewController_arrHint_item5" = "检查更新";
+
+/* 消息设置 */
+"UserToolHomeViewController_arrTool_item1" = "消息设置";
+
+/* 收货地址薄 */
+"UserToolHomeViewController_arrTool_item2" = "收货地址薄";
+
+/* 修改登录密码 */
+"UserToolHomeViewController_arrTool_item3" = "修改登录密码";
+
+/* 多语言 */
+"UserToolHomeViewController_arrTool_item4" = "多语言";
+
+/* 已是最新版本 */
+"UserToolHomeViewController_HUDMsg" = "已是最新版本";
+
+/* 您的反馈已经收录! */
+"UserToolHomeViewController_HUDSucMsg" = "您的反馈已经收录!";
+
+/* 退出当前账号成功 */
+"UserToolHomeViewController_HUDSucMsg2" = "退出当前账号成功";
+
+/* 已是最新版本 */
+"UserToolHomeViewController_labUpdate1" = "已是最新版本";
+
+/* 检测到新版本,点击更新 */
+"UserToolHomeViewController_labUpdate2" = "检测到新版本,点击更新";
+
+/* 更多 */
+"UserToolHomeViewController_Nav_Title" = "更多";
+
+/* One year in time */
+"year" = "year";
+
+/* More than one year in time */
+"years" = "years";
+
+/* 多语言设置 */
+"InternationalViewController_Nav_Title" = "多语言设置";
