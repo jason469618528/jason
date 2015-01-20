@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<integer>0</integer>
+		<key>imageName</key>
+		<string>icon_notifi_order</string>
+		<key>title</key>
+		<string>商品已到Panli</string>
+		<key>isReceive</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>1</integer>
+		<key>imageName</key>
+		<string>icon_notifi_ship</string>
+		<key>title</key>
+		<string>运单已发送</string>
+		<key>isReceive</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>2</integer>
+		<key>imageName</key>
+		<string>icon_notifi_groupBuy</string>
+		<key>title</key>
+		<string>团购消息</string>
+		<key>isReceive</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>3</integer>
+		<key>imageName</key>
+		<string>icon_notifi_service</string>
+		<key>title</key>
+		<string>客服短信</string>
+		<key>isReceive</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>4</integer>
+		<key>imageName</key>
+		<string>icon_notifi_unReceive</string>
+		<key>title</key>
+		<string>免打扰设置</string>
+		<key>isReceive</key>
+		<false/>
+		<key>start</key>
+		<string>23:00</string>
+		<key>end</key>
+		<string>09:00</string>
+	</dict>
+</array>
+</plist>

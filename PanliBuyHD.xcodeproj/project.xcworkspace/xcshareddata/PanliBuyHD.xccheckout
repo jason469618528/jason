@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9D948EDD-4EB7-4132-A3B1-C224A7B497B7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PanliBuyHD</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>93f8e223-cac1-f64d-9aac-a5e2f2ce2471++8230</key>
+		<string>https://172.20.7.24/svn/PanliMobile/iOS_Mobile/PanliBuyHD</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PanliBuyHD.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>93f8e223-cac1-f64d-9aac-a5e2f2ce2471++8230</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>93f8e223-cac1-f64d-9aac-a5e2f2ce2471++8230</key>
+		<string>https://172.20.7.24/svn/PanliMobile</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://172.20.7.24/svn/PanliMobile/iOS_Mobile/PanliBuyHD/PanliBuyHD.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>93f8e223-cac1-f64d-9aac-a5e2f2ce2471++8230</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>93f8e223-cac1-f64d-9aac-a5e2f2ce2471++8230</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PanliBuyHD</string>
+		</dict>
+	</array>
+</dict>
+</plist>
