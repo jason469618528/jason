@@ -20,11 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.5.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - SBJson (4.0.1)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - SBJson (~> 4.0.1)
+  - SDWebImage (~> 3.7.2)
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
+  SBJson: 68f16f446bd6047dc3dd1ec4919a468c2cd7fedd
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 
 COCOAPODS: 0.36.3
