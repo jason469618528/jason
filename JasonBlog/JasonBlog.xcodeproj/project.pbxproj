@@ -33,6 +33,7 @@
 		96C7AD141AF86255002A1FB3 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7AD121AF86255002A1FB3 /* HomeCell.m */; };
 		96C7AD151AF86255002A1FB3 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C7AD131AF86255002A1FB3 /* HomeCell.xib */; };
 		96C7AD191AF889EC002A1FB3 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7AD181AF889EC002A1FB3 /* RequestManager.m */; };
+		96C7AD211AF8B313002A1FB3 /* DataRepeater.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7AD201AF8B313002A1FB3 /* DataRepeater.m */; };
 		96F7751D1AF7158A000C5219 /* CartHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F7751B1AF7158A000C5219 /* CartHomeViewController.m */; };
 		96F7751E1AF7158A000C5219 /* CartHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F7751C1AF7158A000C5219 /* CartHomeViewController.xib */; };
 		96F775221AF7187B000C5219 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F775201AF7187B000C5219 /* HomeViewController.m */; };
@@ -94,6 +95,8 @@
 		96C7AD171AF889EC002A1FB3 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
 		96C7AD181AF889EC002A1FB3 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
 		96C7AD1C1AF88B59002A1FB3 /* requestDefile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requestDefile.h; sourceTree = "<group>"; };
+		96C7AD1F1AF8B313002A1FB3 /* DataRepeater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRepeater.h; sourceTree = "<group>"; };
+		96C7AD201AF8B313002A1FB3 /* DataRepeater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataRepeater.m; sourceTree = "<group>"; };
 		96F7751A1AF7158A000C5219 /* CartHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartHomeViewController.h; sourceTree = "<group>"; };
 		96F7751B1AF7158A000C5219 /* CartHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartHomeViewController.m; sourceTree = "<group>"; };
 		96F7751C1AF7158A000C5219 /* CartHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartHomeViewController.xib; sourceTree = "<group>"; };
@@ -299,8 +302,18 @@
 		96C7AD1D1AF8AF8E002A1FB3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				96C7AD1E1AF8B2F9002A1FB3 /* request */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		96C7AD1E1AF8B2F9002A1FB3 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				96C7AD1F1AF8B313002A1FB3 /* DataRepeater.h */,
+				96C7AD201AF8B313002A1FB3 /* DataRepeater.m */,
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 		96F7755C1AF725CA000C5219 /* Resources */ = {
@@ -499,6 +512,7 @@
 				96F7751D1AF7158A000C5219 /* CartHomeViewController.m in Sources */,
 				96B0721B1AF21F1E00A1E2E6 /* AppDelegate.m in Sources */,
 				962373D61A6CAEDD00ED6815 /* main.m in Sources */,
+				96C7AD211AF8B313002A1FB3 /* DataRepeater.m in Sources */,
 				96C7AD191AF889EC002A1FB3 /* RequestManager.m in Sources */,
 				96F7758E1AF74061000C5219 /* OtherHomeViewController.m in Sources */,
 				96F7752C1AF7189D000C5219 /* SearchHomeViewController.m in Sources */,

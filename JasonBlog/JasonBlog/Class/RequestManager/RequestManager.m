@@ -10,6 +10,11 @@
 
 @implementation RequestManager
 
+- (void) dealloc
+{
+    NSLog(@"%@ dealloc",[self class]);
+}
+
 + (RequestManager *)sharedInstance
 {
     static id sharedInstance = nil;
@@ -23,20 +28,26 @@
 - (void)sendRequest
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-//    //申明返回的结果是json类型
-//    manager.responseSerializer = [AFJSONResponseSerializer serializer];
 //    //申明请求的数据是json类型
-//    manager.requestSerializer=[AFJSONRequestSerializer serializer];
+    manager.requestSerializer=[AFJSONRequestSerializer serializer];
     //如果报接受类型不一致请替换一致text/html或别的
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    //传入的参数
+    
     //你的接口地址
-    NSString *url=@"http://www.weather.com.cn/data/cityinfo/101010100.html";
+    NSString *url=@"http://www.weather.com.cn/data/cityinfo/101010100";
+    
+    __weak typeof(id) temp = self;
     //发送请求
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
+        [temp requestSuccessAndError:operation];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];}
+        [temp requestSuccessAndError:operation];
+    }];
+}
+
+- (void)requestSuccessAndError:(AFHTTPRequestOperation*)operation
+{
+    NSLog(@"%@",operation);
+}
 
 @end
