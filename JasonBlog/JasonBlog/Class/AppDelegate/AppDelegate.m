@@ -52,6 +52,8 @@
 
     
     UITabBarController *tabVC = [[UITabBarController alloc] init];
+    tabVC.tabBar.barTintColor = [UIColor whiteColor];
+    tabVC.tabBar.tintColor = [UIColor whiteColor];
     tabVC.viewControllers = @[nav_Home,nav_search,nav_cart,nav_my,nav_other];
     tabVC.selectedIndex = 0;
     

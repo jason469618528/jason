@@ -30,6 +30,9 @@
 		96B072101AF21EF700A1E2E6 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B071FC1AF21EF700A1E2E6 /* LaunchImage.png */; };
 		96B072111AF21EF700A1E2E6 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B071FD1AF21EF700A1E2E6 /* LaunchImage@2x.png */; };
 		96B0721B1AF21F1E00A1E2E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B072151AF21F1E00A1E2E6 /* AppDelegate.m */; };
+		96C7AD141AF86255002A1FB3 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7AD121AF86255002A1FB3 /* HomeCell.m */; };
+		96C7AD151AF86255002A1FB3 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C7AD131AF86255002A1FB3 /* HomeCell.xib */; };
+		96C7AD191AF889EC002A1FB3 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7AD181AF889EC002A1FB3 /* RequestManager.m */; };
 		96F7751D1AF7158A000C5219 /* CartHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F7751B1AF7158A000C5219 /* CartHomeViewController.m */; };
 		96F7751E1AF7158A000C5219 /* CartHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F7751C1AF7158A000C5219 /* CartHomeViewController.xib */; };
 		96F775221AF7187B000C5219 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F775201AF7187B000C5219 /* HomeViewController.m */; };
@@ -85,6 +88,12 @@
 		96B071FD1AF21EF700A1E2E6 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		96B072141AF21F1E00A1E2E6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96B072151AF21F1E00A1E2E6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96C7AD111AF86255002A1FB3 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		96C7AD121AF86255002A1FB3 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		96C7AD131AF86255002A1FB3 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		96C7AD171AF889EC002A1FB3 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		96C7AD181AF889EC002A1FB3 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		96C7AD1C1AF88B59002A1FB3 /* requestDefile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requestDefile.h; sourceTree = "<group>"; };
 		96F7751A1AF7158A000C5219 /* CartHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartHomeViewController.h; sourceTree = "<group>"; };
 		96F7751B1AF7158A000C5219 /* CartHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartHomeViewController.m; sourceTree = "<group>"; };
 		96F7751C1AF7158A000C5219 /* CartHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartHomeViewController.xib; sourceTree = "<group>"; };
@@ -204,9 +213,11 @@
 		96B072121AF21F1E00A1E2E6 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				96F775901AF76393000C5219 /* Macro */,
 				96B072131AF21F1E00A1E2E6 /* AppDelegate */,
+				96F775901AF76393000C5219 /* Macro */,
 				96B072161AF21F1E00A1E2E6 /* Controller */,
+				96C7AD1D1AF8AF8E002A1FB3 /* Model */,
+				96C7AD161AF889BA002A1FB3 /* RequestManager */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -248,6 +259,9 @@
 				96F7751F1AF7187B000C5219 /* HomeViewController.h */,
 				96F775201AF7187B000C5219 /* HomeViewController.m */,
 				96F775211AF7187B000C5219 /* HomeViewController.xib */,
+				96C7AD111AF86255002A1FB3 /* HomeCell.h */,
+				96C7AD121AF86255002A1FB3 /* HomeCell.m */,
+				96C7AD131AF86255002A1FB3 /* HomeCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -270,6 +284,23 @@
 				96F7752B1AF7189D000C5219 /* SearchHomeViewController.xib */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		96C7AD161AF889BA002A1FB3 /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				96C7AD171AF889EC002A1FB3 /* RequestManager.h */,
+				96C7AD181AF889EC002A1FB3 /* RequestManager.m */,
+				96C7AD1C1AF88B59002A1FB3 /* requestDefile.h */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
+		96C7AD1D1AF8AF8E002A1FB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		96F7755C1AF725CA000C5219 /* Resources */ = {
@@ -404,6 +435,7 @@
 				96F775861AF725CA000C5219 /* tabbar_icon_news_normal@2x.png in Resources */,
 				96F775841AF725CA000C5219 /* tabbar_icon_media_normal@2x.png in Resources */,
 				96B072011AF21EF700A1E2E6 /* AppIcon29x29~ipad.png in Resources */,
+				96C7AD151AF86255002A1FB3 /* HomeCell.xib in Resources */,
 				96F7751E1AF7158A000C5219 /* CartHomeViewController.xib in Resources */,
 				96B072041AF21EF700A1E2E6 /* AppIcon57x57.png in Resources */,
 				96F775881AF725CA000C5219 /* tabbar_icon_reader_normal@2x.png in Resources */,
@@ -467,9 +499,11 @@
 				96F7751D1AF7158A000C5219 /* CartHomeViewController.m in Sources */,
 				96B0721B1AF21F1E00A1E2E6 /* AppDelegate.m in Sources */,
 				962373D61A6CAEDD00ED6815 /* main.m in Sources */,
+				96C7AD191AF889EC002A1FB3 /* RequestManager.m in Sources */,
 				96F7758E1AF74061000C5219 /* OtherHomeViewController.m in Sources */,
 				96F7752C1AF7189D000C5219 /* SearchHomeViewController.m in Sources */,
 				96F775221AF7187B000C5219 /* HomeViewController.m in Sources */,
+				96C7AD141AF86255002A1FB3 /* HomeCell.m in Sources */,
 				96F775271AF7188E000C5219 /* MyHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,28 +7,18 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeCell.h"
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+@property (strong, nonatomic) IBOutlet UITableView *tab_Main;
 @end
 
 @implementation HomeViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-//    self.navigationController.navigationBar.translucent = YES;
-//    self.automaticallyAdjustsScrollViewInsets = NO;
-//    self.edgesForExtendedLayout = UIRectEdgeNone;
-    
-//    UIButton *btn_nav_back = [UIButton buttonWithType:UIButtonTypeCustom];
-//    btn_nav_back.frame = CGRectMake(0.0f, 0.0f, 100.0f, 100.0f);
-//    [btn_nav_back setBackgroundColor:[UIColor redColor]];
-//    [self.view addSubview:btn_nav_back];
-    
-    UITableView *tab_Test = [[UITableView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, MainScreenFrame_Width, MainScreenFrame_Height - UI_TAB_BAR_HEIGHT) style:UITableViewStylePlain];
-    tab_Test.delegate = self;
-    tab_Test.dataSource = self;
-    [self.view addSubview:tab_Test];
+    [[RequestManager sharedInstance] sendRequest];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,28 +28,48 @@
 }
 
 #pragma mark - UITableviewDelegate && UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10.0f;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50.0f;
+    if(indexPath.section == 0 || indexPath.section == 1)
+    {
+        return 200.0f;
+    }
+    else
+    {
+        return 100.f;
+    }
+    
+    return 0.0f;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *homeString = @"homeString";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:homeString];
+    HomeCell*cell = [tableView dequeueReusableCellWithIdentifier:homeString];
     if(!cell)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:homeString];
-        cell.backgroundColor = [UIColor blueColor];
+        cell = (HomeCell*)[[[NSBundle mainBundle] loadNibNamed:@"HomeCell" owner:self options:nil] firstObject];
     }
-    cell.textLabel.text = @"1200000";
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if(section)
+    {
+        return 50.0f;
+    }
+    return 0.1f;
+}
 
 @end
