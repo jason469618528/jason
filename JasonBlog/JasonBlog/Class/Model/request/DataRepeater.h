@@ -8,12 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum
+{
+    post,
+    get,
+}RequestState;
+
 @interface DataRepeater : NSObject
 {
     //请求参数
     NSString *_requestName;
     NSString *_requestUrl;
     NSMutableDictionary *mdic_params;
-    
+    RequestState state;
 }
 @end

@@ -25,7 +25,7 @@
     return sharedInstance;
 }
 
-- (void)sendRequest
+- (void)sendRequestSuccess:(requestSuccess)requestSuccess error : (requestError)requestError
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 //    //申明请求的数据是json类型
@@ -34,15 +34,30 @@
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
     //你的接口地址
-    NSString *url=@"http://www.weather.com.cn/data/cityinfo/101010100";
+    NSString *url=@"http://www.weather.com.cn/data/cityinfo/101010100.html";
     
-    __weak typeof(id) temp = self;
+//    __weak typeof(id) temp = self;
     //发送请求
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [temp requestSuccessAndError:operation];
+        [self requestSuccessAndError:requestSuccess error:requestError];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        [temp requestSuccessAndError:operation];
+        [self requestSuccessAndError:requestSuccess error:requestError];
     }];
+}
+
+- (void)requestSuccessAndError:(requestSuccess) succes error:(requestError)error
+{
+    if(succes && error)
+    {
+        
+    }
+    else
+    {
+        NSError *errorTest = [NSError errorWithDomain:@"错误" code:-88 userInfo:nil];
+        error(errorTest);
+    }
+    
+    succes(@"2323");
 }
 
 - (void)requestSuccessAndError:(AFHTTPRequestOperation*)operation

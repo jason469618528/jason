@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
 
+typedef void(^requestSuccess)(id response);
+typedef void(^requestError)(NSError *responseError);
+
+
 @interface RequestManager : NSObject
 
 + (RequestManager *)sharedInstance;
-- (void)sendRequest;
+- (void)sendRequestSuccess:(requestSuccess)requestSuccess error : (requestError)requestError;
 @end

@@ -18,7 +18,31 @@
 {
     [super viewDidLoad];
     
-    [[RequestManager sharedInstance] sendRequest];
+    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
+        NSLog(@"%@",response);
+    } error:^(NSError *responseError) {
+        NSLog(@"%@",responseError);
+    }];
+    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
+        NSLog(@"%@",response);
+    } error:^(NSError *responseError) {
+        NSLog(@"%@",responseError);
+    }];
+    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
+        NSLog(@"%@",response);
+    } error:^(NSError *responseError) {
+        NSLog(@"%@",responseError);
+    }];
+    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
+        NSLog(@"%@",response);
+    } error:^(NSError *responseError) {
+        NSLog(@"%@",responseError);
+    }];
+    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
+        NSLog(@"%@",response);
+    } error:^(NSError *responseError) {
+        NSLog(@"%@",responseError);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
