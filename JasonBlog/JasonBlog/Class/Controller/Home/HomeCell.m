@@ -17,6 +17,7 @@
 - (void)awakeFromNib
 {
     // Initialization code
+    self.view_Detail.frame = self.contentView.frame;
     [self.contentView addSubview:self.view_Detail];
 }
 

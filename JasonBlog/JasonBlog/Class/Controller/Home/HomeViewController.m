@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "HomeCell.h"
+#import "HomeDetailViewController.h"
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tab_Main;
 @end
@@ -17,32 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = YES;
     [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
         NSLog(@"%@",response);
     } error:^(NSError *responseError) {
         NSLog(@"%@",responseError);
     }];
-    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
-        NSLog(@"%@",response);
-    } error:^(NSError *responseError) {
-        NSLog(@"%@",responseError);
-    }];
-    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
-        NSLog(@"%@",response);
-    } error:^(NSError *responseError) {
-        NSLog(@"%@",responseError);
-    }];
-    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
-        NSLog(@"%@",response);
-    } error:^(NSError *responseError) {
-        NSLog(@"%@",responseError);
-    }];
-    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
-        NSLog(@"%@",response);
-    } error:^(NSError *responseError) {
-        NSLog(@"%@",responseError);
-    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,6 +78,14 @@
         return 50.0f;
     }
     return 0.1f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    HomeDetailViewController *detailVC = [[HomeDetailViewController alloc] init];
+    detailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 @end

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		962373D41A6CAEDD00ED6815 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962373CF1A6CAEDD00ED6815 /* Images.xcassets */; };
 		962373D61A6CAEDD00ED6815 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 962373D21A6CAEDD00ED6815 /* main.m */; };
+		96AD2B511AFB6C08006E1B94 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AD2B4F1AFB6C08006E1B94 /* HomeDetailViewController.m */; };
+		96AD2B521AFB6C08006E1B94 /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96AD2B501AFB6C08006E1B94 /* HomeDetailViewController.xib */; };
 		96B071FE1AF21EF700A1E2E6 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B071EA1AF21EF700A1E2E6 /* AppIcon29x29.png */; };
 		96B071FF1AF21EF700A1E2E6 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B071EB1AF21EF700A1E2E6 /* AppIcon29x29@2x.png */; };
 		96B072001AF21EF700A1E2E6 /* AppIcon29x29@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B071EC1AF21EF700A1E2E6 /* AppIcon29x29@2x~ipad.png */; };
@@ -67,6 +69,9 @@
 		962373D01A6CAEDD00ED6815 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		962373D11A6CAEDD00ED6815 /* JasonBlog-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JasonBlog-Prefix.pch"; sourceTree = "<group>"; };
 		962373D21A6CAEDD00ED6815 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96AD2B4E1AFB6C08006E1B94 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
+		96AD2B4F1AFB6C08006E1B94 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		96AD2B501AFB6C08006E1B94 /* HomeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
 		96B071EA1AF21EF700A1E2E6 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
 		96B071EB1AF21EF700A1E2E6 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
 		96B071EC1AF21EF700A1E2E6 /* AppIcon29x29@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x~ipad.png"; sourceTree = "<group>"; };
@@ -265,6 +270,9 @@
 				96C7AD111AF86255002A1FB3 /* HomeCell.h */,
 				96C7AD121AF86255002A1FB3 /* HomeCell.m */,
 				96C7AD131AF86255002A1FB3 /* HomeCell.xib */,
+				96AD2B4E1AFB6C08006E1B94 /* HomeDetailViewController.h */,
+				96AD2B4F1AFB6C08006E1B94 /* HomeDetailViewController.m */,
+				96AD2B501AFB6C08006E1B94 /* HomeDetailViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -450,6 +458,7 @@
 				96B072011AF21EF700A1E2E6 /* AppIcon29x29~ipad.png in Resources */,
 				96C7AD151AF86255002A1FB3 /* HomeCell.xib in Resources */,
 				96F7751E1AF7158A000C5219 /* CartHomeViewController.xib in Resources */,
+				96AD2B521AFB6C08006E1B94 /* HomeDetailViewController.xib in Resources */,
 				96B072041AF21EF700A1E2E6 /* AppIcon57x57.png in Resources */,
 				96F775881AF725CA000C5219 /* tabbar_icon_reader_normal@2x.png in Resources */,
 				96B072111AF21EF700A1E2E6 /* LaunchImage@2x.png in Resources */,
@@ -519,6 +528,7 @@
 				96F775221AF7187B000C5219 /* HomeViewController.m in Sources */,
 				96C7AD141AF86255002A1FB3 /* HomeCell.m in Sources */,
 				96F775271AF7188E000C5219 /* MyHomeViewController.m in Sources */,
+				96AD2B511AFB6C08006E1B94 /* HomeDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +622,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -626,6 +637,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
