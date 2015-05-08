@@ -16,5 +16,11 @@ typedef void(^requestError)(NSError *responseError);
 @interface RequestManager : NSObject
 
 + (RequestManager *)sharedInstance;
+
 - (void)sendRequestSuccess:(requestSuccess)requestSuccess error : (requestError)requestError;
+
+- (void)getPath:(NSString *)path
+     parameters:(NSDictionary *)parameters
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 @end
