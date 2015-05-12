@@ -14,25 +14,22 @@
 
 @implementation HomeDetailViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.view.backgroundColor = [UIColor redColor];
+//    UIButton *btn_navBack = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn_navBack.frame = CGRectMake(0.0f, 0.0f, 50.0f, 50.0f);
+//    btn_navBack.backgroundColor = [UIColor redColor];
+//    
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn_navBack];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    self.view.backgroundColor = [UIColor whiteColor];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

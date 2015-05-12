@@ -26,8 +26,19 @@
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     
+    //去除navbar 黑线
+//    [[UINavigationBar appearance] setBackgroundColor:COLOR_CLEAR];
+//    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+//    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init]
+//                                      forBarPosition:UIBarPositionAny
+//                                          barMetrics:UIBarMetricsDefault];
+    
+//    [[UITabBar appearance] setBarStyle:UIBarStyleBlack];
+    
+    [[UINavigationBar appearance] setTranslucent:NO];
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor redColor],NSForegroundColorAttributeName, nil]forState:UIControlStateSelected];
+    
     NSLog(@"%f",[UIScreen mainScreen].bounds.size.width);
     
     HomeViewController *homeVC = [[HomeViewController alloc] init];

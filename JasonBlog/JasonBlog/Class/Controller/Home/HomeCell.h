@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeCell : UITableViewCell
-
+- (void)setDisplayImage:(UIImage*)displayImage;
 @end

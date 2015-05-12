@@ -21,10 +21,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.translucent = YES;
-    
+//    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
+
     
 //    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
 //        NSLog(@"%@",response);
@@ -104,16 +104,8 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.section == 0 || indexPath.section == 1)
-    {
-        return 200.0f;
-    }
-    else
-    {
-        return 100.f;
-    }
-    
-    return 0.0f;
+    UIImage *image = [self.marr_Data objectAtIndex:indexPath.row];
+    return image.size.height;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -124,17 +116,19 @@
     {
         cell = (HomeCell*)[[[NSBundle mainBundle] loadNibNamed:@"HomeCell" owner:self options:nil] firstObject];
     }
+    UIImage *image = [self.marr_Data objectAtIndex:indexPath.row];
+    [cell setDisplayImage:image];
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    if(section)
-    {
-        return 50.0f;
-    }
-    return 0.1f;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    if(section)
+//    {
+//        return 50.0f;
+//    }
+//    return 0.1f;
+//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

@@ -15,9 +15,11 @@
                 <autoresizingMask key="autoresizingMask"/>
             </tableViewCellContentView>
             <connections>
+                <outlet property="img_Hea" destination="ETj-3e-an3" id="7m8-Qy-9Om"/>
                 <outlet property="view_Detail" destination="sJK-PI-Me7" id="glP-w9-P8P"/>
+                <outlet property="view_DisplayImage" destination="vFb-bG-xI6" id="GpP-Ra-Ngl"/>
             </connections>
-            <point key="canvasLocation" x="204.5" y="255"/>
+            <point key="canvasLocation" x="204" y="255"/>
         </tableViewCell>
         <view clipsSubviews="YES" contentMode="scaleToFill" id="sJK-PI-Me7">
             <rect key="frame" x="0.0" y="0.0" width="533" height="200"/>
@@ -54,6 +56,25 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="204.5" y="514"/>
+        </view>
+        <view contentMode="scaleToFill" id="vFb-bG-xI6">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETj-3e-an3">
+                    <rect key="frame" x="0.0" y="0.0" width="533" height="176"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ETj-3e-an3" firstAttribute="top" secondItem="vFb-bG-xI6" secondAttribute="top" id="G9N-lC-Yc3"/>
+                <constraint firstItem="ETj-3e-an3" firstAttribute="leading" secondItem="vFb-bG-xI6" secondAttribute="leading" id="JR2-8p-KCI"/>
+                <constraint firstAttribute="trailing" secondItem="ETj-3e-an3" secondAttribute="trailing" id="ZD9-3u-kgL"/>
+                <constraint firstAttribute="bottom" secondItem="ETj-3e-an3" secondAttribute="bottom" id="p54-KZ-tgc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="204.5" y="746"/>
         </view>
     </objects>
 </document>
