@@ -17,12 +17,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"测试";
     self.view.backgroundColor = [UIColor redColor];
-//    UIButton *btn_navBack = [UIButton buttonWithType:UIButtonTypeCustom];
-//    btn_navBack.frame = CGRectMake(0.0f, 0.0f, 50.0f, 50.0f);
-//    btn_navBack.backgroundColor = [UIColor redColor];
-//    
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn_navBack];
+    UIButton *btn_navBack = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn_navBack.frame = CGRectMake(0.0f, 0.0f, 50.0f, 50.0f);
+    btn_navBack.backgroundColor = [UIColor redColor];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn_navBack];
     
 }
 

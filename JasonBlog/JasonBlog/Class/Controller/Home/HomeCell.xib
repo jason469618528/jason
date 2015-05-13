@@ -61,7 +61,7 @@
             <rect key="frame" x="0.0" y="0.0" width="415" height="176"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETj-3e-an3">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETj-3e-an3">
                     <rect key="frame" x="0.0" y="0.0" width="533" height="176"/>
                 </imageView>
             </subviews>

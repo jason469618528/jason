@@ -7,12 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
-#import "SearchHomeViewController.h"
-#import "MyHomeViewController.h"
-#import "CartHomeViewController.h"
-#import "OtherHomeViewController.h"
-#define TABBAR_TITLE_Y (-3.0f)
+#import "CustomerTabbarController.h"
 @interface AppDelegate ()
 
 @end
@@ -35,68 +30,19 @@
     
 //    [[UITabBar appearance] setBarStyle:UIBarStyleBlack];
     
+    
+//    UIImage *backButtonImage = [[UIImage imageNamed:@"AppIcon57x57"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
+    
     [[UINavigationBar appearance] setTranslucent:NO];
+    [[UITabBar appearance] setTranslucent:NO];
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor redColor],NSForegroundColorAttributeName, nil]forState:UIControlStateSelected];
     
     NSLog(@"%f",[UIScreen mainScreen].bounds.size.width);
     
-    HomeViewController *homeVC = [[HomeViewController alloc] init];
-    homeVC.navigationItem.title = @"首页";
-    UINavigationController *nav_Home = [[UINavigationController alloc] initWithRootViewController:homeVC];
-
-    SearchHomeViewController *searchVC = [[SearchHomeViewController alloc] init];
-    searchVC.navigationItem.title = @"搜索";
-    UINavigationController *nav_search = [[UINavigationController alloc] initWithRootViewController:searchVC];
-
-    CartHomeViewController *cartVC = [[CartHomeViewController alloc] init];
-    cartVC.navigationItem.title = @"购物车";
-    UINavigationController *nav_cart = [[UINavigationController alloc] initWithRootViewController:cartVC];
-
-    MyHomeViewController *myVC = [[MyHomeViewController alloc] init];
-    myVC.navigationItem.title = @"我的";
-    UINavigationController *nav_my = [[UINavigationController alloc] initWithRootViewController:myVC];
-
-    OtherHomeViewController *otherVC = [[OtherHomeViewController alloc] init];
-    otherVC.navigationItem.title = @"更多";
-    UINavigationController *nav_other = [[UINavigationController alloc] initWithRootViewController:otherVC];
-
-    
-    UITabBarController *tabVC = [[UITabBarController alloc] init];
-    tabVC.tabBar.barTintColor = [UIColor whiteColor];
-    tabVC.tabBar.tintColor = [UIColor whiteColor];
-    tabVC.viewControllers = @[nav_Home,nav_search,nav_cart,nav_my,nav_other];
-    tabVC.selectedIndex = 0;
-    
-    UIImage *img_home = [UIImage imageNamed:@"tabbar_icon_news_highlight"];
-    img_home =  [img_home imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    homeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[UIImage imageNamed:@"tabbar_icon_news_normal"] selectedImage:img_home];
-    [homeVC.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0.0f, TABBAR_TITLE_Y)];
-    
-    
-    UIImage *img_search = [UIImage imageNamed:@"tabbar_icon_found_highlight"];
-    img_search =  [img_search imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    searchVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"搜索" image:[UIImage imageNamed:@"tabbar_icon_found_normal"] selectedImage:img_search];
-    [searchVC.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0.0f, TABBAR_TITLE_Y)];
-
-    
-    UIImage *img_cart = [UIImage imageNamed:@"tabbar_icon_reader_highlight"];
-    img_cart =  [img_cart imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    cartVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"购物车" image:[UIImage imageNamed:@"tabbar_icon_reader_normal"] selectedImage:img_cart];
-    [cartVC.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0.0f, TABBAR_TITLE_Y)];
-
-    
-    UIImage *img_my = [UIImage imageNamed:@"tabbar_icon_me_highlight"];
-    img_my =  [img_my imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    myVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"tabbar_icon_me_normal"] selectedImage:img_my];
-    [myVC.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0.0f, TABBAR_TITLE_Y)];
-    
-    UIImage *img_other = [UIImage imageNamed:@"tabbar_icon_media_highlight"];
-    img_other =  [img_other imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    otherVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"更多" image:[UIImage imageNamed:@"tabbar_icon_media_normal"] selectedImage:img_other];
-    [otherVC.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0.0f, TABBAR_TITLE_Y)];
-
-
+    CustomerTabbarController *tabVC = [[CustomerTabbarController alloc] init];
     self.window.rootViewController = tabVC;
     
     return YES;

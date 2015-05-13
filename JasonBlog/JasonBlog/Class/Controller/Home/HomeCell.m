@@ -29,7 +29,7 @@
 {
     self.img_Hea.image = displayImage;
     self.img_Hea.frame = CGRectMake(0.0f, 0.0f, displayImage.size.width, displayImage.size.height);
-    self.view_DisplayImage.frame = CGRectMake(0.0f, 0.0f, MainScreenFrame_Width, self.img_Hea.frame.size.height);
+    self.view_DisplayImage.frame = CGRectMake(0.0f, 0.0f, self.img_Hea.frame.size.width, self.img_Hea.frame.size.height);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

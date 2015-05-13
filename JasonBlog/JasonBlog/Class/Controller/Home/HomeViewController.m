@@ -10,7 +10,7 @@
 #import "HomeCell.h"
 #import "HomeDetailViewController.h"
 #import "DataRepeater.h"
-
+#import "UIImage+UIImageScale.h"
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tab_Main;
 @property(strong, nonatomic) NSMutableArray *marr_Data;
@@ -57,6 +57,7 @@
                 if(imageData != nil)
                 {
                     UIImage *image = [UIImage imageWithData:imageData];
+                    image = [image scaleToSize:CGSizeMake(MainScreenFrame_Width, MainScreenFrame_Width)];
                     dispatch_sync(dispatch_get_main_queue(), ^{
                         if (image != nil)
                         {
@@ -79,10 +80,55 @@
         });
     }
     
-    
+    [self.tabBarItem setBadgeValue:@""];
     //NSPredicate NSRegularExpression
 //    NSPredicate *predicate = [NSPredicate predicateWithFormat:<#(NSString *), ...#>]
 
+}
+
+- (UIImage *)thumbnailWithImageWithoutScale:(UIImage *)image size:(CGSize)asize
+{
+    UIImage *newimage;
+    if (nil == image) {
+        newimage = nil;
+    }
+    else{
+        CGSize oldsize = image.size;
+        CGRect rect;
+        if (asize.width/asize.height > oldsize.width/oldsize.height) {
+            rect.size.width = asize.height*oldsize.width/oldsize.height;
+            rect.size.height = asize.height;
+            rect.origin.x = (asize.width - rect.size.width)/2;
+            rect.origin.y = 0;
+        }
+        else{
+            rect.size.width = asize.width;
+            rect.size.height = asize.width*oldsize.height/oldsize.width;
+            rect.origin.x = 0;
+            rect.origin.y = (asize.height - rect.size.height)/2;
+        }
+        UIGraphicsBeginImageContext(asize);
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        CGContextSetFillColorWithColor(context, [[UIColor clearColor] CGColor]);
+        UIRectFill(CGRectMake(0, 0, asize.width, asize.height));//clear background
+        [image drawInRect:rect];
+        newimage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+    }
+    return newimage;
+}
+
+-(UIImage*) OriginImage:(UIImage *)image scaleToSize:(CGSize)size
+{
+    UIGraphicsBeginImageContext(size);  //size 为CGSize类型，即你所需要的图片尺寸
+    
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    
+    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return scaledImage;   //返回的就是已经改变的图片
 }
 
 - (void)didReceiveMemoryWarning {
@@ -134,6 +180,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSLog(@"%lu",(unsigned long)self.marr_Data.count);
+//    UIImage *image = [self.marr_Data objectAtIndex:indexPath.row];
     HomeDetailViewController *detailVC = [[HomeDetailViewController alloc] init];
     detailVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:detailVC animated:YES];
