@@ -40,6 +40,7 @@
 		96DE2E271B0324EC001557CC /* CustomerNavgaionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DE2E261B0324EC001557CC /* CustomerNavgaionController.m */; };
 		96DE2E2B1B033F5C001557CC /* UIImage+UIImageScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DE2E2A1B033F5C001557CC /* UIImage+UIImageScale.m */; };
 		96DE2E2F1B034BA7001557CC /* CustomerTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DE2E2E1B034BA7001557CC /* CustomerTabbarController.m */; };
+		96F437251B05DB30000D4686 /* SearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F437241B05DB30000D4686 /* SearchDetailViewController.m */; };
 		96F7751D1AF7158A000C5219 /* CartHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F7751B1AF7158A000C5219 /* CartHomeViewController.m */; };
 		96F7751E1AF7158A000C5219 /* CartHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F7751C1AF7158A000C5219 /* CartHomeViewController.xib */; };
 		96F775221AF7187B000C5219 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F775201AF7187B000C5219 /* HomeViewController.m */; };
@@ -114,6 +115,8 @@
 		96DE2E2A1B033F5C001557CC /* UIImage+UIImageScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImageScale.m"; sourceTree = "<group>"; };
 		96DE2E2D1B034BA7001557CC /* CustomerTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTabbarController.h; sourceTree = "<group>"; };
 		96DE2E2E1B034BA7001557CC /* CustomerTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTabbarController.m; sourceTree = "<group>"; };
+		96F437231B05DB30000D4686 /* SearchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailViewController.h; sourceTree = "<group>"; };
+		96F437241B05DB30000D4686 /* SearchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewController.m; sourceTree = "<group>"; };
 		96F7751A1AF7158A000C5219 /* CartHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartHomeViewController.h; sourceTree = "<group>"; };
 		96F7751B1AF7158A000C5219 /* CartHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartHomeViewController.m; sourceTree = "<group>"; };
 		96F7751C1AF7158A000C5219 /* CartHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartHomeViewController.xib; sourceTree = "<group>"; };
@@ -309,6 +312,8 @@
 				96F775291AF7189D000C5219 /* SearchHomeViewController.h */,
 				96F7752A1AF7189D000C5219 /* SearchHomeViewController.m */,
 				96F7752B1AF7189D000C5219 /* SearchHomeViewController.xib */,
+				96F437231B05DB30000D4686 /* SearchDetailViewController.h */,
+				96F437241B05DB30000D4686 /* SearchDetailViewController.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -585,6 +590,7 @@
 				96C7AD141AF86255002A1FB3 /* HomeCell.m in Sources */,
 				96F775271AF7188E000C5219 /* MyHomeViewController.m in Sources */,
 				96AD2B511AFB6C08006E1B94 /* HomeDetailViewController.m in Sources */,
+				96F437251B05DB30000D4686 /* SearchDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

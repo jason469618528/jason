@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchHomeViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIButton *btn_Name;
+- (IBAction)btnNameClick:(id)sender;
 @end

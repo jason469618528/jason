@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "CustomerTabbarController.h"
+#import "SearchDetailViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -42,8 +44,12 @@
     
     NSLog(@"%f",[UIScreen mainScreen].bounds.size.width);
     
+    
     CustomerTabbarController *tabVC = [[CustomerTabbarController alloc] init];
     self.window.rootViewController = tabVC;
+    
+//    SearchDetailViewController *rootVC = [[SearchDetailViewController alloc] init];
+//    self.window.rootViewController = rootVC;
     
     return YES;
 }

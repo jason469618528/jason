@@ -30,6 +30,10 @@
     [[view_Header layer] setShadowOpacity:1];
     [[view_Header layer] setShadowColor:[UIColor blackColor].CGColor];
     [self.view addSubview:view_Header];
+    
+    
+//    [self.btn_Name addTarget:self action:@selector(btnNameClick:) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,4 +51,8 @@
 }
 */
 
+- (IBAction)btnNameClick:(id)sender
+{
+    NSLog(@"asdfadsfadsfassfsad");
+}
 @end
