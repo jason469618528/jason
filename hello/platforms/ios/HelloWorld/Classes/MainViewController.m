@@ -75,19 +75,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    // Release any retained subviews of the  main view.
     // e.g. self.myOutlet = nil;
-}
-
-- (void)newButton
-{
-    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -110,8 +104,8 @@
 - (void)webViewDidFinishLoad:(UIWebView*)theWebView
 {
     // Black base color for background matches the native apps
-    theWebView.backgroundColor = [UIColor whiteColor];
-
+    theWebView.backgroundColor = [UIColor blackColor];
+    
     return [super webViewDidFinishLoad:theWebView];
 }
 

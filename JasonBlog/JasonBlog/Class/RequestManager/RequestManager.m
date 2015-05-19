@@ -31,6 +31,8 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 //    //申明请求的数据是json类型
     manager.requestSerializer=[AFJSONRequestSerializer serializer];
+    
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
     //如果报接受类型不一致请替换一致text/html或别的
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
