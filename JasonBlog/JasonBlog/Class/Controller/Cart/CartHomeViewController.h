@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CartHomeViewController : UIViewController
-
+@interface CartHomeViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tab_Main;
 @end

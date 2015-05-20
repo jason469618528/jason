@@ -33,7 +33,7 @@
     CustomerNavgaionController *nav_search = [[CustomerNavgaionController alloc] initWithRootViewController:searchVC];
     
     CartHomeViewController *cartVC = [[CartHomeViewController alloc] init];
-    cartVC.navigationItem.title = @"购物车";
+//    cartVC.navigationItem.title = @"购物车";
     CustomerNavgaionController *nav_cart = [[CustomerNavgaionController alloc] initWithRootViewController:cartVC];
     
     MyHomeViewController *myVC = [[MyHomeViewController alloc] init];
