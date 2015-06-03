@@ -37,9 +37,11 @@
 //    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
 //    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
     
+    //设置nav 与 tabbar 不透明
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UITabBar appearance] setTranslucent:NO];
     
+    //设置tabbar 文字颜色
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor redColor],NSForegroundColorAttributeName, nil]forState:UIControlStateSelected];
     
     NSLog(@"%f",[UIScreen mainScreen].bounds.size.width);

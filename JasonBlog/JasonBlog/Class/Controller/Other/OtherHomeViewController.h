@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface OtherHomeViewController : UIViewController
+#import <CDVViewController.h>
+@interface OtherHomeViewController : CDVViewController
 
 @end

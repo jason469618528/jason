@@ -7,9 +7,11 @@
 //
 
 #import "CartHomeViewController.h"
-
+#import "CategoryView.h"
 @interface CartHomeViewController ()
-
+{
+    CategoryView *categoryView;
+}
 @end
 
 @implementation CartHomeViewController
@@ -26,14 +28,28 @@
     self.navigationItem.rightBarButtonItem = bar_Right;
     
     //搜索条
+//    UITextField
     UISearchBar *bar_searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(60.0f, 0.0f, MainScreenFrame_Width - 120.0f, 44.0f)];
-    bar_searchBar.backgroundColor = [UIColor redColor];
-    bar_searchBar.tintColor = COLOR_GRAY;
+    bar_searchBar.backgroundColor = [UIColor clearColor];
+    bar_searchBar.tintColor = J_COLOR_GRAY;
     bar_searchBar.placeholder = @"搜索商品";
+    
+    UITextField *searchBarTextField = [bar_searchBar valueForKey:@"_searchField"];
+    searchBarTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    [searchBarTextField addTarget:self action:@selector(updateTest) forControlEvents:UIControlEventEditingChanged];
+    
+    bar_searchBar.layer.borderColor = [UIColor redColor].CGColor;
+    bar_searchBar.layer.borderWidth = 1.0f;
+    bar_searchBar.layer.cornerRadius = 20.0f;
     bar_searchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
     bar_searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
     self.navigationItem.titleView = bar_searchBar;
     
+}
+
+- (void)updateTest
+{
+    NSLog(@"asf");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,7 +59,24 @@
 
 - (void)categoryClick:(UIBarButtonItem*)barItem
 {
-    NSLog(@"分类");
+    if(barItem == self.navigationItem.leftBarButtonItem)
+    {
+        NSLog(@"分类");
+        if(categoryView)
+        {
+            [categoryView removeFromSuperview];
+            categoryView = nil;
+        }
+        else
+        {
+            categoryView = [[CategoryView alloc] initWithFrame:CGRectMake(0.0f, 50.0f, MainScreenFrame_Width, MainScreenFrame_Height - UI_NAVIGATION_BAR_HEIGHT - UI_TAB_BAR_HEIGHT - 50.0f)];
+            [self.view addSubview:categoryView];
+        }
+    }
+    else
+    {
+        NSLog(@"购物车");
+    }
 }
 
 

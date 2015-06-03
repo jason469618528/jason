@@ -24,6 +24,9 @@
 {
     [super viewDidLoad];
     
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+
     HomeViewController *homeVC = [[HomeViewController alloc] init];
     homeVC.navigationItem.title = @"首页";
     CustomerNavgaionController *nav_Home = [[CustomerNavgaionController alloc] initWithRootViewController:homeVC];

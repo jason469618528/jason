@@ -48,6 +48,30 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 3
 
+// Cordova
+#define COCOAPODS_POD_AVAILABLE_Cordova
+#define COCOAPODS_VERSION_MAJOR_Cordova 3
+#define COCOAPODS_VERSION_MINOR_Cordova 8
+#define COCOAPODS_VERSION_PATCH_Cordova 0
+
+// CordovaPlugin-device
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_device
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_device 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_device 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_device 11
+
+// MJRefresh
+#define COCOAPODS_POD_AVAILABLE_MJRefresh
+#define COCOAPODS_VERSION_MAJOR_MJRefresh 1
+#define COCOAPODS_VERSION_MINOR_MJRefresh 4
+#define COCOAPODS_VERSION_PATCH_MJRefresh 6
+
+// Masonry
+#define COCOAPODS_POD_AVAILABLE_Masonry
+#define COCOAPODS_VERSION_MAJOR_Masonry 0
+#define COCOAPODS_VERSION_MINOR_Masonry 6
+#define COCOAPODS_VERSION_PATCH_Masonry 1
+
 // SBJson
 #define COCOAPODS_POD_AVAILABLE_SBJson
 #define COCOAPODS_VERSION_MAJOR_SBJson 4

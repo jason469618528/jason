@@ -20,6 +20,11 @@ PODS:
   - AFNetworking/UIKit (2.5.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Cordova (3.8.0)
+  - CordovaPlugin-device (0.2.11):
+    - Cordova (>= 3.0.0)
+  - Masonry (0.6.1)
+  - MJRefresh (1.4.6)
   - SBJson (4.0.1)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
@@ -27,11 +32,19 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.3)
+  - Cordova (~> 3.8.0)
+  - CordovaPlugin-device (~> 0.2.11)
+  - Masonry (~> 0.6.1)
+  - MJRefresh (~> 1.4.6)
   - SBJson (~> 4.0.1)
   - SDWebImage (~> 3.7.2)
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
+  Cordova: 41554048698d50e70387ca2ab5bbdd1286fd0e39
+  CordovaPlugin-device: 2c0522f5f73c709ba65e68409b1d04624c626cb9
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  MJRefresh: 2eaa3fd8f67fbb86497840fb0167446f7eb61dc7
   SBJson: 68f16f446bd6047dc3dd1ec4919a468c2cd7fedd
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 

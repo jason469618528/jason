@@ -48,7 +48,6 @@
     __weak typeof(HomeViewController*) weself = self;
     for(NSString *str_ImageUrl in arr_Image)
     {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
             dispatch_async (dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
                 NSURL *url = [NSURL URLWithString:str_ImageUrl];
                 //加载图片
@@ -76,7 +75,6 @@
                     NSLog(@"No data could get downloaded the URL.");
                 }
             });
-        });
     }
     
     //NSPredicate NSRegularExpression

@@ -44,13 +44,13 @@
 
 
 /***************常用颜色**************/
-#define COLOR_CLEAR [UIColor clearColor]
-#define COLOR_GRAY  [UIColor grayColor]
-#define COLOR_WHITE [UIColor whiteColor]
-#define COLOR_BLACK [UIColor blackColor]
-#define COLOR_RED   [UIColor redColor]
-#define COLOR_LOW_GRAY [PanliHelper colorWithHexString:@"#5d5d5d"]
-#define COLOR_NAVBAR_TITLE [PanliHelper colorWithHexString:@"#4B4B4B"]
+#define J_COLOR_CLEAR [UIColor clearColor]
+#define J_COLOR_GRAY  [UIColor grayColor]
+#define J_COLOR_WHITE [UIColor whiteColor]
+#define J_COLOR_BLACK [UIColor blackColor]
+#define J_COLOR_RED   [UIColor redColor]
+#define J_COLOR_LOW_GRAY [PanliHelper colorWithHexString:@"#5d5d5d"]
+#define J_COLOR_NAVBAR_TITLE [PanliHelper colorWithHexString:@"#4B4B4B"]
 
 /***************设备相关**************/
 #define IS_568H ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? \

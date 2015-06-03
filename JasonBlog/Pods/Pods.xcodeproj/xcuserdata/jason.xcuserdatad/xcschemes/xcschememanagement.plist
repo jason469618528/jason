@@ -9,6 +9,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Cordova.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CordovaPlugin-device.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SBJson.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>56CF577820D5F9A52520324A</key>
+		<key>234875ED30FCE70013B40941</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7AB1F3694EFF0251C850E33B</key>
+		<key>5845768B0CB77975CD337FE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9387016CA921CA6697EFF4B6</key>
+		<key>8D711F7E24BDD22CAE0E1278</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3BF475659B8F16AAFD90185</key>
+		<key>9225CFC07F5AA62511A005A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD4BF364077D769358B377BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE175DE3F4E4907F95D2D9F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D210E30E41257C895E8AE2C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D22775B0DDA9DC3B95C83283</key>
 		<dict>
 			<key>primary</key>
 			<true/>
