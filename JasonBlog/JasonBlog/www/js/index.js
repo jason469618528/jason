@@ -35,7 +35,6 @@ bindEvents: function() {
 onDeviceReady: function() {
 
     setContentsBtn = document.getElementById('setFileContents');
-
     //Set file contents
     setContentsBtn.addEventListener('click', function() {
                                     cordova.exec(function(){},function(){},"FileWriter","cordovaSetFileContents", []);

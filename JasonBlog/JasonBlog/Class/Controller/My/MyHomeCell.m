@@ -37,6 +37,7 @@
         cellMainTabView.transform = CGAffineTransformMakeRotation(-M_PI / 2);
         // scrollbar 不显示
         cellMainTabView.showsVerticalScrollIndicator = NO;
+        cellMainTabView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.contentView addSubview:cellMainTabView];
         
     }

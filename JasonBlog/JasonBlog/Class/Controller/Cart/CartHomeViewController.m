@@ -8,6 +8,7 @@
 
 #import "CartHomeViewController.h"
 #import "CategoryView.h"
+#import "PanliMoneyViewController.h"
 @interface CartHomeViewController ()
 {
     CategoryView *categoryView;
@@ -52,6 +53,62 @@
     NSLog(@"asf");
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    timeArr = @[@"2016-2-23 19:23:20"];
+
+    if (_timer == nil) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(calTime) userInfo:nil repeats:YES];
+    }
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    if(_timer)
+    {
+        _timer = nil;//关闭定时器，
+    }
+}
+
+//定时器刷新倒计时
+-(void)calTime
+{
+    NSArray  *cells = _tab_Main.visibleCells; //取出屏幕可见cell
+    for (UITableViewCell *cell in cells) {
+        cell.textLabel.text = [self getTimeStr:timeArr[cell.tag]];
+    }
+}
+
+//返回倒计时
+-(NSString *)getTimeStr:(NSString *)fireStr
+{
+    NSDateFormatter* formater = [[NSDateFormatter alloc] init];
+    [formater setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate* fireDate = [formater dateFromString:fireStr];
+    NSDate *today = [NSDate date];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    unsigned int unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
+    NSDateComponents *d = [calendar components:unitFlags fromDate:today toDate:fireDate options:0];//计算时间差
+    long hour = [d day] *24 + [d hour];
+    NSString *seconds;
+    NSString *minutes;
+    NSString *hours;
+    if([d second]<10)
+        seconds = [NSString stringWithFormat:@"0%ld",[d second]];
+    else
+        seconds = [NSString stringWithFormat:@"%ld",[d second]];
+    if([d minute]<10)
+        minutes = [NSString stringWithFormat:@"0%ld",[d minute]];
+    else
+        minutes = [NSString stringWithFormat:@"%ld",[d minute]];
+    if(hour < 10)
+        hours = [NSString stringWithFormat:@"0%ld", hour];
+    else
+        hours = [NSString stringWithFormat:@"%ld",hour];
+    return [NSString stringWithFormat:@"            倒计时%@:%@:%@", hours, minutes,seconds];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -83,7 +140,7 @@
 #pragma mark - UITableViewDelegate && UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10.0f;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -99,7 +156,10 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:homeString];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%d",(int)indexPath.row];
+//    cell.textLabel.text = [NSString stringWithFormat:@"%d",(int)indexPath.row];
+    cell.textLabel.text = [self getTimeStr:timeArr[indexPath.row]];
+    cell.textLabel.font = [UIFont systemFontOfSize:20];
+    cell.tag = indexPath.row;//通过tag 获取对应cell的位置
     return cell;
 }
 
@@ -124,6 +184,14 @@
 - (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return @"删除";
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    PanliMoneyViewController *panliMoney = [[PanliMoneyViewController alloc] init];
+    panliMoney.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:panliMoney animated:YES];
 }
 
 @end

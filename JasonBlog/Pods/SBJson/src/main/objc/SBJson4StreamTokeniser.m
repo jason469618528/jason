@@ -96,7 +96,7 @@
     unichar tmp = 0;
 
     for (int i = 0; i < 4; i++, index++) {
-        unichar c = bytes[index];
+        unichar c = (unichar)bytes[index];
         tmp *= 16;
         switch (c) {
             case '0' ... '9':
@@ -207,8 +207,6 @@
                 break;
         }
     }
-
-    @throw @"FUT FUT FUT";
 }
 
 - (sbjson4_token_t)getNumberToken:(char **)token length:(NSUInteger *)length {
@@ -250,14 +248,14 @@
         if (![self haveOneMoreCharacter])
             return sbjson4_token_eof;
 
-        NSUInteger frac_start = index;
+        NSUInteger fraction_start = index;
         while (isdigit(bytes[index])) {
             index++;
             if (![self haveOneMoreCharacter])
                 return sbjson4_token_eof;
         }
 
-        if (frac_start == index) {
+        if (fraction_start == index) {
             [self setError:@"No digits after decimal point"];
             return sbjson4_token_error;
         }

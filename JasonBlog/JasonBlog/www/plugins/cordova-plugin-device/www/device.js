@@ -49,8 +49,8 @@ function Device() {
 //   button.onclick = function(){
 //   exec(function(){}, function(){}, "Device", "goToLastPage", []);
 //   }
-   this.goToLastPage = function (){
-            exec(function(){}, function(){}, "Device", "goToLastPage", []);
+   this.goToLastPage = function (value){
+            exec(function(){}, function(){}, "Device", "testClick", [value]);
    }
                
    this.getMyInfo = function (value){
@@ -91,8 +91,8 @@ Device.prototype.getInfo = function(successCallback, errorCallback) {
 
 module.exports = new Device();
 
-goToLastPage = function (){
-               exec(successCallback, errorCallback, "Device", "getDeviceInfo", []);
-}
+//goToLastPage = function (){
+//  exec(successCallback, errorCallback, "Device", "getDeviceInfo", []);
+//}
 
 });

@@ -1,51 +1,70 @@
 PODS:
-  - AFNetworking (2.5.3):
-    - AFNetworking/NSURLConnection (= 2.5.3)
-    - AFNetworking/NSURLSession (= 2.5.3)
-    - AFNetworking/Reachability (= 2.5.3)
-    - AFNetworking/Security (= 2.5.3)
-    - AFNetworking/Serialization (= 2.5.3)
-    - AFNetworking/UIKit (= 2.5.3)
-  - AFNetworking/NSURLConnection (2.5.3):
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.3):
+  - AFNetworking/NSURLSession (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.3)
-  - AFNetworking/Security (2.5.3)
-  - AFNetworking/Serialization (2.5.3)
-  - AFNetworking/UIKit (2.5.3):
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Cordova (3.8.0)
+  - CordovaPlugin-battery-status (0.2.10):
+    - Cordova (>= 3.0.0)
   - CordovaPlugin-device (0.2.11):
     - Cordova (>= 3.0.0)
-  - Masonry (0.6.1)
-  - MJRefresh (1.4.6)
-  - SBJson (4.0.1)
-  - SDWebImage (3.7.2):
-    - SDWebImage/Core (= 3.7.2)
-  - SDWebImage/Core (3.7.2)
+  - JBASIHTTPRequest (2.1):
+    - Reachability (~> 3.2)
+  - Masonry (0.6.4)
+  - MJRefresh (1.4.7)
+  - Reachability (3.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SBJson (4.0.2)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.3)
   - Cordova (~> 3.8.0)
+  - CordovaPlugin-battery-status (~> 0.2.10)
   - CordovaPlugin-device (~> 0.2.11)
+  - JBASIHTTPRequest (~> 2.1)
   - Masonry (~> 0.6.1)
   - MJRefresh (~> 1.4.6)
+  - ReactiveCocoa
   - SBJson (~> 4.0.1)
   - SDWebImage (~> 3.7.2)
 
 SPEC CHECKSUMS:
-  AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Cordova: 41554048698d50e70387ca2ab5bbdd1286fd0e39
+  CordovaPlugin-battery-status: 3a70da87b7bf56e222b955c110e964c7e37b12e5
   CordovaPlugin-device: 2c0522f5f73c709ba65e68409b1d04624c626cb9
-  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
-  MJRefresh: 2eaa3fd8f67fbb86497840fb0167446f7eb61dc7
-  SBJson: 68f16f446bd6047dc3dd1ec4919a468c2cd7fedd
-  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  JBASIHTTPRequest: bcb52c0c249fe21a236e16c2747d663d3d5d0007
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MJRefresh: 6b140993028fa30f1fcb88e82925a7c7911415cf
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SBJson: c18691cc18375b14664ff0fec841f8c4faef1934
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.38.2

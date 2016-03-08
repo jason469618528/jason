@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface SearchHomeViewController : UIViewController
+@interface SearchHomeViewController : BaseViewController
+@property (nonatomic, strong) AVAudioPlayer *player;
 @property (weak, nonatomic) IBOutlet UIButton *btn_Name;
 - (IBAction)btnNameClick:(id)sender;
 @end

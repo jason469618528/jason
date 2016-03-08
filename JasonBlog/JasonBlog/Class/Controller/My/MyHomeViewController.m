@@ -44,6 +44,8 @@ typedef void(^blockAAAA)();
 //    [tableView.legendHeader beginRefreshing];
 
     mainTableView.rowHeight = 100.0f;
+    mainTableView.separatorColor = J_COLOR_CLEAR;
+    mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 - (void)loadNewData
 {

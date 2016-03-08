@@ -192,7 +192,8 @@
     // And the start folder/page.
     self.wwwFolderName = @"www";
     self.startPage = delegate.startPage;
-    if (self.startPage == nil) {
+    if (self.startPage == nil)
+    {
         self.startPage = @"index.html";
     }
 

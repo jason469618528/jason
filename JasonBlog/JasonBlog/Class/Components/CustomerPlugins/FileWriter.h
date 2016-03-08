@@ -20,7 +20,7 @@
 #pragma mark - Util_Methods
 
 // Pure native code to persist data
-- (void) setFileContents;
+//- (void) setFileContents;
 
 // Native code to load data from disk and return the String.
 - (NSString *) getFileContents;

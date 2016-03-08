@@ -39,7 +39,8 @@
 
 - (void) cordovaSetFileContents:(CDVInvokedUrlCommand *)command
 {
-       NSLog(@"TEST");
+    NSLog(@"TEST");
+    self.viewController.tabBarController.selectedIndex = 0;
 }
 
 #pragma mark - Util_Methods

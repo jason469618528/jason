@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomerNavgaionController : UINavigationController<UINavigationControllerDelegate>
+/**
+ *是否启动侧滑
+ */
+@property(nonatomic, assign) BOOL canBack;
 
 @end

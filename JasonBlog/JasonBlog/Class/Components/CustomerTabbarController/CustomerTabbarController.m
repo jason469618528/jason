@@ -15,7 +15,6 @@
 #import "CustomerNavgaionController.h"
 #define TABBAR_TITLE_Y (-3.0f)
 @interface CustomerTabbarController ()
-
 @end
 
 @implementation CustomerTabbarController
@@ -23,6 +22,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
@@ -80,6 +81,12 @@
     self.viewControllers = @[nav_Home,nav_search,nav_cart,nav_my,nav_other];
     self.selectedIndex = 0;
 
+    //设置nav 与 tabbar 不透明
+    [self.tabBar setTranslucent:NO];
+    
+    __weak typeof(self) weSelf = self;
+    weSelf.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,6 +94,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark - UITabBarDelegate
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    return YES;
+}
 
 @end

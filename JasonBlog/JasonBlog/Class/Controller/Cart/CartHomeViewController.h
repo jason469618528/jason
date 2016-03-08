@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CartHomeViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface CartHomeViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    NSArray *timeArr;
+}
 @property (weak, nonatomic) IBOutlet UITableView *tab_Main;
+@property (strong, nonatomic) NSTimer *timer;
 @end

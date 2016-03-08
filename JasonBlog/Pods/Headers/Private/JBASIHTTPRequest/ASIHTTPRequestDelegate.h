@@ -1,0 +1,1 @@
+../../../JBASIHTTPRequest/Classes/ASIHTTPRequestDelegate.h

@@ -49,29 +49,29 @@
         [self requestSuccessAndError:nil responseError:error];
     }];
 }
-
-- (void)requestSuccessAndError:(requestSuccess) succes error:(requestError)error
-{
-    if(succes && error)
-    {
-        if(succes)
-        {
-            //成功
-        }
-        else if(error)
-        {
-            //失败
-            NSError *errorTest = [NSError errorWithDomain:@"错误" code:-88 userInfo:nil];
-            error(errorTest);
-            return;
-        }
-    }
-    else
-    {
-        NSError *errorTest = [NSError errorWithDomain:@"错误" code:-88 userInfo:nil];
-        error(errorTest);
-    }
-}
+//
+//- (void)requestSuccessAndError:(requestSuccess) succes error:(requestError)error
+//{
+//    if(succes && error)
+//    {
+//        if(succes)
+//        {
+//            //成功
+//        }
+//        else if(error)
+//        {
+//            //失败
+//            NSError *errorTest = [NSError errorWithDomain:@"错误" code:-88 userInfo:nil];
+//            error(errorTest);
+//            return;
+//        }
+//    }
+//    else
+//    {
+//        NSError *errorTest = [NSError errorWithDomain:@"错误" code:-88 userInfo:nil];
+//        error(errorTest);
+//    }
+//}
 
 - (void)requestSuccessAndError:(id)responseObject responseError:(NSError*)responseError
 {

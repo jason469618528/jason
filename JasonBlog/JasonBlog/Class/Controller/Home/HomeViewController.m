@@ -31,6 +31,7 @@
 //        NSLog(@"%@",responseError);
 //    }];
     
+    
     self.marr_Data = [NSMutableArray array];
     
     //GCD
@@ -66,8 +67,8 @@
                         else
                         {
                             NSLog(@"没有图片");
-                            [weself.marr_Data addObject:nil];
-                        } 
+//                            [weself.marr_Data addObject:nil];
+                        }
                     });
                 }
                 else

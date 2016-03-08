@@ -1,0 +1,1 @@
+../../../CordovaPlugin-battery-status/src/ios/CDVBattery.h
