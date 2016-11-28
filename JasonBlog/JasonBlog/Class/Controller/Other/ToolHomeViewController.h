@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomButton.h"
+
 @interface ToolHomeViewController : UIViewController
+
+- (void)showInView:(UIView*)view;
+- (void)dimss;
 
 @end

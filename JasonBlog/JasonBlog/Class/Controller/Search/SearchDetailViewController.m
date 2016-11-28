@@ -12,15 +12,16 @@
 {
     UIView *viewTest;
 }
-@property (nonatomic, copy) NSString  *warningText;
-@property (nonatomic, copy) UITextField *txt_UserName;
-@property (nonatomic, copy) UITextField *txt_PassWord;
+@property (nonatomic, strong) NSString  *warningText;
+@property (nonatomic, strong) UITextField *txt_UserName;
+@property (nonatomic, strong) UITextField *txt_PassWord;
 @end
 
 @implementation SearchDetailViewController
-@synthesize warningText;
-@synthesize txt_UserName;
-@synthesize txt_PassWord;
+
+//@synthesize warningText;
+//@synthesize txt_UserName;
+//@synthesize txt_PassWord;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,15 +32,16 @@
     [self.view addSubview:lab_Title];
     
     
-    txt_UserName = [[UITextField alloc] initWithFrame:CGRectMake(20.0f, 100.0f, MainScreenFrame_Width - 40.0f, 40.0f)];
-    txt_UserName.borderStyle = UITextBorderStyleRoundedRect;
-    [self.view addSubview:txt_UserName];
+    _txt_UserName = [[UITextField alloc] initWithFrame:CGRectMake(20.0f, 100.0f, MainScreenFrame_Width - 40.0f, 40.0f)];
+    _txt_UserName.borderStyle = UITextBorderStyleRoundedRect;
+    [self.view addSubview:_txt_UserName];
     
     
-    txt_PassWord = [[UITextField alloc] initWithFrame:CGRectMake(20.0f, 160.0f, MainScreenFrame_Width - 40.0f, 40.0f)];
-    txt_PassWord.borderStyle = UITextBorderStyleRoundedRect;
-    [self.view addSubview:txt_PassWord];
+    _txt_PassWord = [[UITextField alloc] initWithFrame:CGRectMake(20.0f, 160.0f, MainScreenFrame_Width - 40.0f, 40.0f)];
+    _txt_PassWord.borderStyle = UITextBorderStyleRoundedRect;
+    [self.view addSubview:_txt_PassWord];
     
+    _warningText = @"asdfasdf";
     
 //    [txt_PassWord.rac_textSignal subscribeNext:^(id x) {
 //        NSLog(@"输出:%@",x);

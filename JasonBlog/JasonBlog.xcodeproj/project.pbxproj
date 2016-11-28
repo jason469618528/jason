@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E5897B21DD1B36C0027E7CA /* 上海.html in Resources */ = {isa = PBXBuildFile; fileRef = 7E5897B11DD1B36C0027E7CA /* 上海.html */; };
+		7E5A8B951DD5685A00710C50 /* icon_home_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */; };
 		9600A7861C8E6B25002478DD /* SearchDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600A7851C8E6B25002478DD /* SearchDetailViewModel.m */; };
 		96153ACC1B26930A004FD113 /* PanliMoneyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96153ACA1B26930A004FD113 /* PanliMoneyCell.m */; };
 		96153ACD1B26930A004FD113 /* PanliMoneyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96153ACB1B26930A004FD113 /* PanliMoneyCell.xib */; };
@@ -108,6 +110,8 @@
 		2E8F383B81BAD418188EECEE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3B983D1C6FE0B7D620024F02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4197AC79B493E0D6314049F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5897B11DD1B36C0027E7CA /* 上海.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "上海.html"; sourceTree = "<group>"; };
+		7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_home_open@2x.png"; sourceTree = "<group>"; };
 		9600A7841C8E6B25002478DD /* SearchDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailViewModel.h; sourceTree = "<group>"; };
 		9600A7851C8E6B25002478DD /* SearchDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewModel.m; sourceTree = "<group>"; };
 		96153AC91B26930A004FD113 /* PanliMoneyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanliMoneyCell.h; sourceTree = "<group>"; };
@@ -521,6 +525,7 @@
 		96F7755C1AF725CA000C5219 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E5897B11DD1B36C0027E7CA /* 上海.html */,
 				96412E631C476F9900527BB5 /* btn_navbar_back_on@2x.png */,
 				96412E641C476F9900527BB5 /* btn_navbar_back@2x.png */,
 				96F7755D1AF725CA000C5219 /* Tabbar */,
@@ -561,6 +566,7 @@
 		96F7758A1AF74052000C5219 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */,
 				96F7758B1AF74061000C5219 /* OtherHomeViewController.h */,
 				96F7758C1AF74061000C5219 /* OtherHomeViewController.m */,
 				96F7758D1AF74061000C5219 /* OtherHomeViewController.xib */,
@@ -666,6 +672,7 @@
 				96F7758F1AF74061000C5219 /* OtherHomeViewController.xib in Resources */,
 				96B0720A1AF21EF700A1E2E6 /* AppIcon76x76~ipad.png in Resources */,
 				96AC6E821C4656DA00A5AF2C /* Inmysong.mp3 in Resources */,
+				7E5897B21DD1B36C0027E7CA /* 上海.html in Resources */,
 				96F5811B1B25274D009A4910 /* unselect_icon5@2x.png in Resources */,
 				96F7752D1AF7189D000C5219 /* SearchHomeViewController.xib in Resources */,
 				96B072091AF21EF700A1E2E6 /* AppIcon76x76@2x~ipad.png in Resources */,
@@ -688,6 +695,7 @@
 				96F775871AF725CA000C5219 /* tabbar_icon_reader_highlight@2x.png in Resources */,
 				96F775831AF725CA000C5219 /* tabbar_icon_media_highlight@2x.png in Resources */,
 				96F775861AF725CA000C5219 /* tabbar_icon_news_normal@2x.png in Resources */,
+				7E5A8B951DD5685A00710C50 /* icon_home_open@2x.png in Resources */,
 				96F775841AF725CA000C5219 /* tabbar_icon_media_normal@2x.png in Resources */,
 				96B072011AF21EF700A1E2E6 /* AppIcon29x29~ipad.png in Resources */,
 				96C7AD151AF86255002A1FB3 /* HomeCell.xib in Resources */,

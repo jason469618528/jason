@@ -8,6 +8,7 @@
 
 #import "CustomerNavgaionController.h"
 #import "HomeViewController.h"
+
 @interface CustomerNavgaionController ()<UIGestureRecognizerDelegate>
 
 @end

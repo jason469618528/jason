@@ -115,12 +115,10 @@
     //买家评价
     UIButton *btn_ProductEvaluate = [UIButton buttonWithType:UIButtonTypeCustom];
     btn_ProductEvaluate.frame = CGRectMake(0.0f, 50.0f, MainScreenFrame_Width, 44.5f);
-    btn_ProductEvaluate.backgroundColor = J_COLOR_GRAY;
+    btn_ProductEvaluate.backgroundColor = J_COLOR_RED;
     [btn_ProductEvaluate addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn_ProductEvaluate];
 
-    
-    
     
     //添加放大效果
 //    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];

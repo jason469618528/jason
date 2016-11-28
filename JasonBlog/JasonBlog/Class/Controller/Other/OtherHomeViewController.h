@@ -13,7 +13,7 @@
  * 创 建 人: Jason
  * 创建日期: 2016-1-8
  **************************************************/
-@interface OtherHomeViewController : UIViewController
+@interface OtherHomeViewController : BaseViewController
 
 @property (nonatomic, strong, nullable) UIScrollView *contentView;
 
@@ -22,4 +22,11 @@
 //@property (nonatomic, strong, nullable) APEHomePracticeSubjectsView *subjectsView;
 //
 //@property (nonatomic, strong, nullable) APEHomePracticeDataController *dataController;
+
+
+@property (nonatomic, strong) NSString *initString;
+
+- (NSString *)initString __attribute__((objc_method_family(none)));
+
+
 @end
