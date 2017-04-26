@@ -12,8 +12,12 @@
 #import "OtherHomeViewController.h"
 #import "ToolHomeViewController.h"
 #include <objc/runtime.h>
+#import "UIAlertView+EasyUIKit.h"
 
-@interface OtherHomeViewController ()
+
+@interface OtherHomeViewController (){
+    dispatch_source_t _timer;
+}
 
 @property (nonatomic, strong) ToolHomeViewController *toolVC;
 
@@ -53,7 +57,7 @@
     [self.view addSubview:btn_ToolClick];
     
     //创建队列
-    dispatch_queue_t queue = dispatch_queue_create("Test", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue = dispatch_queue_create("Test", DISPATCH_QUEUE_SERIAL);
     
     NSLog(@"Star");
     
@@ -70,14 +74,63 @@
     });
     
     NSLog(@"End");
-    
+//    NSLog(@"任务4---%@", [NSThread currentThread]);
+
     bool res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
     bool res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
     NSLog(@"res1 ==== %d\n res2 === %d",res1,res2);
     
 //    class_addProperty(self, @"Test", <#const objc_property_attribute_t *attributes#>, <#unsigned int attributeCount#>)
     
+    
+    [UIAlertView showConfirmWithTitle:@"sadf" message:@"message" clickComplete:^(UIAlertView *alertView, NSInteger buttonTag) {
+        NSLog(@"%@----%ld",alertView,buttonTag);
+    }];
+    
+    
+    NSBundle *myBundle = [NSBundle mainBundle];
+    NSLog(@"%@",myBundle);
+    
+    
+    dispatch_queue_t q_queue =  dispatch_queue_create("zy", DISPATCH_QUEUE_SERIAL);
+    
+        // 将任务添加到队列中
+    dispatch_async(q_queue, ^{
+            NSLog(@"%@---%zd",[NSThread currentThread],100);
+        });
+    
+    dispatch_async(q_queue, ^{
+        NSLog(@"%@---%zd",[NSThread currentThread],200);
+    });
+    
+    dispatch_async(q_queue, ^{
+        NSLog(@"%@---%zd",[NSThread currentThread],300);
+    });
+    
+    dispatch_async(q_queue, ^{
+        NSLog(@"%@---%zd",[NSThread currentThread],400);
+    });
+    
+    NSLog(@"End");
+
+    
+    [self startGCDTimer];
+    
 }
+
+-(void) startGCDTimer{
+    NSTimeInterval period = 1.0; //设置时间间隔
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_source_set_timer(_timer, dispatch_walltime(NULL, 0), period * NSEC_PER_SEC, 0); //每秒执行
+    dispatch_source_set_event_handler(_timer, ^{
+        //在这里执行事件
+        NSLog(@"每秒执行test");
+    });
+    
+    dispatch_resume(_timer);
+}
+
 
 - (void)ToolClick:(UIButton*)btn
 {

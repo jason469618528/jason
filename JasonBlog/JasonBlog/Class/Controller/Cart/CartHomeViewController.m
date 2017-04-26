@@ -11,6 +11,7 @@
 #import "PanliMoneyViewController.h"
 @interface CartHomeViewController ()
 {
+    dispatch_source_t timer;
     CategoryView *categoryView;
 }
 @end
@@ -46,6 +47,18 @@
     bar_searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
     self.navigationItem.titleView = bar_searchBar;
     
+    timeArr = @[@"2016-12-12 19:23:20"];
+
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.1 * NSEC_PER_SEC);
+    
+    __weak typeof(self) weSelf = self;
+    dispatch_source_set_event_handler(timer, ^{
+        [weSelf calTime];
+    });
+    dispatch_resume(timer);
+
 }
 
 - (void)updateTest
@@ -56,19 +69,21 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    timeArr = @[@"2016-2-23 19:23:20"];
 
-    if (_timer == nil) {
-        _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(calTime) userInfo:nil repeats:YES];
-    }
-}
+//    if (_timer == nil) {
+//        _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(calTime) userInfo:nil repeats:YES];
+//        [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+//    }
+    
+   }
+
 -(void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    if(_timer)
-    {
-        _timer = nil;//关闭定时器，
-    }
+//    if(_timer)
+//    {
+//        _timer = nil;//关闭定时器，
+//    }
 }
 
 //定时器刷新倒计时
@@ -78,6 +93,7 @@
     for (UITableViewCell *cell in cells) {
         cell.textLabel.text = [self getTimeStr:timeArr[cell.tag]];
     }
+    [_tab_Main reloadData];
 }
 
 //返回倒计时

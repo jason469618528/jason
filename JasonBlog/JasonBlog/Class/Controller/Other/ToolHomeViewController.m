@@ -27,6 +27,8 @@
         [self dimss];
     }];
     [self.view addSubview:btn_ToolClick];
+    
+
 }
 
 - (void)showInView:(UIView*)view{
@@ -49,22 +51,22 @@
 //    } completion:^(BOOL finished){
 //        [self.view removeFromSuperview];
 //    }];
-    
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, MainScreenFrame_Width, MainScreenFrame_Height - UI_NAVIGATION_BAR_HEIGHT)];
-    webView.backgroundColor = [UIColor whiteColor];
-    webView.scalesPageToFit = YES;
-    webView.scrollView.clipsToBounds = YES;
-    webView.scrollView.scrollsToTop = YES;
-    
-    NSString *path = [[NSBundle mainBundle] bundlePath];
-    NSURL *baseURL = [NSURL fileURLWithPath:path];
-    NSString * htmlPath = [[NSBundle mainBundle] pathForResource:@"上海"
-                                                          ofType:@"html"];
-    NSString * htmlCont = [NSString stringWithContentsOfFile:htmlPath
-                                                    encoding:NSUTF8StringEncoding
-                                                       error:nil];
-    [webView loadHTMLString:htmlCont baseURL:baseURL];
-    [self.view addSubview:webView];
+//    
+//    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, MainScreenFrame_Width, MainScreenFrame_Height - UI_NAVIGATION_BAR_HEIGHT)];
+//    webView.backgroundColor = [UIColor whiteColor];
+//    webView.scalesPageToFit = YES;
+//    webView.scrollView.clipsToBounds = YES;
+//    webView.scrollView.scrollsToTop = YES;
+//    
+//    NSString *path = [[NSBundle mainBundle] bundlePath];
+//    NSURL *baseURL = [NSURL fileURLWithPath:path];
+//    NSString * htmlPath = [[NSBundle mainBundle] pathForResource:@"上海"
+//                                                          ofType:@"html"];
+//    NSString * htmlCont = [NSString stringWithContentsOfFile:htmlPath
+//                                                    encoding:NSUTF8StringEncoding
+//                                                       error:nil];
+//    [webView loadHTMLString:htmlCont baseURL:baseURL];
+//    [self.view addSubview:webView];
 }
 
 - (void)viewWillAppear:(BOOL)animated

@@ -11,6 +11,7 @@
 #import "HomeDetailViewController.h"
 #import "DataRepeater.h"
 #import "UIImage+UIImageScale.h"
+
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tab_Main;
 @property(strong, nonatomic) NSMutableArray *marr_Data;

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7E5897B21DD1B36C0027E7CA /* 上海.html in Resources */ = {isa = PBXBuildFile; fileRef = 7E5897B11DD1B36C0027E7CA /* 上海.html */; };
 		7E5A8B951DD5685A00710C50 /* icon_home_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */; };
+		7EA2FC931DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2FC921DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m */; };
 		9600A7861C8E6B25002478DD /* SearchDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600A7851C8E6B25002478DD /* SearchDetailViewModel.m */; };
 		96153ACC1B26930A004FD113 /* PanliMoneyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96153ACA1B26930A004FD113 /* PanliMoneyCell.m */; };
 		96153ACD1B26930A004FD113 /* PanliMoneyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96153ACB1B26930A004FD113 /* PanliMoneyCell.xib */; };
@@ -112,6 +113,8 @@
 		4197AC79B493E0D6314049F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5897B11DD1B36C0027E7CA /* 上海.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "上海.html"; sourceTree = "<group>"; };
 		7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_home_open@2x.png"; sourceTree = "<group>"; };
+		7EA2FC911DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+EasyUIKit.h"; sourceTree = "<group>"; };
+		7EA2FC921DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+EasyUIKit.m"; sourceTree = "<group>"; };
 		9600A7841C8E6B25002478DD /* SearchDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailViewModel.h; sourceTree = "<group>"; };
 		9600A7851C8E6B25002478DD /* SearchDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewModel.m; sourceTree = "<group>"; };
 		96153AC91B26930A004FD113 /* PanliMoneyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanliMoneyCell.h; sourceTree = "<group>"; };
@@ -509,6 +512,8 @@
 				96DE2E2A1B033F5C001557CC /* UIImage+UIImageScale.m */,
 				96A887D91C3FB5AE008B99FD /* UINavigationController+UINavigationControllerCanBack.h */,
 				96A887DA1C3FB5AE008B99FD /* UINavigationController+UINavigationControllerCanBack.m */,
+				7EA2FC911DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.h */,
+				7EA2FC921DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -797,6 +802,7 @@
 				96DE2E2F1B034BA7001557CC /* CustomerTabbarController.m in Sources */,
 				96C7AD141AF86255002A1FB3 /* HomeCell.m in Sources */,
 				96C0A3801B16E78400605F4D /* LoginViewController.m in Sources */,
+				7EA2FC931DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m in Sources */,
 				96F775271AF7188E000C5219 /* MyHomeViewController.m in Sources */,
 				96AD2B511AFB6C08006E1B94 /* HomeDetailViewController.m in Sources */,
 				96B1DAA61C4CD43C0082A28D /* CustomButton.m in Sources */,
@@ -824,8 +830,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: æ æ é»å¥ (A7U5T8PS6T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: æ æ é»å¥ (A7U5T8PS6T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jian haung (A7U5T8PS6T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jian haung (A7U5T8PS6T)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -891,13 +897,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: æ æ é»å¥ (A7U5T8PS6T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jian haung (A7U5T8PS6T)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JasonBlog/Supporting Files/JasonBlog-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JasonBlog/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.panli.panlimobile1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JasonBlog/Class/Components/library",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panli.panlimobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.panlimobile.debug;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -913,7 +924,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/JasonBlog/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.panli.panlimobile1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JasonBlog/Class/Components/library",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panli.panlimobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -929,7 +944,7 @@
 				962373C41A6CAE6600ED6815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		962373C51A6CAE6600ED6815 /* Build configuration list for PBXNativeTarget "JasonBlog" */ = {
 			isa = XCConfigurationList;
@@ -938,7 +953,7 @@
 				962373C71A6CAE6600ED6815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

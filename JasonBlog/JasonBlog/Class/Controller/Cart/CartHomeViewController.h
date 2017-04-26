@@ -13,5 +13,5 @@
     NSArray *timeArr;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tab_Main;
-@property (strong, nonatomic) NSTimer *timer;
+//@property (strong, nonatomic) NSTimer *timer;
 @end
