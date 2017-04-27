@@ -1,0 +1,9 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+target 'JSPatch_demo' do
+    
+pod 'ReactiveCocoa'
+pod 'JSPatch'
+
+end
