@@ -26,8 +26,10 @@
 //    self.navigationBar.translucent = NO;
 //    self.navigationBar.tintColor = [UIColor blueColor];
 //    self.navigationBar.barTintColor = [UIColor blueColor];
-    self.view.backgroundColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor redColor];
     
+    UIImage *image = [self createImageWithColor:[UIColor redColor]];
+    [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
 //    __weak typeof(id) weakSelf = self;
 //    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
 //        self.interactivePopGestureRecognizer.delegate = weakSelf;
@@ -43,6 +45,19 @@
     // 禁止使用系统自带的滑动手势
     self.interactivePopGestureRecognizer.enabled = NO;
 }
+    
+- (UIImage*) createImageWithColor: (UIColor*) color
+    {
+        CGRect rect=CGRectMake(0,0, 1, 1);
+        UIGraphicsBeginImageContext(rect.size);
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        CGContextSetFillColorWithColor(context, [color CGColor]);
+        CGContextFillRect(context, rect);
+        UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return theImage;  
+    }
+    
 
 - (void)didReceiveMemoryWarning
 {

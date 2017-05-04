@@ -21,15 +21,20 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIButton *btn_nav_back = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn_nav_back.frame = CGRectMake(0.0f, 0.0f, 54.0f, 44.0f);
-    btn_nav_back.tag = 999;
-    [btn_nav_back setImage:[UIImage imageNamed:@"btn_navbar_back"]forState:UIControlStateNormal];
-    [btn_nav_back setImage:[UIImage imageNamed:@"btn_navbar_back_on"] forState:UIControlStateHighlighted];
-    btn_nav_back.imageEdgeInsets = IS_IOS7 ? UIEdgeInsetsMake(0, -34, 0, 0) : UIEdgeInsetsZero;
-    [btn_nav_back addTarget:self action:@selector(navBackClick) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem * btn_Left = [[UIBarButtonItem alloc] initWithCustomView:btn_nav_back];
-    self.navigationItem.leftBarButtonItem = btn_Left;
+//    UIButton *btn_nav_back = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn_nav_back.frame = CGRectMake(0.0f, 0.0f, 54.0f, 44.0f);
+//    btn_nav_back.tag = 999;
+//    [btn_nav_back setImage:[UIImage imageNamed:@"btn_navbar_back"]forState:UIControlStateNormal];
+//    [btn_nav_back setImage:[UIImage imageNamed:@"btn_navbar_back_on"] forState:UIControlStateHighlighted];
+//    btn_nav_back.imageEdgeInsets = IS_IOS7 ? UIEdgeInsetsMake(0, -34, 0, 0) : UIEdgeInsetsZero;
+//    [btn_nav_back setTitle:@"返回" forState:UIControlStateNormal];
+//    [btn_nav_back setTitle:@"返回" forState:UIControlStateHighlighted];
+//    [btn_nav_back setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [btn_nav_back setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+//    btn_nav_back.titleEdgeInsets = IS_IOS7 ? UIEdgeInsetsMake(0, -54, 0, 0) : UIEdgeInsetsZero;
+//    [btn_nav_back addTarget:self action:@selector(navBackClick) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem * btn_Left = [[UIBarButtonItem alloc] initWithCustomView:btn_nav_back];
+//    self.navigationItem.leftBarButtonItem = btn_Left;
     
     
     NSString *str_expirationtime = @"2015-06-30";

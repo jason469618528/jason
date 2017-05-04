@@ -24,7 +24,7 @@
 //    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
 //    self.view.backgroundColor = [UIColor whiteColor];
     self.view.backgroundColor = [UIColor redColor];
-
+    
     
 //    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
 //        NSLog(@"%@",response);
@@ -242,6 +242,19 @@
     HomeDetailViewController *detailVC = [[HomeDetailViewController alloc] init];
     detailVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:detailVC animated:YES];
+}
+    
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"viewWillAppear");
+}
+    
+    
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    NSLog(@"viewWillDisappear");
+
+
 }
 
 @end

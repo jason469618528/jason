@@ -41,7 +41,6 @@
     CustomerNavgaionController *nav_cart = [[CustomerNavgaionController alloc] initWithRootViewController:cartVC];
     
     MyHomeViewController *myVC = [[MyHomeViewController alloc] init];
-    myVC.navigationItem.title = @"我的";
     CustomerNavgaionController *nav_my = [[CustomerNavgaionController alloc] initWithRootViewController:myVC];
     
     OtherHomeViewController *otherVC = [[OtherHomeViewController alloc] init];

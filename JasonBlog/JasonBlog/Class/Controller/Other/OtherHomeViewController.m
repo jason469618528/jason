@@ -13,6 +13,8 @@
 #import "ToolHomeViewController.h"
 #include <objc/runtime.h>
 #import "UIAlertView+EasyUIKit.h"
+#import "RSMaskedLabel.h"
+
 
 
 @interface OtherHomeViewController (){
@@ -51,30 +53,10 @@
     
     UIButton *btn_ToolClick = [UIButton buttonWithType:UIButtonTypeCustom];
     btn_ToolClick.frame = CGRectMake(100.0f, 100.0f, 100.0f, 100.0f);
-//    btn_ToolClick.backgroundColor = J_COLOR_RED;
     [btn_ToolClick setImage:[UIImage imageNamed:@"icon_home_open"] forState:UIControlStateNormal];
-    [btn_ToolClick addTarget:self action:@selector(ToolClick:) forControlEvents:UIControlEventTouchUpInside];
+    [btn_ToolClick addTarget:self action:@selector(toolClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn_ToolClick];
     
-    //创建队列
-    dispatch_queue_t queue = dispatch_queue_create("Test", DISPATCH_QUEUE_SERIAL);
-    
-    NSLog(@"Star");
-    
-    dispatch_async(queue, ^{
-         NSLog(@"任务1---%@", [NSThread currentThread]);
-    });
-    
-    dispatch_async(queue, ^{
-        NSLog(@"任务2---%@", [NSThread currentThread]);
-    });
-    
-    dispatch_async(queue, ^{
-        NSLog(@"任务3---%@", [NSThread currentThread]);
-    });
-    
-    NSLog(@"End");
-//    NSLog(@"任务4---%@", [NSThread currentThread]);
 
     bool res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
     bool res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
@@ -86,7 +68,6 @@
     [UIAlertView showConfirmWithTitle:@"sadf" message:@"message" clickComplete:^(UIAlertView *alertView, NSInteger buttonTag) {
         NSLog(@"%@----%ld",alertView,buttonTag);
     }];
-    
     
     NSBundle *myBundle = [NSBundle mainBundle];
     NSLog(@"%@",myBundle);
@@ -114,11 +95,37 @@
     NSLog(@"End");
 
     
-    [self startGCDTimer];
+//    [self startGCDTimer];
     
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queueGroup = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    dispatch_group_async(group, queueGroup, ^{
+
+    });
+    dispatch_group_async(group, queueGroup, ^{
+
+    });
+    dispatch_group_async(group, queueGroup, ^{
+
+    });
+    
+    dispatch_group_notify(group, queueGroup, ^{
+        NSLog(@"dispatch_group_notify End");
+    });
+//    [self performSelector:@selector(loadWait) withObject:self afterDelay:10];
+//    [UIView animateWithDuration:10 animations:^{
+//        [self loadWait];
+//    }];
+    
+    RSMaskedLabel *maskLabel = [[RSMaskedLabel alloc] initWithFrame:CGRectMake(0.0f, 20.0f, MainScreenFrame_Width, 50.0f)];
+    maskLabel.text = NSLocalizedString(@"home_back",nil);
+    maskLabel.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:maskLabel];
 }
 
--(void) startGCDTimer{
+-(void)startGCDTimer {
     NSTimeInterval period = 1.0; //设置时间间隔
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
@@ -127,12 +134,11 @@
         //在这里执行事件
         NSLog(@"每秒执行test");
     });
-    
     dispatch_resume(_timer);
 }
 
 
-- (void)ToolClick:(UIButton*)btn
+- (void)toolClick:(UIButton*)btn
 {
 //    ToolHomeViewController *toolHome = [[ToolHomeViewController alloc] init];
 //    toolHome.hidesBottomBarWhenPushed = YES;
