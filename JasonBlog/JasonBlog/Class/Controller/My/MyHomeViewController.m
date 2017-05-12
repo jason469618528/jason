@@ -151,6 +151,11 @@ typedef void(^blockAAAA)();
         NSLog(@"%@",test);
         return 30;
     }];
+    
+    [UIView commitAnimations];
+    
+    
+    
 }
 
 - (void)testBolck:(int(^)(id test))blockTest

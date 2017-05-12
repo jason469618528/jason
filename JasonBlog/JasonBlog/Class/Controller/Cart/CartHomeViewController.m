@@ -20,44 +20,50 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIBarButtonItem *leftBackItem = self.navigationItem.leftBarButtonItem;
+    UIBarButtonItem *leftBackItem2 = self.navigationController.navigationItem.leftBarButtonItem;
+    UIBarButtonItem *backItem = self.navigationItem.backBarButtonItem;
+    UIBarButtonItem *backItem2 = self.navigationController.navigationBar.backItem.backBarButtonItem;
+    
     // Do any additional setup after loading the view from its nib.
 //    self.tab_Main.editing = YES;
-    
-    UIBarButtonItem *bar_Left = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(categoryClick:)];
-    self.navigationItem.leftBarButtonItem = bar_Left;
-    
-    UIBarButtonItem *bar_Right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(categoryClick:)];
-    self.navigationItem.rightBarButtonItem = bar_Right;
+//    
+//    UIBarButtonItem *bar_Left = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(categoryClick:)];
+//    self.navigationItem.leftBarButtonItem = bar_Left;
+//    
+//    UIBarButtonItem *bar_Right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(categoryClick:)];
+//    self.navigationItem.rightBarButtonItem = bar_Right;
     
     //搜索条
 //    UITextField
-    UISearchBar *bar_searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(60.0f, 0.0f, MainScreenFrame_Width - 120.0f, 44.0f)];
-    bar_searchBar.backgroundColor = [UIColor clearColor];
-    bar_searchBar.tintColor = J_COLOR_GRAY;
-    bar_searchBar.placeholder = @"搜索商品";
-    
-    UITextField *searchBarTextField = [bar_searchBar valueForKey:@"_searchField"];
-    searchBarTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    [searchBarTextField addTarget:self action:@selector(updateTest) forControlEvents:UIControlEventEditingChanged];
-    
-    bar_searchBar.layer.borderColor = [UIColor redColor].CGColor;
-    bar_searchBar.layer.borderWidth = 1.0f;
-    bar_searchBar.layer.cornerRadius = 20.0f;
-    bar_searchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
-    bar_searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
-    self.navigationItem.titleView = bar_searchBar;
-    
-    timeArr = @[@"2016-12-12 19:23:20"];
-
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
-    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.1 * NSEC_PER_SEC);
-    
-    __weak typeof(self) weSelf = self;
-    dispatch_source_set_event_handler(timer, ^{
-        [weSelf calTime];
-    });
-    dispatch_resume(timer);
+//    UISearchBar *bar_searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(60.0f, 0.0f, MainScreenFrame_Width - 120.0f, 44.0f)];
+//    bar_searchBar.backgroundColor = [UIColor clearColor];
+//    bar_searchBar.tintColor = J_COLOR_GRAY;
+//    bar_searchBar.placeholder = @"搜索商品";
+//    
+//    UITextField *searchBarTextField = [bar_searchBar valueForKey:@"_searchField"];
+//    searchBarTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+//    [searchBarTextField addTarget:self action:@selector(updateTest) forControlEvents:UIControlEventEditingChanged];
+//    
+//    bar_searchBar.layer.borderColor = [UIColor redColor].CGColor;
+//    bar_searchBar.layer.borderWidth = 1.0f;
+//    bar_searchBar.layer.cornerRadius = 20.0f;
+//    bar_searchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
+//    bar_searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
+//    self.navigationItem.titleView = bar_searchBar;
+//    
+//    timeArr = @[@"2016-12-12 19:23:20"];
+//
+//    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//    timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+//    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0.1 * NSEC_PER_SEC);
+//    
+//    __weak typeof(self) weSelf = self;
+//    dispatch_source_set_event_handler(timer, ^{
+//        [weSelf calTime];
+//    });
+//    dispatch_resume(timer);
 
 }
 

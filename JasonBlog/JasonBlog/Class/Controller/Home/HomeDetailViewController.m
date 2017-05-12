@@ -7,6 +7,7 @@
 //
 
 #import "HomeDetailViewController.h"
+#import "CartHomeViewController.h"
 
 @interface HomeDetailViewController ()
 
@@ -36,40 +37,28 @@
 //    UIBarButtonItem * btn_Left = [[UIBarButtonItem alloc] initWithCustomView:btn_nav_back];
 //    self.navigationItem.leftBarButtonItem = btn_Left;
     
+    UIBarButtonItem *leftBackItem = self.navigationItem.leftBarButtonItem;
+    UIBarButtonItem *leftBackItem2 = self.navigationController.navigationItem.leftBarButtonItem;
+    UIBarButtonItem *backItem = self.navigationItem.backBarButtonItem;
+
     
     NSString *str_expirationtime = @"2015-06-30";
-    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     NSDate *expirationData = [dateFormatter dateFromString:str_expirationtime];
-    
     NSDate *test111 = [expirationData dateByAddingTimeInterval:-(3*30*24*60*60)];
-
-    if([test111 compare:[NSDate date]] != NSOrderedDescending)
-    {
+    if([test111 compare:[NSDate date]] != NSOrderedDescending) {
         NSLog(@"快到期");
     }
-    
     
     UIButton *btn_ToolClick = [UIButton buttonWithType:UIButtonTypeCustom];
     btn_ToolClick.frame = CGRectMake(100.0f, 100.0f, 100.0f, 100.0f);
     btn_ToolClick.backgroundColor = J_COLOR_RED;
     [btn_ToolClick addTarget:self action:@selector(ToolClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn_ToolClick];
-    
-//    //获取3个月前日期
-//    NSDate *yesterday = [NSDate dateWithTimeIntervalSinceNow:(24*60*60*30*3)];
-//    NSString *str_LastDate = [dateFormatter stringFromDate:yesterday];
-//    NSLog(@"%@",str_LastDate);
-//    
-//    if([str_expirationtime compare:str_LastDate] != NSOrderedAscending)
-//    {
-//        NSLog(@"3个月过期");
-//    }
 }
 
-- (void)ToolClick
-{
+- (void)ToolClick {
 //    UIPageControl *pageControl = [[UIPageControl alloc] init];
 //    pageControl.backgroundColor = J_COLOR_RED;
 //    pageControl.numberOfPages = 5;
@@ -81,21 +70,28 @@
 //    pageControl.center = CGPointMake(self.view.center.x, 50.0f);
 //    [self.view addSubview:pageControl];
     //prefs:root=NOTIFICATIONS_ID
-    NSURL * url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-    if([[UIApplication sharedApplication] canOpenURL:url])
-    {
-        NSURL*url =[NSURL URLWithString:UIApplicationOpenSettingsURLString];
-        [[UIApplication sharedApplication] openURL:url];
-    }
+//    NSURL * url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+//    if([[UIApplication sharedApplication] canOpenURL:url])
+//    {
+//        NSURL*url =[NSURL URLWithString:UIApplicationOpenSettingsURLString];
+//        [[UIApplication sharedApplication] openURL:url];
+//    }
+    
+    CartHomeViewController *detailVC = [[CartHomeViewController alloc] init];
+    detailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:detailVC animated:YES];
+    
+    UIBarButtonItem *leftBackItem = self.navigationItem.leftBarButtonItem;
+    UIBarButtonItem *leftBackItem2 = self.navigationController.navigationItem.leftBarButtonItem;
+    UIBarButtonItem *backItem = self.navigationItem.backBarButtonItem;
+    UIBarButtonItem *backItem2 = self.navigationController.navigationBar.backItem.backBarButtonItem;
 }
 
-- (void)testBlock:(void(^)(id result))AAA
-{
+- (void)testBlock:(void(^)(id result))AAA {
     AAA(@"aa");
 }
 
-- (void)navBackClick
-{
+- (void)navBackClick {
     [self.navigationController popViewControllerAnimated:YES];
 }
 

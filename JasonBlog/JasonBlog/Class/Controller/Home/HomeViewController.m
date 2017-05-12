@@ -12,6 +12,9 @@
 #import "DataRepeater.h"
 #import "UIImage+UIImageScale.h"
 
+#define nb_Weak(s) __weak typeof(s) weself = s
+
+
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tab_Main;
 @property(strong, nonatomic) NSMutableArray *marr_Data;
@@ -21,17 +24,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-//    self.view.backgroundColor = [UIColor whiteColor];
     self.view.backgroundColor = [UIColor redColor];
-    
-    
-//    [[RequestManager sharedInstance] sendRequestSuccess:^(id response) {
-//        NSLog(@"%@",response);
-//    } error:^(NSError *responseError) {
-//        NSLog(@"%@",responseError);
-//    }];
-    
+    self.navigationItem.title = @"首页";
+
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleBordered target:nil action:nil];
+    self.navigationItem.backBarButtonItem = backItem;
     
     self.marr_Data = [NSMutableArray array];
     
@@ -48,6 +45,8 @@
                            @"http://a.hiphotos.baidu.com/image/pic/item/77094b36acaf2edd93f23ba08d1001e939019373.jpg"];
     
     __weak typeof(HomeViewController*) weself = self;
+    
+    
     for(NSString *str_ImageUrl in arr_Image)
     {
             dispatch_async (dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
@@ -225,19 +224,10 @@
     return cell;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-//{
-//    if(section)
-//    {
-//        return 50.0f;
-//    }
-//    return 0.1f;
-//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSLog(@"%lu",(unsigned long)self.marr_Data.count);
 //    UIImage *image = [self.marr_Data objectAtIndex:indexPath.row];
     HomeDetailViewController *detailVC = [[HomeDetailViewController alloc] init];
     detailVC.hidesBottomBarWhenPushed = YES;
@@ -249,12 +239,9 @@
     NSLog(@"viewWillAppear");
 }
     
-    
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     NSLog(@"viewWillDisappear");
-
-
 }
 
 @end

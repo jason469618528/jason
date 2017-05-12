@@ -14,13 +14,14 @@
 #include <objc/runtime.h>
 #import "UIAlertView+EasyUIKit.h"
 #import "RSMaskedLabel.h"
-
+#import <AFNetworking.h>
 
 
 @interface OtherHomeViewController (){
     dispatch_source_t _timer;
 }
 
+@property (nonatomic, strong) NSMutableArray<NSString *> *arrayList;
 @property (nonatomic, strong) ToolHomeViewController *toolVC;
 
 @end
@@ -123,6 +124,27 @@
     maskLabel.text = NSLocalizedString(@"home_back",nil);
     maskLabel.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:maskLabel];
+    
+
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *filePath = NSTemporaryDirectory();
+        NSString *flleName = [filePath stringByAppendingPathComponent:@"text.jpg"];
+        NSData *dataTest = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://img6.bdstatic.com/img/image/smallpic/dongzijianxiaotup.jpg"]];
+        if(dataTest) {
+            UIImage *image = [UIImage imageWithData:dataTest];
+            [dataTest writeToFile:flleName atomically:YES];
+        }
+    });
+    
+//    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:<#(nonnull id)#>];
+//    NSKeyedUnarchiver unarchiveObjectWithData:<#(nonnull NSData *)#>
+
+//    NSSearchPathDirectory
+    NSDate* tmpStartData = [NSDate date];
+    //You code here...
+    double deltaTime = [[NSDate date] timeIntervalSinceDate:tmpStartData];
+    NSLog(@"cost time = %f s", deltaTime);
 }
 
 -(void)startGCDTimer {
@@ -144,7 +166,24 @@
 //    toolHome.hidesBottomBarWhenPushed = YES;
 //    [self.navigationController pushViewController:toolHome animated:YES];
 //    [self.toolVC showInView:self.navigationController.view];
-    btn.transform = CGAffineTransformMakeRotation((45.0f * M_PI) / 180.0f);
+//    btn.transform = CGAffineTransformMakeRotation((45.0f * M_PI) / 180.0f);
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+         NSDictionary *dict = @{@"name": @"zhangsan"};
+         NSDictionary *dict1 = @{@"name": @"wangwu"};
+         NSArray *array = @[dict, dict1];
+         // 设置请求格式
+         manager.requestSerializer = [AFJSONRequestSerializer serializer];
+        // 设置返回格式
+         manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+         [manager POST:@"http://localhost/postjson.php" parameters:array success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+                NSLog(@"%@", result);
+             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                 
+            }];
 }
 
 

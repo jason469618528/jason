@@ -28,7 +28,7 @@
 //    self.navigationBar.barTintColor = [UIColor blueColor];
 //    self.view.backgroundColor = [UIColor redColor];
     
-    UIImage *image = [self createImageWithColor:[UIColor redColor]];
+    UIImage *image = [self createImageWithColor:[UIColor whiteColor]];
     [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
 //    __weak typeof(id) weakSelf = self;
 //    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
