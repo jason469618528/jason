@@ -97,17 +97,15 @@ typedef void(^blockAAAA)();
     self.bckView.alpha = alpha;
 }
     
-    
+
 - (void)loadNewData
 {
 //    __weak typeof(self) weakSelf = self;
-    
-    // 添加传统的上拉刷新
-    // 设置回调（一旦进入刷新状态就会调用这个refreshingBlock）
+//    添加传统的上拉刷新
+//    设置回调（一旦进入刷新状态就会调用这个refreshingBlock）
 //    [tableView addLegendFooterWithRefreshingBlock:^{
 //        NSLog(@"more");
 //    }];
-
 }
     
 - (void)navBackClick

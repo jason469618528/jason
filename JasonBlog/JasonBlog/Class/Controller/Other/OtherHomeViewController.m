@@ -36,6 +36,11 @@
     return self;
 }
 
+//- (void)loadView
+//{
+//    
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 //#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_2_2
@@ -145,6 +150,10 @@
     //You code here...
     double deltaTime = [[NSDate date] timeIntervalSinceDate:tmpStartData];
     NSLog(@"cost time = %f s", deltaTime);
+    
+    @autoreleasepool {
+        
+    };
 }
 
 -(void)startGCDTimer {
@@ -168,22 +177,75 @@
 //    [self.toolVC showInView:self.navigationController.view];
 //    btn.transform = CGAffineTransformMakeRotation((45.0f * M_PI) / 180.0f);
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    
+//         NSDictionary *dict = @{@"name": @"zhangsan"};
+//         NSDictionary *dict1 = @{@"name": @"wangwu"};
+//         NSArray *array = @[dict, dict1];
+//         // 设置请求格式
+//         manager.requestSerializer = [AFJSONRequestSerializer serializer];
+//        // 设置返回格式
+//         manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    
+//         [manager POST:@"http://localhost/postjson.php" parameters:array success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//                NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+//                NSLog(@"%@", result);
+//             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//                 
+//            }];
     
-         NSDictionary *dict = @{@"name": @"zhangsan"};
-         NSDictionary *dict1 = @{@"name": @"wangwu"};
-         NSArray *array = @[dict, dict1];
-         // 设置请求格式
-         manager.requestSerializer = [AFJSONRequestSerializer serializer];
-        // 设置返回格式
-         manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    for (int i =0; i <20; i++) {
+//        dispatch_async(dispatch_get_global_queue(0,0), ^{
+//            [NSThread sleepForTimeInterval:3];
+//            NSLog(@"NSThread %@ %d",[NSThread currentThread],i);
+//        });
+//    }
     
-         [manager POST:@"http://localhost/postjson.php" parameters:array success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-                NSLog(@"%@", result);
-             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                 
-            }];
+    //创建队列 参数1：队列名称  参数2：队列属性
+//    dispatch_queue_t serialqueue =dispatch_queue_create("serialqueue",DISPATCH_QUEUE_SERIAL);
+//    for (int i =0; i <20; i++) {
+//        dispatch_sync(serialqueue, ^{
+//            NSLog(@"%@ %d",[NSThread currentThread],i);
+//        });
+//    }
+    
+//    dispatch_queue_t serialqueue1 =dispatch_queue_create("serialqueue1",DISPATCH_QUEUE_SERIAL);
+//    for (int i =0; i <20; i++) {
+//        dispatch_async(serialqueue1, ^{
+//            NSLog(@"%@ %d",[NSThread currentThread],i);
+//        });
+//    }
+
+//    dispatch_queue_t concurrentQueue = dispatch_queue_create("concurrentQueue",DISPATCH_QUEUE_CONCURRENT);
+//    for (int i =0; i <20; i++) {
+//        dispatch_async(concurrentQueue, ^{
+//            NSLog(@"%@ %d",[NSThread currentThread],i);
+//        });
+//    }
+//
+//    
+//    dispatch_queue_t concurrentQueue1 =dispatch_queue_create("concurrentQueue1",DISPATCH_QUEUE_CONCURRENT);
+//    for (int i =0; i <20; i++) {
+//        dispatch_sync(concurrentQueue1, ^{
+//            NSLog(@"%@ %d",[NSThread currentThread],i);
+//        });
+//    }
+//
+    //获取主线程
+    dispatch_queue_t mainqueue = dispatch_get_main_queue();
+    for (int i =0; i <20; i++) {
+        dispatch_async(mainqueue, ^{
+            NSLog(@"main queue %@ %d",[NSThread currentThread],i);
+        });
+    }
+
+//    //获取主线程
+//    dispatch_queue_t mainqueue =dispatch_get_main_queue();
+//    dispatch_sync(mainqueue, ^{
+//        NSLog(@"main queue %@",[NSThread currentThread]);
+//    });
+    
+//    dispatch_queue_t gloaQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 }
 
 

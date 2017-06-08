@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E18E5EA1EB3464A000FCFB7 /* RSMaskedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E18E5E91EB3464A000FCFB7 /* RSMaskedLabel.m */; };
+		7E2318E11EC985BB002B1A8D /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2318E01EC985BB002B1A8D /* Student.m */; };
 		7E5897B21DD1B36C0027E7CA /* 上海.html in Resources */ = {isa = PBXBuildFile; fileRef = 7E5897B11DD1B36C0027E7CA /* 上海.html */; };
 		7E5A8B951DD5685A00710C50 /* icon_home_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */; };
 		7E994E501EB98373004990E3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E994E4F1EB98373004990E3 /* Storyboard.storyboard */; };
@@ -117,6 +118,8 @@
 		4197AC79B493E0D6314049F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E18E5E81EB3464A000FCFB7 /* RSMaskedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMaskedLabel.h; sourceTree = "<group>"; };
 		7E18E5E91EB3464A000FCFB7 /* RSMaskedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMaskedLabel.m; sourceTree = "<group>"; };
+		7E2318DF1EC985BB002B1A8D /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		7E2318E01EC985BB002B1A8D /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		7E5897B11DD1B36C0027E7CA /* 上海.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "上海.html"; sourceTree = "<group>"; };
 		7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_home_open@2x.png"; sourceTree = "<group>"; };
 		7E994E4F1EB98373004990E3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -500,6 +503,8 @@
 			isa = PBXGroup;
 			children = (
 				96C7AD1E1AF8B2F9002A1FB3 /* request */,
+				7E2318DF1EC985BB002B1A8D /* Student.h */,
+				7E2318E01EC985BB002B1A8D /* Student.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -840,6 +845,7 @@
 				96C7AD141AF86255002A1FB3 /* HomeCell.m in Sources */,
 				96C0A3801B16E78400605F4D /* LoginViewController.m in Sources */,
 				7EA2FC931DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m in Sources */,
+				7E2318E11EC985BB002B1A8D /* Student.m in Sources */,
 				96F775271AF7188E000C5219 /* MyHomeViewController.m in Sources */,
 				96AD2B511AFB6C08006E1B94 /* HomeDetailViewController.m in Sources */,
 				96B1DAA61C4CD43C0082A28D /* CustomButton.m in Sources */,

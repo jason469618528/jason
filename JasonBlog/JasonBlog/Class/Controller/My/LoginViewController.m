@@ -22,8 +22,7 @@
 @implementation LoginViewController
 
 
-- (void) dealloc
-{
+- (void) dealloc {
     NSLog(@"%@ dealloc",[self class]);
 }
 
@@ -32,12 +31,19 @@
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = J_COLOR_WHITE;
     
-    
+//    NSArray
     if([UIScreen mainScreen].bounds.size.width <= 320)
     {
         self.loginWidth.constant -= 40.0f;
     }
     NSLog(@"%@----%@",self.btn_LoginTag,self.btn_RegisterTag);
+    
+    NSLog(@"%s---%@",__func__,NSStringFromSelector(_cmd));
+    
+    
+    
+    NSMutableArray *sourceData = [NSMutableArray new];
+    
 }
 
 

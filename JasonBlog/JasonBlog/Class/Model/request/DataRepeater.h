@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum
-{
+typedef enum {
     post,
     get,
 }RequestState;
