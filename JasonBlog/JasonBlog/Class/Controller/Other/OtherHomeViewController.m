@@ -15,7 +15,7 @@
 #import "UIAlertView+EasyUIKit.h"
 #import "RSMaskedLabel.h"
 #import <AFNetworking.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface OtherHomeViewController (){
     dispatch_source_t _timer;
@@ -24,6 +24,7 @@
 @property (nonatomic, strong) NSMutableArray<NSString *> *arrayList;
 @property (nonatomic, strong) ToolHomeViewController *toolVC;
 
+@property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
 @end
 
 @implementation OtherHomeViewController
@@ -51,6 +52,8 @@
 #else
     NSLog(@"222222222.0");
 #endif
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
     
     UIButton *btn_ToolClick = [UIButton buttonWithType:UIButtonTypeCustom];
     btn_ToolClick.frame = CGRectMake(100.0f, 100.0f, 100.0f, 100.0f);
@@ -58,7 +61,37 @@
     [btn_ToolClick addTarget:self action:@selector(toolClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn_ToolClick];
     
-
+//    NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:@"哈哈123456"];
+//    // 设置“哈哈”为蓝色
+//    [string addAttribute:NSForegroundColorAttributeName value:[UIColor blueColor] range:NSMakeRange(0, 2)];
+//    [string addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:30] range:NSMakeRange(0, 2)];
+//    [string addAttribute:NSBackgroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 2)];
+//    
+//    // 设置“456”为红色
+//    [string addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(6, 2)];
+//    [string addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:24] range:NSMakeRange(6, 2)];
+//    [string addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:NSMakeRange(6, 2)];
+//    
+//    // 创建图片图片附件
+//    NSTextAttachment *attach = [[NSTextAttachment alloc] init];
+//    attach.image = [UIImage imageNamed:@"AppIcon60x60"];
+//    attach.bounds = CGRectMake(0, 0, 60, 60);
+//    NSAttributedString *attachString = [NSAttributedString attributedStringWithAttachment:attach];
+//    
+//    
+//    [string appendAttributedString:attachString];
+//    
+//    [string appendAttributedString:[[NSAttributedString alloc] initWithString:@"789"]];
+    
+    NSMutableAttributedString *attributedString = [NSMutableAttributedString nb_attributedStringWithText:@"i云保" font:[UIFont systemFontOfSize:30] color:[UIColor redColor]];
+    [attributedString appendString:@"上海" font:[UIFont systemFontOfSize:14] color:[UIColor blueColor]];
+    [attributedString appendAttributedString:[NSAttributedString nb_attributedStringWithImageName:@"AppIcon60x60" bounds:CGRectMake(0, 0, 160, 160)]];
+    [attributedString appendString:@"网络" font:[UIFont systemFontOfSize:14] color:[UIColor blackColor]];
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0.0f, 200.0f, MainScreenFrame_Width, 200)];
+//    textView.editable = NO;
+    textView.attributedText = attributedString;
+    [self.view addSubview:textView];
+    
     bool res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
     bool res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
     NSLog(@"res1 ==== %d\n res2 === %d",res1,res2);
@@ -162,51 +195,69 @@
 
 - (void)toolClick:(UIButton*)btn
 {
-//    ToolHomeViewController *toolHome = [[ToolHomeViewController alloc] init];
-//    toolHome.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:toolHome animated:YES];
+//    NSString *file = @"http://mvvideo2.meitudata.com/5785a7e3e6a1b824.mp4";
+//    NSURL *url = [NSURL URLWithString:file];
+//    if (_moviePlayer == nil) {
+//        _moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
+//    }else {
+//        [_moviePlayer setContentURL:url];
+//    }
+//    
+//    _moviePlayer.controlStyle = MPMovieControlStyleNone;
+//    _moviePlayer.shouldAutoplay = YES;
+//    _moviePlayer.repeatMode = MPMovieRepeatModeOne;
+//    [_moviePlayer setFullscreen:YES animated:YES];
+//    _moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
+//    [_moviePlayer play];
+//    
+//    _moviePlayer.view.frame = CGRectMake(0.0f, 0.0f, MainScreenFrame_Width, 200);
+//    [self.view addSubview:_moviePlayer.view];
+    
+    ToolHomeViewController *toolHome = [[ToolHomeViewController alloc] init];
+    toolHome.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:toolHome animated:YES];
 //    [self.toolVC showInView:self.navigationController.view];
 //    btn.transform = CGAffineTransformMakeRotation((45.0f * M_PI) / 180.0f);
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    
-         NSDictionary *dict = @{@"name": @"zhangsan"};
-         NSDictionary *dict1 = @{@"name": @"wangwu"};
-         NSArray *array = @[dict, dict1];
-         // 设置请求格式
-         manager.requestSerializer = [AFJSONRequestSerializer serializer];
-        // 设置返回格式
-         manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    
-         [manager POST:@"http://localhost/postjson.php" parameters:array success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-                NSLog(@"%@", result);
-             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                 
-            }];
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    
+//         NSDictionary *dict = @{@"name": @"zhangsan"};
+//         NSDictionary *dict1 = @{@"name": @"wangwu"};
+//         NSArray *array = @[dict, dict1];
+//         // 设置请求格式
+//         manager.requestSerializer = [AFJSONRequestSerializer serializer];
+//        // 设置返回格式
+//         manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    
+//         [manager POST:@"http://localhost/postjson.php" parameters:array success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//                NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+//                NSLog(@"%@", result);
+//             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//                 
+//            }];
 }
 
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    NSLog(@"%d",(int)animated);
-    [self.navigationController setNavigationBarHidden:YES animated:animated];
-}
-
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
-
-}
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    NSLog(@"%d",(int)animated);
+//    [self.navigationController setNavigationBarHidden:YES animated:NO];
+//}
+//
+//
+//- (void)viewDidDisappear:(BOOL)animated
+//{
+//    [super viewDidDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:YES animated:animated];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - getter
 - (ToolHomeViewController*)toolVC{
     if(_toolVC == nil){
         _toolVC = [[ToolHomeViewController alloc] init];

@@ -13,6 +13,8 @@
 #import "CartHomeViewController.h"
 #import "OtherHomeViewController.h"
 #import "CustomerNavgaionController.h"
+#import "JTNavigationController.h"
+
 #define TABBAR_TITLE_Y (-3.0f)
 @interface CustomerTabbarController ()
 @end
@@ -77,12 +79,15 @@
     
     self.tabBar.barTintColor = [UIColor whiteColor];
     self.tabBar.tintColor = [UIColor whiteColor];
+    
     self.viewControllers = @[nav_Home,nav_search,nav_cart,nav_my,nav_other];
     self.selectedIndex = 0;
 
     //设置nav 与 tabbar 不透明
     [self.tabBar setTranslucent:NO];
     
+    self.tabBar.tintColor = [UIColor blueColor];
+    self.tabBar.barTintColor = [UIColor blueColor];
     __weak typeof(self) weSelf = self;
     weSelf.delegate = self;
     
@@ -98,5 +103,23 @@
 {
     return YES;
 }
+
+
+- (BOOL)shouldAutorotate
+{
+    return self.selectedViewController.shouldAutorotate;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return self.selectedViewController.supportedInterfaceOrientations;  //支持横向
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    //    return  UIInterfaceOrientationPortrait;
+    return self.selectedViewController.interfaceOrientation;
+}
+
 
 @end

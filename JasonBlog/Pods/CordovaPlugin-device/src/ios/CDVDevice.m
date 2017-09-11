@@ -57,12 +57,13 @@
      */
     // TODO: turn this into an iOS only plugin
     NSDictionary* temp = [CDVViewController getBundlePlist:@"Settings"];
-    
+
     if ([temp respondsToSelector:@selector(JSONString)]) {
         NSLog(@"Deprecation warning: window.Setting will be removed Aug 2013. Refer to https://issues.apache.org/jira/browse/CB-2433");
         NSString* js = [NSString stringWithFormat:@"window.Settings = %@;", [temp JSONString]];
         [self.commandDelegate evalJs:js];
     }
+
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
@@ -86,11 +87,4 @@
     return CDV_VERSION;
 }
 
-- (void)testClick:(CDVInvokedUrlCommand*)command
-{
-    DLog(@"点击设备信息");
-    NSString *url = [command.arguments objectAtIndex:0];
-    url = [url stringByReplacingOccurrencesOfString:@"file://" withString:@""];
-    DLog(@"%@",url);
-}
 @end

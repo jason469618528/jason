@@ -11,13 +11,18 @@
 #import "HomeDetailViewController.h"
 #import "DataRepeater.h"
 #import "UIImage+UIImageScale.h"
+#import "HomeViewModel.h"
+#import "AppDelegate.h"
 
 #define nb_Weak(s) __weak typeof(s) weself = s
 
+static NSString const *TestString = @"sadfasdf";
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tab_Main;
 @property(strong, nonatomic) NSMutableArray *marr_Data;
+
+@property (nonatomic, strong) HomeViewModel *viewModel;
 @end
 
 @implementation HomeViewController
@@ -26,7 +31,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     self.navigationItem.title = @"首页";
-
+//    *TestString = @"123";
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleBordered target:nil action:nil];
     self.navigationItem.backBarButtonItem = backItem;
     
@@ -83,6 +88,18 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS %@",@"3"];
     [arr_Priedicate filterUsingPredicate:predicate];
     NSLog(@"%@",arr_Priedicate);
+    
+    
+    [self.viewModel.homeCommand.executionSignals subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+    
+    [[self.viewModel.homeCommand.executionSignals takeUntil:[self rac_willDeallocSignal]] subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+    
+    [self.viewModel.homeCommand execute:@"parmas"];
+
 }
 
 - (UIImage*)imageByScalingAndCroppingForSize:(CGSize)targetSize withImage:(UIImage *)image
@@ -238,10 +255,35 @@
     [super viewWillAppear:animated];
     NSLog(@"viewWillAppear");
 }
-    
+
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     NSLog(@"viewWillDisappear");
 }
+//设置为允许旋转
+- (BOOL) shouldAutorotate {
+    return NO;
+}
+
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;  
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    //    return  UIInterfaceOrientationPortrait;
+    return UIInterfaceOrientationPortrait;
+}
+
+#pragma mark - getter
+- (HomeViewModel*)viewModel {
+    if(_viewModel == nil) {
+        _viewModel = [[HomeViewModel alloc] init];
+    }
+    return _viewModel;
+}
+
 
 @end

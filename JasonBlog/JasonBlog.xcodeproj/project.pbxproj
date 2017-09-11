@@ -108,13 +108,27 @@
 		96F775891AF725CA000C5219 /* tabbar_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F775731AF725CA000C5219 /* tabbar_shadow@2x.png */; };
 		96F7758E1AF74061000C5219 /* OtherHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F7758C1AF74061000C5219 /* OtherHomeViewController.m */; };
 		96F7758F1AF74061000C5219 /* OtherHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F7758D1AF74061000C5219 /* OtherHomeViewController.xib */; };
-		D8ACE9614F1A11CB71A0F113 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4197AC79B493E0D6314049F1 /* libPods.a */; };
+		BBD8ED9FC8A588D1D6A8ED24 /* libPods-JasonBlog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BF4301F659BC5BBA95897C /* libPods-JasonBlog.a */; };
+		E20E765D1F39521700DC3BA7 /* backImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E20E76571F39521700DC3BA7 /* backImage@2x.png */; };
+		E20E765E1F39521700DC3BA7 /* backImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E20E76581F39521700DC3BA7 /* backImage@3x.png */; };
+		E20E765F1F39521700DC3BA7 /* JTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20E765A1F39521700DC3BA7 /* JTNavigationController.m */; };
+		E20E76601F39521700DC3BA7 /* UIViewController+JTNavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E20E765C1F39521700DC3BA7 /* UIViewController+JTNavigationExtension.m */; };
+		E20E76631F396A6F00DC3BA7 /* FDDemoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E20E76621F396A6F00DC3BA7 /* FDDemoScrollView.m */; };
+		E20E766F1F39859600DC3BA7 /* NSAttributedString+NBUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E20E766C1F39859600DC3BA7 /* NSAttributedString+NBUIKit.m */; };
+		E20E76701F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E20E766E1F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.m */; };
+		E277A1BC1F46C0D90023AC22 /* IYBSlideLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E277A1BB1F46C0D90023AC22 /* IYBSlideLabel.m */; };
+		E278979D1F569B5600E1BC3D /* LazyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E278979C1F569B5600E1BC3D /* LazyScrollViewController.m */; };
+		E27897A01F569BE500E1BC3D /* UIViewController+CoolUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E278979F1F569BE500E1BC3D /* UIViewController+CoolUIKit.m */; };
+		E2CFC92E1F3ADE99008A5E81 /* customer_info_hd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CFC92D1F3ADE99008A5E81 /* customer_info_hd@2x.png */; };
+		E2DF60F11F662F6000DB12EA /* UIViewController+IYBSharkDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DF60F01F662F6000DB12EA /* UIViewController+IYBSharkDebug.m */; };
+		E2DF60F51F6634F800DB12EA /* IYBDebugView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DF60F41F6634F800DB12EA /* IYBDebugView.m */; };
+		E2F946C21F384AAE00BBCE9F /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F946C11F384AAE00BBCE9F /* HomeViewModel.m */; };
+		E2F946C51F38764700BBCE9F /* RootTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F946C41F38764700BBCE9F /* RootTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E8F383B81BAD418188EECEE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		3B983D1C6FE0B7D620024F02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		4197AC79B493E0D6314049F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C70AB15CEA21C846C252D76 /* Pods-JasonBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JasonBlog.release.xcconfig"; path = "Pods/Target Support Files/Pods-JasonBlog/Pods-JasonBlog.release.xcconfig"; sourceTree = "<group>"; };
+		42E321DB484764125300D3AF /* Pods-JasonBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JasonBlog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JasonBlog/Pods-JasonBlog.debug.xcconfig"; sourceTree = "<group>"; };
 		7E18E5E81EB3464A000FCFB7 /* RSMaskedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMaskedLabel.h; sourceTree = "<group>"; };
 		7E18E5E91EB3464A000FCFB7 /* RSMaskedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMaskedLabel.m; sourceTree = "<group>"; };
 		7E5897B11DD1B36C0027E7CA /* 上海.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "上海.html"; sourceTree = "<group>"; };
@@ -251,6 +265,34 @@
 		96F7758C1AF74061000C5219 /* OtherHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherHomeViewController.m; sourceTree = "<group>"; };
 		96F7758D1AF74061000C5219 /* OtherHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherHomeViewController.xib; sourceTree = "<group>"; };
 		96F775931AF763E1000C5219 /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
+		B1BF4301F659BC5BBA95897C /* libPods-JasonBlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JasonBlog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20E76571F39521700DC3BA7 /* backImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage@2x.png"; sourceTree = "<group>"; };
+		E20E76581F39521700DC3BA7 /* backImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage@3x.png"; sourceTree = "<group>"; };
+		E20E76591F39521700DC3BA7 /* JTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTNavigationController.h; sourceTree = "<group>"; };
+		E20E765A1F39521700DC3BA7 /* JTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTNavigationController.m; sourceTree = "<group>"; };
+		E20E765B1F39521700DC3BA7 /* UIViewController+JTNavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTNavigationExtension.h"; sourceTree = "<group>"; };
+		E20E765C1F39521700DC3BA7 /* UIViewController+JTNavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTNavigationExtension.m"; sourceTree = "<group>"; };
+		E20E76611F396A6F00DC3BA7 /* FDDemoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDemoScrollView.h; sourceTree = "<group>"; };
+		E20E76621F396A6F00DC3BA7 /* FDDemoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDemoScrollView.m; sourceTree = "<group>"; };
+		E20E766B1F39859600DC3BA7 /* NSAttributedString+NBUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+NBUIKit.h"; sourceTree = "<group>"; };
+		E20E766C1F39859600DC3BA7 /* NSAttributedString+NBUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+NBUIKit.m"; sourceTree = "<group>"; };
+		E20E766D1F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+NBUIKit.h"; sourceTree = "<group>"; };
+		E20E766E1F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+NBUIKit.m"; sourceTree = "<group>"; };
+		E277A1BA1F46C0D90023AC22 /* IYBSlideLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYBSlideLabel.h; sourceTree = "<group>"; };
+		E277A1BB1F46C0D90023AC22 /* IYBSlideLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYBSlideLabel.m; sourceTree = "<group>"; };
+		E278979B1F569B5600E1BC3D /* LazyScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyScrollViewController.h; sourceTree = "<group>"; };
+		E278979C1F569B5600E1BC3D /* LazyScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyScrollViewController.m; sourceTree = "<group>"; };
+		E278979E1F569BE500E1BC3D /* UIViewController+CoolUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CoolUIKit.h"; sourceTree = "<group>"; };
+		E278979F1F569BE500E1BC3D /* UIViewController+CoolUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CoolUIKit.m"; sourceTree = "<group>"; };
+		E2CFC92D1F3ADE99008A5E81 /* customer_info_hd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customer_info_hd@2x.png"; sourceTree = "<group>"; };
+		E2DF60EF1F662F6000DB12EA /* UIViewController+IYBSharkDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IYBSharkDebug.h"; sourceTree = "<group>"; };
+		E2DF60F01F662F6000DB12EA /* UIViewController+IYBSharkDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IYBSharkDebug.m"; sourceTree = "<group>"; };
+		E2DF60F31F6634F800DB12EA /* IYBDebugView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYBDebugView.h; sourceTree = "<group>"; };
+		E2DF60F41F6634F800DB12EA /* IYBDebugView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYBDebugView.m; sourceTree = "<group>"; };
+		E2F946C01F384AAE00BBCE9F /* HomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewModel.h; sourceTree = "<group>"; };
+		E2F946C11F384AAE00BBCE9F /* HomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewModel.m; sourceTree = "<group>"; };
+		E2F946C31F38764700BBCE9F /* RootTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTestViewController.h; sourceTree = "<group>"; };
+		E2F946C41F38764700BBCE9F /* RootTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,13 +307,22 @@
 				96AC6E861C465AAF00A5AF2C /* Foundation.framework in Frameworks */,
 				96AC6E841C465AA800A5AF2C /* UIKit.framework in Frameworks */,
 				96AC6E7E1C46539000A5AF2C /* AVFoundation.framework in Frameworks */,
-				D8ACE9614F1A11CB71A0F113 /* libPods.a in Frameworks */,
+				BBD8ED9FC8A588D1D6A8ED24 /* libPods-JasonBlog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077B77610EDD9B8CDB9DDDFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42E321DB484764125300D3AF /* Pods-JasonBlog.debug.xcconfig */,
+				3C70AB15CEA21C846C252D76 /* Pods-JasonBlog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6ECAF7EF509E464E48863E89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,7 +333,7 @@
 				96AC6E851C465AAF00A5AF2C /* Foundation.framework */,
 				96AC6E831C465AA800A5AF2C /* UIKit.framework */,
 				96AC6E7D1C46539000A5AF2C /* AVFoundation.framework */,
-				4197AC79B493E0D6314049F1 /* libPods.a */,
+				B1BF4301F659BC5BBA95897C /* libPods-JasonBlog.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -318,8 +369,8 @@
 			children = (
 				962373A81A6CAE6600ED6815 /* JasonBlog */,
 				962373A71A6CAE6600ED6815 /* Products */,
-				FF2BC925D32A1EA6B7017C0C /* Pods */,
 				6ECAF7EF509E464E48863E89 /* Frameworks */,
+				077B77610EDD9B8CDB9DDDFB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -435,6 +486,8 @@
 				96153AC91B26930A004FD113 /* PanliMoneyCell.h */,
 				96153ACA1B26930A004FD113 /* PanliMoneyCell.m */,
 				96153ACB1B26930A004FD113 /* PanliMoneyCell.xib */,
+				E20E76611F396A6F00DC3BA7 /* FDDemoScrollView.h */,
+				E20E76621F396A6F00DC3BA7 /* FDDemoScrollView.m */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -451,6 +504,12 @@
 				96AD2B4E1AFB6C08006E1B94 /* HomeDetailViewController.h */,
 				96AD2B4F1AFB6C08006E1B94 /* HomeDetailViewController.m */,
 				96AD2B501AFB6C08006E1B94 /* HomeDetailViewController.xib */,
+				E2F946C01F384AAE00BBCE9F /* HomeViewModel.h */,
+				E2F946C11F384AAE00BBCE9F /* HomeViewModel.m */,
+				E2F946C31F38764700BBCE9F /* RootTestViewController.h */,
+				E2F946C41F38764700BBCE9F /* RootTestViewController.m */,
+				E278979B1F569B5600E1BC3D /* LazyScrollViewController.h */,
+				E278979C1F569B5600E1BC3D /* LazyScrollViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -473,6 +532,8 @@
 		96B0721A1AF21F1E00A1E2E6 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				E277A1BA1F46C0D90023AC22 /* IYBSlideLabel.h */,
+				E277A1BB1F46C0D90023AC22 /* IYBSlideLabel.m */,
 				96F775291AF7189D000C5219 /* SearchHomeViewController.h */,
 				96F7752A1AF7189D000C5219 /* SearchHomeViewController.m */,
 				96F7752B1AF7189D000C5219 /* SearchHomeViewController.xib */,
@@ -516,6 +577,9 @@
 		96DE2E201B02FADE001557CC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E2DF60F21F6634CD00DB12EA /* IYBDebugView */,
+				E20E76671F396E3800DC3BA7 /* Category */,
+				E20E76561F39521700DC3BA7 /* JTNavigationController */,
 				7E18E5E61EB3461C000FCFB7 /* widget */,
 				961FEF801BE05DF000324588 /* CustomerWebViewController */,
 				96FE0A261B1DBEDF0096B313 /* CustomerPlugins */,
@@ -543,6 +607,8 @@
 				96A887DA1C3FB5AE008B99FD /* UINavigationController+UINavigationControllerCanBack.m */,
 				7EA2FC911DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.h */,
 				7EA2FC921DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m */,
+				E278979E1F569BE500E1BC3D /* UIViewController+CoolUIKit.h */,
+				E278979F1F569BE500E1BC3D /* UIViewController+CoolUIKit.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -559,6 +625,7 @@
 		96F7755C1AF725CA000C5219 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E2CFC92D1F3ADE99008A5E81 /* customer_info_hd@2x.png */,
 				7E5897B11DD1B36C0027E7CA /* 上海.html */,
 				96412E631C476F9900527BB5 /* btn_navbar_back_on@2x.png */,
 				96412E641C476F9900527BB5 /* btn_navbar_back@2x.png */,
@@ -631,13 +698,39 @@
 			path = CustomerPlugins;
 			sourceTree = "<group>";
 		};
-		FF2BC925D32A1EA6B7017C0C /* Pods */ = {
+		E20E76561F39521700DC3BA7 /* JTNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				3B983D1C6FE0B7D620024F02 /* Pods.debug.xcconfig */,
-				2E8F383B81BAD418188EECEE /* Pods.release.xcconfig */,
+				E20E76571F39521700DC3BA7 /* backImage@2x.png */,
+				E20E76581F39521700DC3BA7 /* backImage@3x.png */,
+				E20E76591F39521700DC3BA7 /* JTNavigationController.h */,
+				E20E765A1F39521700DC3BA7 /* JTNavigationController.m */,
+				E20E765B1F39521700DC3BA7 /* UIViewController+JTNavigationExtension.h */,
+				E20E765C1F39521700DC3BA7 /* UIViewController+JTNavigationExtension.m */,
 			);
-			name = Pods;
+			path = JTNavigationController;
+			sourceTree = "<group>";
+		};
+		E20E76671F396E3800DC3BA7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E20E766B1F39859600DC3BA7 /* NSAttributedString+NBUIKit.h */,
+				E20E766C1F39859600DC3BA7 /* NSAttributedString+NBUIKit.m */,
+				E20E766D1F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.h */,
+				E20E766E1F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.m */,
+				E2DF60EF1F662F6000DB12EA /* UIViewController+IYBSharkDebug.h */,
+				E2DF60F01F662F6000DB12EA /* UIViewController+IYBSharkDebug.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E2DF60F21F6634CD00DB12EA /* IYBDebugView */ = {
+			isa = PBXGroup;
+			children = (
+				E2DF60F31F6634F800DB12EA /* IYBDebugView.h */,
+				E2DF60F41F6634F800DB12EA /* IYBDebugView.m */,
+			);
+			path = IYBDebugView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -647,11 +740,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 962373C51A6CAE6600ED6815 /* Build configuration list for PBXNativeTarget "JasonBlog" */;
 			buildPhases = (
-				E0DDBAF8F6671A19D092B291 /* Check Pods Manifest.lock */,
+				71965904EAFBD09285FCFA80 /* [CP] Check Pods Manifest.lock */,
 				962373A21A6CAE6600ED6815 /* Sources */,
 				962373A31A6CAE6600ED6815 /* Frameworks */,
 				962373A41A6CAE6600ED6815 /* Resources */,
-				56B1FCEFC057BD99EA0070D2 /* Copy Pods Resources */,
+				7715483C090B0B8F0C9E9CD6 /* [CP] Embed Pods Frameworks */,
+				4E7F035624E56E73F876E595 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -673,8 +767,8 @@
 				TargetAttributes = {
 					962373A51A6CAE6600ED6815 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 3943ARX7RN;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -727,6 +821,7 @@
 				96B0720C1AF21EF700A1E2E6 /* LaunchImage-700-568h@2x.png in Resources */,
 				96F775801AF725CA000C5219 /* tabbar_icon_found_normal@2x.png in Resources */,
 				96B072071AF21EF700A1E2E6 /* AppIcon60x60@3x.png in Resources */,
+				E2CFC92E1F3ADE99008A5E81 /* customer_info_hd@2x.png in Resources */,
 				96F581131B25274D009A4910 /* select_icon4@2x.png in Resources */,
 				96B072101AF21EF700A1E2E6 /* LaunchImage.png in Resources */,
 				96412E651C476F9900527BB5 /* btn_navbar_back_on@2x.png in Resources */,
@@ -751,6 +846,7 @@
 				96F581111B25274D009A4910 /* select_icon2@2x.png in Resources */,
 				7E994E5D1EB9D842004990E3 /* HomeViewController.xib in Resources */,
 				96F7757F1AF725CA000C5219 /* tabbar_icon_found_highlight@2x.png in Resources */,
+				E20E765E1F39521700DC3BA7 /* backImage@3x.png in Resources */,
 				96AB49B71B144E7500E0D118 /* www in Resources */,
 				7E994E641EB9D89F004990E3 /* Localizable.strings in Resources */,
 				96F775811AF725CA000C5219 /* tabbar_icon_me_highlight@2x.png in Resources */,
@@ -761,6 +857,7 @@
 				96B0720D1AF21EF700A1E2E6 /* LaunchImage-700@2x.png in Resources */,
 				96B0720B1AF21EF700A1E2E6 /* LaunchImage-568h@2x.png in Resources */,
 				96B072081AF21EF700A1E2E6 /* AppIcon72x72~ipad.png in Resources */,
+				E20E765D1F39521700DC3BA7 /* backImage@2x.png in Resources */,
 				96F581151B25274D009A4910 /* tabbar_selected.png in Resources */,
 				96B071FE1AF21EF700A1E2E6 /* AppIcon29x29.png in Resources */,
 				96F581181B25274D009A4910 /* unselect_icon2@2x.png in Resources */,
@@ -777,34 +874,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		56B1FCEFC057BD99EA0070D2 /* Copy Pods Resources */ = {
+		4E7F035624E56E73F876E595 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JasonBlog/Pods-JasonBlog-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JasonBlog/Pods-JasonBlog-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E0DDBAF8F6671A19D092B291 /* Check Pods Manifest.lock */ = {
+		71965904EAFBD09285FCFA80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JasonBlog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7715483C090B0B8F0C9E9CD6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JasonBlog/Pods-JasonBlog-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -817,14 +935,20 @@
 				7E18E5EA1EB3464A000FCFB7 /* RSMaskedLabel.m in Sources */,
 				96F5811F1B25317C009A4910 /* PanliMoneyViewController.m in Sources */,
 				96A887D81C3F9B12008B99FD /* ToolHomeViewController.m in Sources */,
+				E2DF60F51F6634F800DB12EA /* IYBDebugView.m in Sources */,
 				9696EB271C894EFF004F4F33 /* CustomViewTest.m in Sources */,
 				96F7751D1AF7158A000C5219 /* CartHomeViewController.m in Sources */,
 				96DE2E1F1B02DD29001557CC /* BaseViewController.m in Sources */,
+				E20E76601F39521700DC3BA7 /* UIViewController+JTNavigationExtension.m in Sources */,
 				96B0721B1AF21F1E00A1E2E6 /* AppDelegate.m in Sources */,
+				E20E765F1F39521700DC3BA7 /* JTNavigationController.m in Sources */,
 				96F075951B1EC5BF00BDE567 /* FileWriter.m in Sources */,
 				9600A7861C8E6B25002478DD /* SearchDetailViewModel.m in Sources */,
 				962373D61A6CAEDD00ED6815 /* main.m in Sources */,
+				E20E766F1F39859600DC3BA7 /* NSAttributedString+NBUIKit.m in Sources */,
 				96C7AD211AF8B313002A1FB3 /* DataRepeater.m in Sources */,
+				E20E76701F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.m in Sources */,
+				E278979D1F569B5600E1BC3D /* LazyScrollViewController.m in Sources */,
 				96C7AD191AF889EC002A1FB3 /* RequestManager.m in Sources */,
 				96DE2E2B1B033F5C001557CC /* UIImage+UIImageScale.m in Sources */,
 				96F7758E1AF74061000C5219 /* OtherHomeViewController.m in Sources */,
@@ -833,17 +957,23 @@
 				961FEF831BE05E2300324588 /* CustomerWebViewController.m in Sources */,
 				96F775221AF7187B000C5219 /* HomeViewController.m in Sources */,
 				96153ACC1B26930A004FD113 /* PanliMoneyCell.m in Sources */,
+				E2F946C21F384AAE00BBCE9F /* HomeViewModel.m in Sources */,
 				96DE2E271B0324EC001557CC /* CustomerNavgaionController.m in Sources */,
+				E27897A01F569BE500E1BC3D /* UIViewController+CoolUIKit.m in Sources */,
 				96A887DB1C3FB5AE008B99FD /* UINavigationController+UINavigationControllerCanBack.m in Sources */,
+				E20E76631F396A6F00DC3BA7 /* FDDemoScrollView.m in Sources */,
+				E2F946C51F38764700BBCE9F /* RootTestViewController.m in Sources */,
 				96C0A37B1B16A2CD00605F4D /* MyHomeCell.m in Sources */,
 				96DE2E2F1B034BA7001557CC /* CustomerTabbarController.m in Sources */,
 				96C7AD141AF86255002A1FB3 /* HomeCell.m in Sources */,
 				96C0A3801B16E78400605F4D /* LoginViewController.m in Sources */,
+				E2DF60F11F662F6000DB12EA /* UIViewController+IYBSharkDebug.m in Sources */,
 				7EA2FC931DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m in Sources */,
 				96F775271AF7188E000C5219 /* MyHomeViewController.m in Sources */,
 				96AD2B511AFB6C08006E1B94 /* HomeDetailViewController.m in Sources */,
 				96B1DAA61C4CD43C0082A28D /* CustomButton.m in Sources */,
 				96F437251B05DB30000D4686 /* SearchDetailViewController.m in Sources */,
+				E277A1BC1F46C0D90023AC22 /* IYBSlideLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,8 +1018,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jian haung (A7U5T8PS6T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jian haung (A7U5T8PS6T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -931,8 +1061,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Panli Shanghai E-Commerce Co., Ltd. (3943ARX7RN)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Panli Shanghai E-Commerce Co., Ltd. (3943ARX7RN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -952,12 +1082,14 @@
 		};
 		962373C61A6CAE6600ED6815 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B983D1C6FE0B7D620024F02 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 42E321DB484764125300D3AF /* Pods-JasonBlog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jian haung (A7U5T8PS6T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JasonBlog/Supporting Files/JasonBlog-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JasonBlog/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -966,9 +1098,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JasonBlog/Class/Components/library",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.panli.panlimobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.jasonblog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = com.panlimobile.debug;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -977,12 +1109,14 @@
 		};
 		962373C71A6CAE6600ED6815 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E8F383B81BAD418188EECEE /* Pods.release.xcconfig */;
+			baseConfigurationReference = 3C70AB15CEA21C846C252D76 /* Pods-JasonBlog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Panli Shanghai E-Commerce Co., Ltd. (3943ARX7RN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JasonBlog/Supporting Files/JasonBlog-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JasonBlog/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -991,8 +1125,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JasonBlog/Class/Components/library",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.panli.panlimobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.jasonblog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

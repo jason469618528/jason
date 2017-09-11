@@ -8,12 +8,14 @@
 
 #import "CustomerNavgaionController.h"
 #import "HomeViewController.h"
+#import "HomeDetailViewController.h"
 
 @interface CustomerNavgaionController ()<UIGestureRecognizerDelegate>
 
 @end
 
 @implementation CustomerNavgaionController
+
 
 
 - (void)viewDidLoad {
@@ -101,4 +103,22 @@
     }
     return YES;
 }
+
+- (BOOL)shouldAutorotate
+{
+    return self.topViewController.shouldAutorotate;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return self.topViewController.supportedInterfaceOrientations;  //支持横向
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    //    return  UIInterfaceOrientationPortrait;
+    return self.topViewController.interfaceOrientation;
+}
+
+
 @end

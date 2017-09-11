@@ -8,6 +8,7 @@
 
 #import "HomeDetailViewController.h"
 #import "CartHomeViewController.h"
+#import "LazyScrollViewController.h"
 
 @interface HomeDetailViewController ()
 
@@ -41,6 +42,8 @@
     UIBarButtonItem *leftBackItem2 = self.navigationController.navigationItem.leftBarButtonItem;
     UIBarButtonItem *backItem = self.navigationItem.backBarButtonItem;
 
+    self.navigationController.navigationBar.tintColor = [UIColor greenColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor greenColor];
     
     NSString *str_expirationtime = @"2015-06-30";
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -57,6 +60,30 @@
     [btn_ToolClick addTarget:self action:@selector(ToolClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn_ToolClick];
 }
+
+//在想旋转的屏幕
+
+//设置为允许旋转
+
+
+
+//设置为允许旋转
+- (BOOL) shouldAutorotate {
+    return NO;
+}
+
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;  //支持横向
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    //    return  UIInterfaceOrientationPortrait;
+    return UIInterfaceOrientationPortrait;
+}
+
 
 - (void)ToolClick {
 //    UIPageControl *pageControl = [[UIPageControl alloc] init];
@@ -77,14 +104,39 @@
 //        [[UIApplication sharedApplication] openURL:url];
 //    }
     
-    CartHomeViewController *detailVC = [[CartHomeViewController alloc] init];
-    detailVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:detailVC animated:YES];
+//    CartHomeViewController *detailVC = [[CartHomeViewController alloc] init];
+//    detailVC.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:detailVC animated:YES];
+//    
+//    UIBarButtonItem *leftBackItem = self.navigationItem.leftBarButtonItem;
+//    UIBarButtonItem *leftBackItem2 = self.navigationController.navigationItem.leftBarButtonItem;
+//    UIBarButtonItem *backItem = self.navigationItem.backBarButtonItem;
+//    UIBarButtonItem *backItem2 = self.navigationController.navigationBar.backItem.backBarButtonItem;
     
-    UIBarButtonItem *leftBackItem = self.navigationItem.leftBarButtonItem;
-    UIBarButtonItem *leftBackItem2 = self.navigationController.navigationItem.leftBarButtonItem;
-    UIBarButtonItem *backItem = self.navigationItem.backBarButtonItem;
-    UIBarButtonItem *backItem2 = self.navigationController.navigationBar.backItem.backBarButtonItem;
+//    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+//    [self setNeedsStatusBarAppearanceUpdate];
+//    [self easyPushWithClass:[LazyScrollViewController class]];
+    NSLog(@"sadfasdfsdadadsaf");
+    NSLog(@"sadfasdfsdadadsaf");
+    NSLog(@"sadfasdfsdadadsaf");
+    NSLog(@"sadfasdfsdadadsaf");
+    NSLog(@"sadfasdfsdadadsaf");
+    NSLog(@"sadfasdfsdadadsaf");
+    NSLog(@"sadfasdfsdadadsaf");
+    NSLog(@"sadfasdfsdadadsaf");
+
+    [self redirectSTD:STDOUT_FILENO];
+    
+    [self redirectSTD:STDERR_FILENO];
+    NSLog(@"sadfasdfsdadadsaf1111");
+    NSLog(@"sadfasdfsdadadsaf1111");
+    NSLog(@"sadfasdfsdadadsaf1111");
+    NSLog(@"sadfasdfsdadadsaf1111");
+    NSLog(@"sadfasdfsdadadsaf1111");
+    NSLog(@"sadfasdfsdadadsaf1111");
+    NSLog(@"sadfasdfsdadadsaf1111");
+    NSLog(@"sadfasdfsdadadsaf1111");
+
 }
 
 - (void)testBlock:(void(^)(id result))AAA {
@@ -101,4 +153,26 @@
 }
 
 
+- (void)redirectNotificationHandle:(NSNotification *)nf{ // 通知方法
+    NSData *data = [[nf userInfo] objectForKey:NSFileHandleNotificationDataItem];
+    NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//    self.logTextView.text = [NSString stringWithFormat:@"%@\n\n%@",self.logTextView.text, str];// logTextView 就是要将日志输出的视图（UITextView）
+//    NSRange range;
+//    range.location = [self.logTextView.text length] - 1;
+//    range.length = 0;
+//    [self.logTextView scrollRangeToVisible:range];
+    [[nf object] readInBackgroundAndNotify];
+}
+
+- (void)redirectSTD:(int )fd{
+    NSPipe * pipe = [NSPipe pipe] ;// 初始化一个NSPipe 对象
+    NSFileHandle *pipeReadHandle = [pipe fileHandleForReading] ;
+    dup2([[pipe fileHandleForWriting] fileDescriptor], fd) ;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(redirectNotificationHandle:)
+                                                 name:NSFileHandleReadCompletionNotification
+                                               object:pipeReadHandle]; // 注册通知
+    [pipeReadHandle readInBackgroundAndNotify];
+}
 @end
