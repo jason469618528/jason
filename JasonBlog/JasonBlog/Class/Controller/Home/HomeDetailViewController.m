@@ -115,7 +115,7 @@
     
 //    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
 //    [self setNeedsStatusBarAppearanceUpdate];
-//    [self easyPushWithClass:[LazyScrollViewController class]];
+    [self easyPushWithClass:[LazyScrollViewController class]];
     NSLog(@"sadfasdfsdadadsaf");
     NSLog(@"sadfasdfsdadadsaf");
     NSLog(@"sadfasdfsdadadsaf");

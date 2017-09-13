@@ -16,6 +16,9 @@
 #import "RSMaskedLabel.h"
 #import <AFNetworking.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "DTCoretextViewController.h"
+#import "DemoTextViewController.h"
+#import "DTCoreDemoViewController.h"
 
 @interface OtherHomeViewController (){
     dispatch_source_t _timer;
@@ -213,9 +216,26 @@
 //    _moviePlayer.view.frame = CGRectMake(0.0f, 0.0f, MainScreenFrame_Width, 200);
 //    [self.view addSubview:_moviePlayer.view];
     
-    ToolHomeViewController *toolHome = [[ToolHomeViewController alloc] init];
+//    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Snippets" ofType:@"plist"];
+//    NSArray *snippets = [[NSArray alloc] initWithContentsOfFile:plistPath];
+//    
+//    NSDictionary *rowSnippet = [snippets objectAtIndex:6];
+//
+//    
+//    DemoTextViewController *toolHome = [[DemoTextViewController alloc] init];
+//    toolHome.fileName = [rowSnippet objectForKey:@"File"];
+//    toolHome.baseURL = [NSURL URLWithString:[rowSnippet  objectForKey:@"BaseURL"]];
+//    toolHome.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:toolHome animated:YES];
+    
+//    DTCoretextViewController *toolHome = [[DTCoretextViewController alloc] init];
+//    toolHome.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:toolHome animated:YES];
+    
+    DTCoreDemoViewController *toolHome = [[DTCoreDemoViewController alloc] init];
     toolHome.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:toolHome animated:YES];
+    
 //    [self.toolVC showInView:self.navigationController.view];
 //    btn.transform = CGAffineTransformMakeRotation((45.0f * M_PI) / 180.0f);
     

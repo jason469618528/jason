@@ -24,6 +24,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DTCoreText.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DTFoundation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JBASIHTTPRequest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,22 +82,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0B51EC08A865B06A70D28AEFBEAF379D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>11AC6ABC5DCDFAEBD976C0A9E90928CF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1525E0CBB46D165692311F15AA7F4568</key>
+		<key>00F448E98F0F90EA648BF1A01482C35A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>1C90A088B601AFF45ADA5199F67C2EBE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EC596711FAED14BBDEC9F3779C704D5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4BA8C1BD6DCEF9A931A3C18088DEB239</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,11 +117,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FBAE555C036EF40AE1071039F26C746</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>A3C64AD8A1ADBBFE3D1770E1A8AF1011</key>
 		<dict>
 			<key>primary</key>
@@ -122,12 +127,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B51CDCD1D606C895DBCBA3BF406C4298</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B8B0CABE14A7508DF19CF41570E9F2F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C95C45974D77E3E41FE9D2A80E093179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D46D02DB9BB58D61C665FEF682C10F06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D74A65F4A4DC5A17667C33081858ABF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
