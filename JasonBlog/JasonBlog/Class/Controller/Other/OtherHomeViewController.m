@@ -19,6 +19,7 @@
 #import "DTCoretextViewController.h"
 #import "DemoTextViewController.h"
 #import "DTCoreDemoViewController.h"
+#import "JasonAAAViewController.h"
 
 @interface OtherHomeViewController (){
     dispatch_source_t _timer;
@@ -58,11 +59,21 @@
     self.navigationController.navigationBar.tintColor = [UIColor redColor];
     self.navigationController.navigationBar.barTintColor = [UIColor redColor];
     
-    UIButton *btn_ToolClick = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn_ToolClick.frame = CGRectMake(100.0f, 100.0f, 100.0f, 100.0f);
-    [btn_ToolClick setImage:[UIImage imageNamed:@"icon_home_open"] forState:UIControlStateNormal];
-    [btn_ToolClick addTarget:self action:@selector(toolClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn_ToolClick];
+    
+    NSArray *titleArr = @[@"DCDemo",@"selfDemo",@"otherDemo"];
+    
+    for (NSInteger i = 0; i < titleArr.count; ++i) {
+        UIButton *btn_ToolClick = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn_ToolClick.frame = CGRectMake(0.0f, i * 100.0f + 10.f, MainScreenFrame_Width, 100.0f);
+        btn_ToolClick.tag = 1000 + i;
+        btn_ToolClick.backgroundColor = J_COLOR_GRAY;
+        [btn_ToolClick setTitle:[titleArr objectAtIndex:i] forState:UIControlStateNormal];
+        [btn_ToolClick addTarget:self action:@selector(toolClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn_ToolClick];
+        
+        UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(cellLongPress:)];
+        [btn_ToolClick addGestureRecognizer:gesture];
+    }
     
 //    NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:@"哈哈123456"];
 //    // 设置“哈哈”为蓝色
@@ -86,14 +97,14 @@
 //    
 //    [string appendAttributedString:[[NSAttributedString alloc] initWithString:@"789"]];
     
-    NSMutableAttributedString *attributedString = [NSMutableAttributedString nb_attributedStringWithText:@"i云保" font:[UIFont systemFontOfSize:30] color:[UIColor redColor]];
-    [attributedString appendString:@"上海" font:[UIFont systemFontOfSize:14] color:[UIColor blueColor]];
-    [attributedString appendAttributedString:[NSAttributedString nb_attributedStringWithImageName:@"AppIcon60x60" bounds:CGRectMake(0, 0, 160, 160)]];
-    [attributedString appendString:@"网络" font:[UIFont systemFontOfSize:14] color:[UIColor blackColor]];
-    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0.0f, 200.0f, MainScreenFrame_Width, 200)];
-//    textView.editable = NO;
-    textView.attributedText = attributedString;
-    [self.view addSubview:textView];
+//    NSMutableAttributedString *attributedString = [NSMutableAttributedString nb_attributedStringWithText:@"i云保" font:[UIFont systemFontOfSize:30] color:[UIColor redColor]];
+//    [attributedString appendString:@"上海" font:[UIFont systemFontOfSize:14] color:[UIColor blueColor]];
+//    [attributedString appendAttributedString:[NSAttributedString nb_attributedStringWithImageName:@"AppIcon60x60" bounds:CGRectMake(0, 0, 160, 160)]];
+//    [attributedString appendString:@"网络" font:[UIFont systemFontOfSize:14] color:[UIColor blackColor]];
+//    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0.0f, 200.0f, MainScreenFrame_Width, 200)];
+////    textView.editable = NO;
+//    textView.attributedText = attributedString;
+//    [self.view addSubview:textView];
     
     bool res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
     bool res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
@@ -156,10 +167,10 @@
 //        [self loadWait];
 //    }];
     
-    RSMaskedLabel *maskLabel = [[RSMaskedLabel alloc] initWithFrame:CGRectMake(0.0f, 20.0f, MainScreenFrame_Width, 50.0f)];
-    maskLabel.text = NSLocalizedString(@"home_back",nil);
-    maskLabel.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:maskLabel];
+//    RSMaskedLabel *maskLabel = [[RSMaskedLabel alloc] initWithFrame:CGRectMake(0.0f, 20.0f, MainScreenFrame_Width, 50.0f)];
+//    maskLabel.text = NSLocalizedString(@"home_back",nil);
+//    maskLabel.backgroundColor = [UIColor lightGrayColor];
+//    [self.view addSubview:maskLabel];
     
 
     
@@ -216,26 +227,33 @@
 //    _moviePlayer.view.frame = CGRectMake(0.0f, 0.0f, MainScreenFrame_Width, 200);
 //    [self.view addSubview:_moviePlayer.view];
     
-//    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Snippets" ofType:@"plist"];
-//    NSArray *snippets = [[NSArray alloc] initWithContentsOfFile:plistPath];
-//    
-//    NSDictionary *rowSnippet = [snippets objectAtIndex:6];
-//
-//    
-//    DemoTextViewController *toolHome = [[DemoTextViewController alloc] init];
-//    toolHome.fileName = [rowSnippet objectForKey:@"File"];
-//    toolHome.baseURL = [NSURL URLWithString:[rowSnippet  objectForKey:@"BaseURL"]];
-//    toolHome.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:toolHome animated:YES];
-    
-//    DTCoretextViewController *toolHome = [[DTCoretextViewController alloc] init];
-//    toolHome.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:toolHome animated:YES];
-    
-    DTCoreDemoViewController *toolHome = [[DTCoreDemoViewController alloc] init];
-    toolHome.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:toolHome animated:YES];
-    
+    if(btn.tag == 1000) {
+//        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Snippets" ofType:@"plist"];
+//        NSArray *snippets = [[NSArray alloc] initWithContentsOfFile:plistPath];
+////
+//        NSDictionary *rowSnippet = [snippets objectAtIndex:6];
+//        
+//        
+//        DemoTextViewController *toolHome = [[DemoTextViewController alloc] init];
+//        toolHome.fileName = [rowSnippet objectForKey:@"File"];
+//        toolHome.baseURL = [NSURL URLWithString:[rowSnippet  objectForKey:@"BaseURL"]];
+//        toolHome.hidesBottomBarWhenPushed = YES;
+//        [self.navigationController pushViewController:toolHome animated:YES];
+        
+        DTCoretextViewController *toolHome = [[DTCoretextViewController alloc] init];
+        toolHome.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:toolHome animated:YES];
+    } else if(btn.tag == 1001) {
+        DTCoreDemoViewController *toolHome = [[DTCoreDemoViewController alloc] init];
+        toolHome.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:toolHome animated:YES];
+    } else {
+        JasonAAAViewController *toolHome = [[JasonAAAViewController alloc] init];
+        toolHome.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:toolHome animated:YES];
+    }
+
+////
 //    [self.toolVC showInView:self.navigationController.view];
 //    btn.transform = CGAffineTransformMakeRotation((45.0f * M_PI) / 180.0f);
     
@@ -283,6 +301,67 @@
         _toolVC = [[ToolHomeViewController alloc] init];
     }
     return _toolVC;
+}
+
+- (void)cellLongPress:(UILongPressGestureRecognizer *)gesture {
+    
+    // 因为一个手势要经历UIGestureRecognizerStateBegan、UIGestureRecognizerStateChanged、UIGestureRecognizerStateEnded等多个状态，所以这个方法会执行多次。
+    
+    // 一般只需要在began的时候执行动作，所以需要添加这个if判断
+    
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        
+        NSLog(@"触发了长按手势");
+        
+        // 创建弹出的menu
+        
+        UIMenuController *menuController = [UIMenuController sharedMenuController];
+        
+        // 弹出的menu都有哪几个item
+        
+        UIMenuItem *item = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(copyAction)];
+        
+        UIMenuItem *item1 = [[UIMenuItem alloc] initWithTitle:@"自定义" action:@selector(selAction)];
+        
+        // 设置item
+        
+        menuController.menuItems = @[item,item1];
+        
+        [menuController setTargetRect:gesture.view.frame inView:gesture.view.superview];
+        
+        // 设置menu可见，因为默认是不可见的
+        
+        [menuController setMenuVisible:YES animated:YES];
+        
+        [UIMenuController sharedMenuController].menuItems = nil;
+        
+        // 获取需要获取的文本
+        
+//        CGPoint point = [gesture locationInView:self.myTable];
+//        
+//        NSIndexPath *indexPath = [self.myTable indexPathForRowAtPoint:point];
+//        
+//        self.needCopyStr = self.dataSource[indexPath.row];
+//        
+//        NSLog(@"需要复制的文本：%@",self.needCopyStr);
+        
+    }
+}
+- (BOOL)canBecomeFirstResponder {
+    
+    return YES;
+    
+}
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+    
+    if (action == @selector(copyAction)) {
+        
+        return YES;
+        
+    }
+    
+    return NO;
+    
 }
 
 @end

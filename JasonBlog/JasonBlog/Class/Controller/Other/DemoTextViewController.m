@@ -705,6 +705,10 @@
 		
 		NSString *word = [plainText substringWithRange:wordRange];
 		NSLog(@"%lu: '%@' word: '%@'", (unsigned long)tappedIndex, tappedChar, word);
+        UIMenuController * menu = [UIMenuController sharedMenuController];
+        [menu setTargetRect:gesture.view.frame inView:gesture.view.superview];
+        [menu setMenuVisible: YES animated: YES];
+        
 	}
 }
 

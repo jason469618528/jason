@@ -153,6 +153,7 @@
 		E26BA1F11F68CB9D00E56E33 /* XB Niloofar.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1CF1F68CB9D00E56E33 /* XB Niloofar.ttf */; };
 		E26BA1F21F68CB9D00E56E33 /* XB NiloofarBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1D01F68CB9D00E56E33 /* XB NiloofarBd.ttf */; };
 		E26BA1F61F691D1A00E56E33 /* DTCoreDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA1F51F691D1A00E56E33 /* DTCoreDemoViewController.m */; };
+		E26BA1FF1F693DE800E56E33 /* JasonAAAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA1FE1F693DE800E56E33 /* JasonAAAViewController.m */; };
 		E277A1BC1F46C0D90023AC22 /* IYBSlideLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E277A1BB1F46C0D90023AC22 /* IYBSlideLabel.m */; };
 		E278979D1F569B5600E1BC3D /* LazyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E278979C1F569B5600E1BC3D /* LazyScrollViewController.m */; };
 		E27897A01F569BE500E1BC3D /* UIViewController+CoolUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E278979F1F569BE500E1BC3D /* UIViewController+CoolUIKit.m */; };
@@ -356,6 +357,8 @@
 		E26BA1D01F68CB9D00E56E33 /* XB NiloofarBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "XB NiloofarBd.ttf"; sourceTree = "<group>"; };
 		E26BA1F41F691D1A00E56E33 /* DTCoreDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCoreDemoViewController.h; sourceTree = "<group>"; };
 		E26BA1F51F691D1A00E56E33 /* DTCoreDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCoreDemoViewController.m; sourceTree = "<group>"; };
+		E26BA1FD1F693DE800E56E33 /* JasonAAAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JasonAAAViewController.h; sourceTree = "<group>"; };
+		E26BA1FE1F693DE800E56E33 /* JasonAAAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JasonAAAViewController.m; sourceTree = "<group>"; };
 		E277A1BA1F46C0D90023AC22 /* IYBSlideLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYBSlideLabel.h; sourceTree = "<group>"; };
 		E277A1BB1F46C0D90023AC22 /* IYBSlideLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYBSlideLabel.m; sourceTree = "<group>"; };
 		E278979B1F569B5600E1BC3D /* LazyScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyScrollViewController.h; sourceTree = "<group>"; };
@@ -769,6 +772,8 @@
 				E2E3695D1F67F41D00F6F2C2 /* DTCoretextViewController.m */,
 				E26BA1F41F691D1A00E56E33 /* DTCoreDemoViewController.h */,
 				E26BA1F51F691D1A00E56E33 /* DTCoreDemoViewController.m */,
+				E26BA1FD1F693DE800E56E33 /* JasonAAAViewController.h */,
+				E26BA1FE1F693DE800E56E33 /* JasonAAAViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1143,6 +1148,7 @@
 				E2E3695E1F67F41D00F6F2C2 /* DTCoretextViewController.m in Sources */,
 				96F775271AF7188E000C5219 /* MyHomeViewController.m in Sources */,
 				96AD2B511AFB6C08006E1B94 /* HomeDetailViewController.m in Sources */,
+				E26BA1FF1F693DE800E56E33 /* JasonAAAViewController.m in Sources */,
 				96B1DAA61C4CD43C0082A28D /* CustomButton.m in Sources */,
 				96F437251B05DB30000D4686 /* SearchDetailViewController.m in Sources */,
 				E277A1BC1F46C0D90023AC22 /* IYBSlideLabel.m in Sources */,
