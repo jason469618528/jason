@@ -27,5 +27,4 @@
 
 - (void)getDeviceInfo:(CDVInvokedUrlCommand*)command;
 
-- (void)testClick:(CDVInvokedUrlCommand*)command;
 @end

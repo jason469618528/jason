@@ -10,6 +10,8 @@
 #import "CustomerTabbarController.h"
 #import "SearchDetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "RootTestViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -25,30 +27,28 @@ NSString *BraintreeDemoAppDelegatePaymentsURLScheme = @"com.panli.panlimobile.Ja
     self.window.backgroundColor = UIColor.whiteColor;
     [self.window makeKeyAndVisible];
 //    //去除navbar 黑线
-////    [[UINavigationBar appearance] setBackgroundColor:COLOR_CLEAR];
-////    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
-////    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init]
-////                                      forBarPosition:UIBarPositionAny
-////                                          barMetrics:UIBarMetricsDefault];
+//    [[UINavigationBar appearance] setBackgroundColor:[UIColor redColor]];
+//    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+//    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init]
+//                                      forBarPosition:UIBarPositionAny
+//                                          barMetrics:UIBarMetricsDefault];
+//
+//    [[UITabBar appearance] setBarStyle:UIBarStyleBlack];
+//
 //    
-////    [[UITabBar appearance] setBarStyle:UIBarStyleBlack];
-//    
-//    
-////    UIImage *backButtonImage = [[UIImage imageNamed:@"AppIcon57x57"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-////    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-////    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
+//    UIImage *backButtonImage = [[UIImage imageNamed:@"AppIcon57x57"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
     
     //设置tabbar 文字颜色
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor redColor],NSForegroundColorAttributeName, nil]forState:UIControlStateSelected];
     
+    
+    CustomerTabbarController *rootTabbar = [[CustomerTabbarController alloc] init];
+    self.window.rootViewController = rootTabbar;
+    
+    [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
 
-    CustomerTabbarController *tabVC = [[CustomerTabbarController alloc] init];
-    self.window.rootViewController = tabVC;
-    
-//    SearchDetailViewController *rootVC = [[SearchDetailViewController alloc] init];
-//    self.window.rootViewController = rootVC;
-    
-    
     return YES;
 }
 

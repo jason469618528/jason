@@ -114,14 +114,14 @@ typedef void(^blockAAAA)();
 //    toolHome.hidesBottomBarWhenPushed = YES;
 //    [self.navigationController pushViewController:toolHome animated:YES];
     
-//    CABasicAnimation *animation = [CABasicAnimation animation];
-//    animation.keyPath = @"transform.rotation.z";
-//    animation.duration = 3.f;
-//    animation.fromValue = @(0);
-//    animation.toValue = @(2*M_PI);
-//    animation.repeatCount = INFINITY;
-//    animation.removedOnCompletion = NO;
-//    [btn_nav_back.layer addAnimation:animation forKey:nil];
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"transform.rotation.z";
+    animation.duration = 3.f;
+    animation.fromValue = @(0);
+    animation.toValue = @(2*M_PI);
+    animation.repeatCount = INFINITY;
+    animation.removedOnCompletion = NO;
+    [btn_nav_back.layer addAnimation:animation forKey:nil];
     
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
@@ -134,23 +134,23 @@ typedef void(^blockAAAA)();
 //    [view.layer addAnimation:animation forKey:nil];
     
     
-    CABasicAnimation *animation =[CABasicAnimation animationWithKeyPath:@"opacity"];
-    animation.fromValue = [NSNumber numberWithFloat:1.0f];
-    animation.toValue = [NSNumber numberWithFloat:0.0f];
-    animation.autoreverses = YES;    //回退动画（动画可逆，即循环）
-    animation.duration = 1.0f;
-    animation.repeatCount = MAXFLOAT;
-    animation.removedOnCompletion = NO;
-    animation.fillMode = kCAFillModeForwards;//removedOnCompletion,fillMode配合使用保持动画完成效果
-    animation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
-    [view.layer addAnimation:animation forKey:@"aAlpha"];
-    
-    [self testBolck:^int(id test) {
-        NSLog(@"%@",test);
-        return 30;
-    }];
-    
-    [UIView commitAnimations];
+//    CABasicAnimation *animation =[CABasicAnimation animationWithKeyPath:@"opacity"];
+//    animation.fromValue = [NSNumber numberWithFloat:1.0f];
+//    animation.toValue = [NSNumber numberWithFloat:0.0f];
+//    animation.autoreverses = YES;    //回退动画（动画可逆，即循环）
+//    animation.duration = 1.0f;
+//    animation.repeatCount = MAXFLOAT;
+//    animation.removedOnCompletion = NO;
+//    animation.fillMode = kCAFillModeForwards;//removedOnCompletion,fillMode配合使用保持动画完成效果
+//    animation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+//    [view.layer addAnimation:animation forKey:@"aAlpha"];
+//    
+//    [self testBolck:^int(id test) {
+//        NSLog(@"%@",test);
+//        return 30;
+//    }];
+//    
+//    [UIView commitAnimations];
     
     
     

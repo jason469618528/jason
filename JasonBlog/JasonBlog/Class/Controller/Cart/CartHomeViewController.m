@@ -11,9 +11,10 @@
 #import "PanliMoneyViewController.h"
 @interface CartHomeViewController ()
 {
-    dispatch_source_t timer;
+    dispatch_source_t timer;  /**< sdfasfd*/
     CategoryView *categoryView;
 }
+@property (strong, nonatomic) UIButton *titleButton;
 @end
 
 @implementation CartHomeViewController
@@ -64,7 +65,20 @@
 //        [weSelf calTime];
 //    });
 //    dispatch_resume(timer);
+    
+    UIView *headerView = [[UIView alloc] init];//WithFrame:CGRectMake(0.0f, -NSIntegerMax, MainScreenFrame_Width, NSIntegerMax)];
+    headerView.backgroundColor = [UIColor colorWithRed:0 green:175.0f/255.0f blue:249.0f/255.0f alpha:1];
+    [self.tab_Main addSubview:headerView];
+    [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.width.and.height.equalTo(self.tab_Main);
+        make.bottom.equalTo(self.tab_Main.mas_top);
+    }];
+    
+    UIImageView *headerImage = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, MainScreenFrame_Width, 185.0f)];
+    headerImage.image = [UIImage imageNamed:@"customer_info_hd"];
+    self.tab_Main.tableHeaderView = headerImage;
 
+    
 }
 
 - (void)updateTest

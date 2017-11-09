@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "RequestManager.h"
-@interface HomeViewController : UIViewController
+@interface HomeViewController : BaseViewController
 
 @end

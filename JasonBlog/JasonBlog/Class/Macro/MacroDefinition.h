@@ -27,8 +27,8 @@
 #define UI_KAYBOARD_HEIGHT          216.0f
 
 #define MainScreenFrame         [[UIScreen mainScreen] bounds]
-#define MainScreenFrame_Width   MainScreenFrame.size.width
-#define MainScreenFrame_Height  MainScreenFrame.size.height-20
+#define MainScreenFrame_Width   (MainScreenFrame.size.width)
+#define MainScreenFrame_Height  (MainScreenFrame.size.height-20)
 
 /***************常用字体**************/
 #define DEFAULT_FONT(s) [UIFont fontWithName:@"Arial" size:s]

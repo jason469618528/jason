@@ -25,8 +25,26 @@ PODS:
     - Cordova (>= 3.0.0)
   - CordovaPlugin-device (0.2.11):
     - Cordova (>= 3.0.0)
+  - DTCoreText (1.6.21):
+    - DTCoreText/Core (= 1.6.21)
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTCoreText/Core (1.6.21):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.12)
+  - DTFoundation/DTAnimatedGIF (1.7.12)
+  - DTFoundation/DTHTMLParser (1.7.12):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.12):
+    - DTFoundation/Core
   - JBASIHTTPRequest (2.1):
     - Reachability (~> 3.2)
+  - LazyScroll (0.0.2)
   - Masonry (0.6.4)
   - MJRefresh (1.4.7)
   - Reachability (3.2)
@@ -41,30 +59,40 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - WebViewJavascriptBridge (5.2.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.3)
   - Cordova (~> 3.8.0)
   - CordovaPlugin-battery-status (~> 0.2.10)
   - CordovaPlugin-device (~> 0.2.11)
+  - DTCoreText (~> 1.6.21)
   - JBASIHTTPRequest (~> 2.1)
+  - LazyScroll
   - Masonry (~> 0.6.1)
   - MJRefresh (~> 1.4.6)
   - ReactiveCocoa
   - SBJson (~> 4.0.1)
   - SDWebImage (~> 3.7.2)
+  - WebViewJavascriptBridge (~> 5.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Cordova: 41554048698d50e70387ca2ab5bbdd1286fd0e39
   CordovaPlugin-battery-status: 3a70da87b7bf56e222b955c110e964c7e37b12e5
   CordovaPlugin-device: 2c0522f5f73c709ba65e68409b1d04624c626cb9
+  DTCoreText: e5d688cffc9f6a61eddd1a4f94e2046851230de3
+  DTFoundation: 26a164ef510877387906fb92bff524a792db4bf8
   JBASIHTTPRequest: bcb52c0c249fe21a236e16c2747d663d3d5d0007
+  LazyScroll: 614022689b8e3b93c7bbe268c1a47b76e4265941
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MJRefresh: 6b140993028fa30f1fcb88e82925a7c7911415cf
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
-  SBJson: c18691cc18375b14664ff0fec841f8c4faef1934
+  SBJson: 16404e557ff6346b506e9e12f2d83e6782f37f6f
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  WebViewJavascriptBridge: a00b2d61252aec5207e3263d46fd0fd3cfaf7895
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: ea66dbdfa6c7ce4eee05f6f39fe87bf5ced4f9f8
+
+COCOAPODS: 1.3.0

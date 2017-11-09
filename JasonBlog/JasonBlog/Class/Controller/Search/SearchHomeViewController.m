@@ -11,10 +11,12 @@
 #import "SearchDetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "IYBSlideLabel.h"
+
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-@interface SearchHomeViewController ()
+@interface SearchHomeViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 {
-    UILabel *lab_Title;
+    IYBSlideLabel *lab_Title;
 }
 @end
 
@@ -105,21 +107,47 @@
 //        make.edges.equalTo(left_View).with.insets(UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f));
 //    }];
     
-    
-    
-    lab_Title = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 20.0f, 60.0f, 15.0f)];
-    lab_Title.backgroundColor = J_COLOR_CLEAR;
-    [self.view addSubview:lab_Title];
-    
-    
-    //买家评价
-    UIButton *btn_ProductEvaluate = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn_ProductEvaluate.frame = CGRectMake(0.0f, 50.0f, MainScreenFrame_Width, 44.5f);
-    btn_ProductEvaluate.backgroundColor = J_COLOR_RED;
-    [btn_ProductEvaluate addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn_ProductEvaluate];
+//    UIPickerView *pickView = [[UIPickerView alloc]initWithFrame:CGRectMake(10.0f, 200.0f, MainScreenFrame_Width, 150)];
+//   pickView.showsSelectionIndicator=NO;
+//   pickView.dataSource = self;
+//   pickView.delegate = self;
+//   [self.view addSubview:pickView];
+//    
+//    lab_Title = [[IYBSlideLabel alloc] initWithFrame:CGRectMake(10.0f, 20.0f, 60.0f, 15.0f)];
+//    lab_Title.backgroundColor = J_COLOR_CLEAR;
+//    [self.view addSubview:lab_Title];
+//    
+//    
+//    //买家评价
+//    UIButton *btn_ProductEvaluate = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn_ProductEvaluate.frame = CGRectMake(0.0f, 50.0f, MainScreenFrame_Width, 44.5f);
+//    btn_ProductEvaluate.backgroundColor = J_COLOR_RED;
+//    [btn_ProductEvaluate addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:btn_ProductEvaluate];
 
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(20,100,200,100)];
+    [view setBackgroundColor:[UIColor grayColor]];
+    [self.view addSubview:view];
     
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(20,20,50,50)];
+    [button setBackgroundColor:[UIColor whiteColor]];
+    [view addSubview:button];
+    //距离父视图右边距不变
+    button.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+    //距离父视图的左边距不变
+//    button.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
+    //距离父视图的左右边距不变，button大小会调整
+//    button.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//    view.frame = CGRectMake(20,100,320,100);
+    
+    //距离父视图的下边距不变
+    //button.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+    //距离父视图的上边距不变
+    //button.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
+    //距离父视图的上下边距不变,button大小会调整
+//    button.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+//    view.frame = CGRectMake(20,100,200,200);
+//    
     //添加放大效果
 //    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
 //    animation.duration = 0.5;
@@ -133,6 +161,26 @@
 //    [selectedButton.layer addAnimation:animation forKey:nil];
 }
 
+
+//返回列数
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    
+    return 2;
+}
+
+//返回每一列中的行数
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    
+    return 5;
+    
+}
+
+//返回每个item中的title
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+   return @"title";
+}
+
+
 - (void)btnClick
 {
     //添加放大效果
@@ -145,12 +193,20 @@
 //    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
 //    animation.values = values;
 //    [lab_Title.layer addAnimation:animation forKey:nil];
-//    lab_Title.text = @"123456";
+    lab_Title.slideText = @"12";
     
+    //添加移动效果
+    CATransition *transition = [CATransition animation];
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.duration = 0.5f;
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromTop;
+    [lab_Title.layer addAnimation:transition forKey:nil];
+
     
-    SearchDetailViewController *detailView = [[SearchDetailViewController alloc] init];
-    detailView.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:detailView animated:YES];
+//    SearchDetailViewController *detailView = [[SearchDetailViewController alloc] init];
+//    detailView.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:detailView animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -159,7 +215,7 @@
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     [self becomeFirstResponder];
 //    [self configNowPlayingInfoCenter];
-    lab_Title.text = @"12345";
+    [lab_Title setText:@"567" animated:NO];
 
 }
 
@@ -231,22 +287,22 @@
 
 - (IBAction)btnNameClick:(id)sender
 {
-    //进入后台
-    NSLog(@"%s",__FUNCTION__);
-    NSString *musicPath = [[NSBundle mainBundle] pathForResource:@"Inmysong" ofType:@"mp3"];
-    NSURL *url = [[NSURL alloc] initFileURLWithPath:musicPath];
-    
-    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    [self.player prepareToPlay];
-    [self.player setVolume:1];
-    self.player.numberOfLoops = -1; //设置音乐播放次数  -1为一直循环
-    if(self.player)
-    {
-        [self.player play]; //播放
-    }
-    AVAudioSession *session = [AVAudioSession sharedInstance];
-    [session setActive:YES error:nil];
-    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+//    //进入后台
+//    NSLog(@"%s",__FUNCTION__);
+//    NSString *musicPath = [[NSBundle mainBundle] pathForResource:@"Inmysong" ofType:@"mp3"];
+//    NSURL *url = [[NSURL alloc] initFileURLWithPath:musicPath];
+//    
+//    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+//    [self.player prepareToPlay];
+//    [self.player setVolume:1];
+//    self.player.numberOfLoops = -1; //设置音乐播放次数  -1为一直循环
+//    if(self.player)
+//    {
+//        [self.player play]; //播放
+//    }
+//    AVAudioSession *session = [AVAudioSession sharedInstance];
+//    [session setActive:YES error:nil];
+//    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
 
 //    LoginViewController *loginVC = [[LoginViewController alloc] init];
 //    loginVC.hidesBottomBarWhenPushed = YES;

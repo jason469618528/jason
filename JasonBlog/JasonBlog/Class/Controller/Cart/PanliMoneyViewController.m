@@ -57,8 +57,6 @@
     [tab_MainView reloadData];
     //init titleView
     [self getNavgationTitleView];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -164,6 +162,8 @@
     int indexCount = _mainScrollView.contentOffset.x/MainScreenFrame_Width;
     [self panliClick:indexCount];
 }
+
+
 - (IBAction)btn_ClearMessage:(id)sender
 {
     [_view_Bottom removeFromSuperview];
