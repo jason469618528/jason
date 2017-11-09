@@ -196,12 +196,12 @@
     lab_Title.slideText = @"12";
     
     //添加移动效果
-//    CATransition *transition = [CATransition animation];
-//    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//    transition.duration = 0.5f;
-//    transition.type = kCATransitionPush;
-//    transition.subtype = kCATransitionFromTop;
-//    [lab_Title.layer addAnimation:transition forKey:nil];
+    CATransition *transition = [CATransition animation];
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.duration = 0.5f;
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromTop;
+    [lab_Title.layer addAnimation:transition forKey:nil];
 
     
 //    SearchDetailViewController *detailView = [[SearchDetailViewController alloc] init];

@@ -116,6 +116,16 @@
 		E20E76631F396A6F00DC3BA7 /* FDDemoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E20E76621F396A6F00DC3BA7 /* FDDemoScrollView.m */; };
 		E20E766F1F39859600DC3BA7 /* NSAttributedString+NBUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E20E766C1F39859600DC3BA7 /* NSAttributedString+NBUIKit.m */; };
 		E20E76701F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E20E766E1F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.m */; };
+		E23B65E21F725B120092EF97 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23B65E11F725B120092EF97 /* WebKit.framework */; };
+		E23B65F41F727EDF0092EF97 /* echo.html in Resources */ = {isa = PBXBuildFile; fileRef = E23B65E91F727EDF0092EF97 /* echo.html */; };
+		E23B65F51F727EDF0092EF97 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = E23B65EA1F727EDF0092EF97 /* ExampleApp.html */; };
+		E23B65F61F727EDF0092EF97 /* ExampleUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B65EC1F727EDF0092EF97 /* ExampleUIWebViewController.m */; };
+		E23B65F71F727EDF0092EF97 /* ExampleWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B65EE1F727EDF0092EF97 /* ExampleWKWebViewController.m */; };
+		E23B65F81F727EDF0092EF97 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = E23B65EF1F727EDF0092EF97 /* index.html */; };
+		E23B65F91F727EDF0092EF97 /* JavascriptBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B65F11F727EDF0092EF97 /* JavascriptBridgeViewController.m */; };
+		E23B65FA1F727EDF0092EF97 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B65F31F727EDF0092EF97 /* WKWebViewController.m */; };
+		E23B65FC1F727F0E0092EF97 /* JSCallOC.html in Resources */ = {isa = PBXBuildFile; fileRef = E23B65FB1F727F0E0092EF97 /* JSCallOC.html */; };
+		E23B65FF1F727F460092EF97 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B65FE1F727F460092EF97 /* JavaScriptCoreViewController.m */; };
 		E26BA1AB1F68C85500E56E33 /* DemoTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA1AA1F68C85500E56E33 /* DemoTextViewController.m */; };
 		E26BA1AD1F68C95100E56E33 /* Snippets.plist in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1AC1F68C95100E56E33 /* Snippets.plist */; };
 		E26BA1D11F68CB9D00E56E33 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1AF1F68CB9D00E56E33 /* About.html */; };
@@ -318,6 +328,21 @@
 		E20E766C1F39859600DC3BA7 /* NSAttributedString+NBUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+NBUIKit.m"; sourceTree = "<group>"; };
 		E20E766D1F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+NBUIKit.h"; sourceTree = "<group>"; };
 		E20E766E1F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+NBUIKit.m"; sourceTree = "<group>"; };
+		E23B65E11F725B120092EF97 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E23B65E91F727EDF0092EF97 /* echo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = echo.html; sourceTree = "<group>"; };
+		E23B65EA1F727EDF0092EF97 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		E23B65EB1F727EDF0092EF97 /* ExampleUIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleUIWebViewController.h; sourceTree = "<group>"; };
+		E23B65EC1F727EDF0092EF97 /* ExampleUIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleUIWebViewController.m; sourceTree = "<group>"; };
+		E23B65ED1F727EDF0092EF97 /* ExampleWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleWKWebViewController.h; sourceTree = "<group>"; };
+		E23B65EE1F727EDF0092EF97 /* ExampleWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleWKWebViewController.m; sourceTree = "<group>"; };
+		E23B65EF1F727EDF0092EF97 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		E23B65F01F727EDF0092EF97 /* JavascriptBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavascriptBridgeViewController.h; sourceTree = "<group>"; };
+		E23B65F11F727EDF0092EF97 /* JavascriptBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavascriptBridgeViewController.m; sourceTree = "<group>"; };
+		E23B65F21F727EDF0092EF97 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		E23B65F31F727EDF0092EF97 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		E23B65FB1F727F0E0092EF97 /* JSCallOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCallOC.html; sourceTree = "<group>"; };
+		E23B65FD1F727F460092EF97 /* JavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreViewController.h; sourceTree = "<group>"; };
+		E23B65FE1F727F460092EF97 /* JavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreViewController.m; sourceTree = "<group>"; };
 		E26BA1A91F68C85500E56E33 /* DemoTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTextViewController.h; sourceTree = "<group>"; };
 		E26BA1AA1F68C85500E56E33 /* DemoTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTextViewController.m; sourceTree = "<group>"; };
 		E26BA1AC1F68C95100E56E33 /* Snippets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Snippets.plist; sourceTree = "<group>"; };
@@ -385,6 +410,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23B65E21F725B120092EF97 /* WebKit.framework in Frameworks */,
 				96412E621C47482A00527BB5 /* CoreMedia.framework in Frameworks */,
 				96412E601C47482200527BB5 /* MediaPlayer.framework in Frameworks */,
 				96412E5E1C47481800527BB5 /* AudioToolbox.framework in Frameworks */,
@@ -411,6 +437,7 @@
 		6ECAF7EF509E464E48863E89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E23B65E11F725B120092EF97 /* WebKit.framework */,
 				96412E611C47482A00527BB5 /* CoreMedia.framework */,
 				96412E5F1C47482200527BB5 /* MediaPlayer.framework */,
 				96412E5D1C47481800527BB5 /* AudioToolbox.framework */,
@@ -752,6 +779,7 @@
 		96F7758A1AF74052000C5219 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E23B65E81F727EA80092EF97 /* JSViewController */,
 				E26BA1AE1F68CB9D00E56E33 /* Resources */,
 				E26BA1AC1F68C95100E56E33 /* Snippets.plist */,
 				E26BA1A91F68C85500E56E33 /* DemoTextViewController.h */,
@@ -819,6 +847,27 @@
 				E2DF60F01F662F6000DB12EA /* UIViewController+IYBSharkDebug.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		E23B65E81F727EA80092EF97 /* JSViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E23B65FB1F727F0E0092EF97 /* JSCallOC.html */,
+				E23B65E91F727EDF0092EF97 /* echo.html */,
+				E23B65EA1F727EDF0092EF97 /* ExampleApp.html */,
+				E23B65EB1F727EDF0092EF97 /* ExampleUIWebViewController.h */,
+				E23B65EC1F727EDF0092EF97 /* ExampleUIWebViewController.m */,
+				E23B65ED1F727EDF0092EF97 /* ExampleWKWebViewController.h */,
+				E23B65EE1F727EDF0092EF97 /* ExampleWKWebViewController.m */,
+				E23B65EF1F727EDF0092EF97 /* index.html */,
+				E23B65F01F727EDF0092EF97 /* JavascriptBridgeViewController.h */,
+				E23B65F11F727EDF0092EF97 /* JavascriptBridgeViewController.m */,
+				E23B65F21F727EDF0092EF97 /* WKWebViewController.h */,
+				E23B65F31F727EDF0092EF97 /* WKWebViewController.m */,
+				E23B65FD1F727F460092EF97 /* JavaScriptCoreViewController.h */,
+				E23B65FE1F727F460092EF97 /* JavaScriptCoreViewController.m */,
+			);
+			path = JSViewController;
 			sourceTree = "<group>";
 		};
 		E26BA1AE1F68CB9D00E56E33 /* Resources */ = {
@@ -939,6 +988,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23B65F81F727EDF0092EF97 /* index.html in Resources */,
 				E26BA1EB1F68CB9D00E56E33 /* Snippets.plist in Resources */,
 				96F7758F1AF74061000C5219 /* OtherHomeViewController.xib in Resources */,
 				96B0720A1AF21EF700A1E2E6 /* AppIcon76x76~ipad.png in Resources */,
@@ -969,6 +1019,7 @@
 				96F775801AF725CA000C5219 /* tabbar_icon_found_normal@2x.png in Resources */,
 				96B072071AF21EF700A1E2E6 /* AppIcon60x60@3x.png in Resources */,
 				E26BA1E61F68CB9D00E56E33 /* LoremIpsum.html in Resources */,
+				E23B65F41F727EDF0092EF97 /* echo.html in Resources */,
 				E2CFC92E1F3ADE99008A5E81 /* customer_info_hd@2x.png in Resources */,
 				96F581131B25274D009A4910 /* select_icon4@2x.png in Resources */,
 				E26BA1ED1F68CB9D00E56E33 /* Subviews.html in Resources */,
@@ -985,6 +1036,7 @@
 				E26BA1F11F68CB9D00E56E33 /* XB Niloofar.ttf in Resources */,
 				7E5A8B951DD5685A00710C50 /* icon_home_open@2x.png in Resources */,
 				E26BA1DA1F68CB9D00E56E33 /* DTCoreTextFontOverrides.plist in Resources */,
+				E23B65F51F727EDF0092EF97 /* ExampleApp.html in Resources */,
 				96F775841AF725CA000C5219 /* tabbar_icon_media_normal@2x.png in Resources */,
 				96B072011AF21EF700A1E2E6 /* AppIcon29x29~ipad.png in Resources */,
 				96C7AD151AF86255002A1FB3 /* HomeCell.xib in Resources */,
@@ -1033,6 +1085,7 @@
 				96B071FE1AF21EF700A1E2E6 /* AppIcon29x29.png in Resources */,
 				96F581181B25274D009A4910 /* unselect_icon2@2x.png in Resources */,
 				E26BA1D81F68CB9D00E56E33 /* CustomFont.html in Resources */,
+				E23B65FC1F727F0E0092EF97 /* JSCallOC.html in Resources */,
 				96412E661C476F9900527BB5 /* btn_navbar_back@2x.png in Resources */,
 				96F581121B25274D009A4910 /* select_icon3@2x.png in Resources */,
 				7E994E501EB98373004990E3 /* Storyboard.storyboard in Resources */,
@@ -1119,8 +1172,11 @@
 				96F075951B1EC5BF00BDE567 /* FileWriter.m in Sources */,
 				9600A7861C8E6B25002478DD /* SearchDetailViewModel.m in Sources */,
 				962373D61A6CAEDD00ED6815 /* main.m in Sources */,
+				E23B65F91F727EDF0092EF97 /* JavascriptBridgeViewController.m in Sources */,
+				E23B65F61F727EDF0092EF97 /* ExampleUIWebViewController.m in Sources */,
 				E20E766F1F39859600DC3BA7 /* NSAttributedString+NBUIKit.m in Sources */,
 				96C7AD211AF8B313002A1FB3 /* DataRepeater.m in Sources */,
+				E23B65F71F727EDF0092EF97 /* ExampleWKWebViewController.m in Sources */,
 				E20E76701F39859600DC3BA7 /* NSMutableAttributedString+NBUIKit.m in Sources */,
 				E278979D1F569B5600E1BC3D /* LazyScrollViewController.m in Sources */,
 				E2E369591F67BF0900F6F2C2 /* IYBMixtureTextView.m in Sources */,
@@ -1128,6 +1184,7 @@
 				96DE2E2B1B033F5C001557CC /* UIImage+UIImageScale.m in Sources */,
 				96F7758E1AF74061000C5219 /* OtherHomeViewController.m in Sources */,
 				E26BA1F61F691D1A00E56E33 /* DTCoreDemoViewController.m in Sources */,
+				E23B65FA1F727EDF0092EF97 /* WKWebViewController.m in Sources */,
 				96F7752C1AF7189D000C5219 /* SearchHomeViewController.m in Sources */,
 				96E653F31B0C82A200ED9E30 /* CategoryView.m in Sources */,
 				961FEF831BE05E2300324588 /* CustomerWebViewController.m in Sources */,
@@ -1145,6 +1202,7 @@
 				96C0A3801B16E78400605F4D /* LoginViewController.m in Sources */,
 				E2DF60F11F662F6000DB12EA /* UIViewController+IYBSharkDebug.m in Sources */,
 				7EA2FC931DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m in Sources */,
+				E23B65FF1F727F460092EF97 /* JavaScriptCoreViewController.m in Sources */,
 				E2E3695E1F67F41D00F6F2C2 /* DTCoretextViewController.m in Sources */,
 				96F775271AF7188E000C5219 /* MyHomeViewController.m in Sources */,
 				96AD2B511AFB6C08006E1B94 /* HomeDetailViewController.m in Sources */,
@@ -1214,7 +1272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1251,7 +1309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1270,7 +1328,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JasonBlog/Supporting Files/JasonBlog-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JasonBlog/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1297,7 +1355,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JasonBlog/Supporting Files/JasonBlog-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JasonBlog/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

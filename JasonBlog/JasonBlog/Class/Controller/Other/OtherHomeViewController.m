@@ -20,6 +20,9 @@
 #import "DemoTextViewController.h"
 #import "DTCoreDemoViewController.h"
 #import "JasonAAAViewController.h"
+#import "JavascriptBridgeViewController.h"
+#import "WKWebViewController.h"
+
 
 @interface OtherHomeViewController (){
     dispatch_source_t _timer;
@@ -248,7 +251,10 @@
         toolHome.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:toolHome animated:YES];
     } else {
-        JasonAAAViewController *toolHome = [[JasonAAAViewController alloc] init];
+//        JasonAAAViewController *toolHome = [[JasonAAAViewController alloc] init];
+//        toolHome.hidesBottomBarWhenPushed = YES;
+//        [self.navigationController pushViewController:toolHome animated:YES];
+        JavascriptBridgeViewController  *toolHome = [[JavascriptBridgeViewController alloc] init];
         toolHome.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:toolHome animated:YES];
     }
