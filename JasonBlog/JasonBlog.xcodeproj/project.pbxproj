@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E18E5EA1EB3464A000FCFB7 /* RSMaskedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E18E5E91EB3464A000FCFB7 /* RSMaskedLabel.m */; };
+		7E2318E11EC985BB002B1A8D /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2318E01EC985BB002B1A8D /* Student.m */; };
 		7E5897B21DD1B36C0027E7CA /* 上海.html in Resources */ = {isa = PBXBuildFile; fileRef = 7E5897B11DD1B36C0027E7CA /* 上海.html */; };
 		7E5A8B951DD5685A00710C50 /* icon_home_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */; };
 		7E994E501EB98373004990E3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E994E4F1EB98373004990E3 /* Storyboard.storyboard */; };
@@ -127,7 +128,6 @@
 		E23B65FC1F727F0E0092EF97 /* JSCallOC.html in Resources */ = {isa = PBXBuildFile; fileRef = E23B65FB1F727F0E0092EF97 /* JSCallOC.html */; };
 		E23B65FF1F727F460092EF97 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B65FE1F727F460092EF97 /* JavaScriptCoreViewController.m */; };
 		E26BA1AB1F68C85500E56E33 /* DemoTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA1AA1F68C85500E56E33 /* DemoTextViewController.m */; };
-		E26BA1AD1F68C95100E56E33 /* Snippets.plist in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1AC1F68C95100E56E33 /* Snippets.plist */; };
 		E26BA1D11F68CB9D00E56E33 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1AF1F68CB9D00E56E33 /* About.html */; };
 		E26BA1D21F68CB9D00E56E33 /* Alignment.html in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1B01F68CB9D00E56E33 /* Alignment.html */; };
 		E26BA1D31F68CB9D00E56E33 /* APOD.html in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1B11F68CB9D00E56E33 /* APOD.html */; };
@@ -172,6 +172,8 @@
 		E2DF60F51F6634F800DB12EA /* IYBDebugView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DF60F41F6634F800DB12EA /* IYBDebugView.m */; };
 		E2E369591F67BF0900F6F2C2 /* IYBMixtureTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E369581F67BF0900F6F2C2 /* IYBMixtureTextView.m */; };
 		E2E3695E1F67F41D00F6F2C2 /* DTCoretextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E3695D1F67F41D00F6F2C2 /* DTCoretextViewController.m */; };
+		E2E9F2521FB3FE0A0007E077 /* DTTextEditorTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E9F2511FB3FE0A0007E077 /* DTTextEditorTestController.m */; };
+		E2E9F25A1FB420940007E077 /* DTTextEditorTestCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E9F2591FB420940007E077 /* DTTextEditorTestCellTableViewCell.m */; };
 		E2F946C21F384AAE00BBCE9F /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F946C11F384AAE00BBCE9F /* HomeViewModel.m */; };
 		E2F946C51F38764700BBCE9F /* RootTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F946C41F38764700BBCE9F /* RootTestViewController.m */; };
 /* End PBXBuildFile section */
@@ -181,6 +183,8 @@
 		42E321DB484764125300D3AF /* Pods-JasonBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JasonBlog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JasonBlog/Pods-JasonBlog.debug.xcconfig"; sourceTree = "<group>"; };
 		7E18E5E81EB3464A000FCFB7 /* RSMaskedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMaskedLabel.h; sourceTree = "<group>"; };
 		7E18E5E91EB3464A000FCFB7 /* RSMaskedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMaskedLabel.m; sourceTree = "<group>"; };
+		7E2318DF1EC985BB002B1A8D /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		7E2318E01EC985BB002B1A8D /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		7E5897B11DD1B36C0027E7CA /* 上海.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "上海.html"; sourceTree = "<group>"; };
 		7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_home_open@2x.png"; sourceTree = "<group>"; };
 		7E994E4F1EB98373004990E3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -345,7 +349,6 @@
 		E23B65FE1F727F460092EF97 /* JavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreViewController.m; sourceTree = "<group>"; };
 		E26BA1A91F68C85500E56E33 /* DemoTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTextViewController.h; sourceTree = "<group>"; };
 		E26BA1AA1F68C85500E56E33 /* DemoTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTextViewController.m; sourceTree = "<group>"; };
-		E26BA1AC1F68C95100E56E33 /* Snippets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Snippets.plist; sourceTree = "<group>"; };
 		E26BA1AF1F68CB9D00E56E33 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
 		E26BA1B01F68CB9D00E56E33 /* Alignment.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Alignment.html; sourceTree = "<group>"; };
 		E26BA1B11F68CB9D00E56E33 /* APOD.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = APOD.html; sourceTree = "<group>"; };
@@ -399,6 +402,10 @@
 		E2E369581F67BF0900F6F2C2 /* IYBMixtureTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYBMixtureTextView.m; sourceTree = "<group>"; };
 		E2E3695C1F67F41D00F6F2C2 /* DTCoretextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCoretextViewController.h; sourceTree = "<group>"; };
 		E2E3695D1F67F41D00F6F2C2 /* DTCoretextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCoretextViewController.m; sourceTree = "<group>"; };
+		E2E9F2501FB3FE0A0007E077 /* DTTextEditorTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTTextEditorTestController.h; sourceTree = "<group>"; };
+		E2E9F2511FB3FE0A0007E077 /* DTTextEditorTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTextEditorTestController.m; sourceTree = "<group>"; };
+		E2E9F2581FB420940007E077 /* DTTextEditorTestCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTTextEditorTestCellTableViewCell.h; sourceTree = "<group>"; };
+		E2E9F2591FB420940007E077 /* DTTextEditorTestCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTextEditorTestCellTableViewCell.m; sourceTree = "<group>"; };
 		E2F946C01F384AAE00BBCE9F /* HomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewModel.h; sourceTree = "<group>"; };
 		E2F946C11F384AAE00BBCE9F /* HomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewModel.m; sourceTree = "<group>"; };
 		E2F946C31F38764700BBCE9F /* RootTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTestViewController.h; sourceTree = "<group>"; };
@@ -622,6 +629,10 @@
 				E2F946C41F38764700BBCE9F /* RootTestViewController.m */,
 				E278979B1F569B5600E1BC3D /* LazyScrollViewController.h */,
 				E278979C1F569B5600E1BC3D /* LazyScrollViewController.m */,
+				E2E9F2501FB3FE0A0007E077 /* DTTextEditorTestController.h */,
+				E2E9F2511FB3FE0A0007E077 /* DTTextEditorTestController.m */,
+				E2E9F2581FB420940007E077 /* DTTextEditorTestCellTableViewCell.h */,
+				E2E9F2591FB420940007E077 /* DTTextEditorTestCellTableViewCell.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -673,6 +684,8 @@
 			isa = PBXGroup;
 			children = (
 				96C7AD1E1AF8B2F9002A1FB3 /* request */,
+				7E2318DF1EC985BB002B1A8D /* Student.h */,
+				7E2318E01EC985BB002B1A8D /* Student.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -781,7 +794,6 @@
 			children = (
 				E23B65E81F727EA80092EF97 /* JSViewController */,
 				E26BA1AE1F68CB9D00E56E33 /* Resources */,
-				E26BA1AC1F68C95100E56E33 /* Snippets.plist */,
 				E26BA1A91F68C85500E56E33 /* DemoTextViewController.h */,
 				E26BA1AA1F68C85500E56E33 /* DemoTextViewController.m */,
 				7E5A8B941DD5685A00710C50 /* icon_home_open@2x.png */,
@@ -1062,7 +1074,6 @@
 				96F7757F1AF725CA000C5219 /* tabbar_icon_found_highlight@2x.png in Resources */,
 				E26BA1E41F68CB9D00E56E33 /* LineHeight.html in Resources */,
 				E20E765E1F39521700DC3BA7 /* backImage@3x.png in Resources */,
-				E26BA1AD1F68C95100E56E33 /* Snippets.plist in Resources */,
 				96AB49B71B144E7500E0D118 /* www in Resources */,
 				7E994E641EB9D89F004990E3 /* Localizable.strings in Resources */,
 				96F775811AF725CA000C5219 /* tabbar_icon_me_highlight@2x.png in Resources */,
@@ -1107,6 +1118,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JasonBlog/Pods-JasonBlog-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/DTLoupe/DTLoupe.bundle,
 				"${PODS_ROOT}/MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1161,6 +1173,7 @@
 				7E18E5EA1EB3464A000FCFB7 /* RSMaskedLabel.m in Sources */,
 				E26BA1AB1F68C85500E56E33 /* DemoTextViewController.m in Sources */,
 				96F5811F1B25317C009A4910 /* PanliMoneyViewController.m in Sources */,
+				E2E9F2521FB3FE0A0007E077 /* DTTextEditorTestController.m in Sources */,
 				96A887D81C3F9B12008B99FD /* ToolHomeViewController.m in Sources */,
 				E2DF60F51F6634F800DB12EA /* IYBDebugView.m in Sources */,
 				9696EB271C894EFF004F4F33 /* CustomViewTest.m in Sources */,
@@ -1184,6 +1197,7 @@
 				96DE2E2B1B033F5C001557CC /* UIImage+UIImageScale.m in Sources */,
 				96F7758E1AF74061000C5219 /* OtherHomeViewController.m in Sources */,
 				E26BA1F61F691D1A00E56E33 /* DTCoreDemoViewController.m in Sources */,
+				E2E9F25A1FB420940007E077 /* DTTextEditorTestCellTableViewCell.m in Sources */,
 				E23B65FA1F727EDF0092EF97 /* WKWebViewController.m in Sources */,
 				96F7752C1AF7189D000C5219 /* SearchHomeViewController.m in Sources */,
 				96E653F31B0C82A200ED9E30 /* CategoryView.m in Sources */,
@@ -1202,6 +1216,7 @@
 				96C0A3801B16E78400605F4D /* LoginViewController.m in Sources */,
 				E2DF60F11F662F6000DB12EA /* UIViewController+IYBSharkDebug.m in Sources */,
 				7EA2FC931DFE6B6E00A16AE8 /* UIAlertView+EasyUIKit.m in Sources */,
+				7E2318E11EC985BB002B1A8D /* Student.m in Sources */,
 				E23B65FF1F727F460092EF97 /* JavaScriptCoreViewController.m in Sources */,
 				E2E3695E1F67F41D00F6F2C2 /* DTCoretextViewController.m in Sources */,
 				96F775271AF7188E000C5219 /* MyHomeViewController.m in Sources */,

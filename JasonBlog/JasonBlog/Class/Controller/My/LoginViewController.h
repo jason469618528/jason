@@ -15,6 +15,6 @@ typedef void(^loginBlock)();
 {
 
 }
-
+//@property (nonatomic, strong) dispatch_block_t 
 
 @end

@@ -13,6 +13,7 @@
 #import "UIImage+UIImageScale.h"
 #import "HomeViewModel.h"
 #import "AppDelegate.h"
+#import "DTTextEditorTestController.h"
 
 #define nb_Weak(s) __weak typeof(s) weself = s
 
@@ -246,7 +247,7 @@ static NSString const *TestString = @"sadfasdf";
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 //    UIImage *image = [self.marr_Data objectAtIndex:indexPath.row];
-    HomeDetailViewController *detailVC = [[HomeDetailViewController alloc] init];
+    DTTextEditorTestController *detailVC = [[DTTextEditorTestController alloc] init];
     detailVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:detailVC animated:YES];
 }
