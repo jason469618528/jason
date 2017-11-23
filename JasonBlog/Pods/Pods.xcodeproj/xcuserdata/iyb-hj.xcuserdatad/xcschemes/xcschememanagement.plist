@@ -34,6 +34,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DTLoupe-DTLoupe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DTLoupe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DTRichTextEditor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DTWebArchive.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JBASIHTTPRequest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
