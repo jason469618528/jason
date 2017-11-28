@@ -25,13 +25,15 @@
     self.canBack = YES;
     
     //去掉bar半透明
-//    self.navigationBar.translucent = NO;
-//    self.navigationBar.tintColor = [UIColor blueColor];
-//    self.navigationBar.barTintColor = [UIColor blueColor];
-//    self.view.backgroundColor = [UIColor redColor];
+//    self.navigationBar.translucent = YES;
+    self.navigationBar.tintColor = [UIColor blueColor];
+    self.navigationBar.barTintColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor blueColor];
     
-    UIImage *image = [self createImageWithColor:[UIColor whiteColor]];
-    [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+//    self.navigationBar.backgroundColor =
+//    UIImage *image = [self createImageWithColor:[UIColor blueColor]];
+//    [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationBar setShadowImage:[UIImage new]];
 //    __weak typeof(id) weakSelf = self;
 //    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
 //        self.interactivePopGestureRecognizer.delegate = weakSelf;
