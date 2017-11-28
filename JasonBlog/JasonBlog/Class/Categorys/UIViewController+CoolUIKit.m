@@ -12,7 +12,9 @@
 
 - (void)easyPushWithClass:(Class)controller {
     if([self.parentViewController isKindOfClass:[UINavigationController class]] && self.navigationController && [controller isSubclassOfClass:[UIViewController class]]) {
-        [self.navigationController pushViewController:[[controller alloc] init] animated:YES];
+        UIViewController *viewController = [[controller alloc] init];
+        viewController.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:viewController animated:YES];
     }
 }
 @end

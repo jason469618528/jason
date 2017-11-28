@@ -251,10 +251,73 @@ static NSString const *TestString = @"sadfasdf";
     detailVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:detailVC animated:YES];
 }
-    
+#define ArticleContentHtmlPTag (@"<p style='font-size:0.1px;color:#fff;font-family:Arial;line-height:5px;vertical-align: middle;'> . </p>")
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     NSLog(@"viewWillAppear");
+    
+    NSString * searchStr = @"计算机*呢是你@是你是是是#说你想说的到<img src='图片1' />计算机*呢是你@是你是是是#说你想说的到<img src='图片2' />";
+    NSString * regExpStr = @"<img.+?src=[\"'](.+?)[\"'].*?>";
+    NSString * replacement = @"ha";
+    // 创建 NSRegularExpression 对象,匹配 正则表达式
+    NSRegularExpression *regExp = [[NSRegularExpression alloc] initWithPattern:regExpStr
+                                                                       options:NSRegularExpressionCaseInsensitive
+                                                                         error:nil];
+    NSArray *matchs = [regExp matchesInString:searchStr options:kNilOptions range:NSMakeRange(0, searchStr.length)];
+    NSString *changeString = searchStr;
+    for (NSTextCheckingResult* b in matchs)
+    {
+        NSString *str1 = [searchStr substringWithRange:b.range];
+        changeString =  [changeString stringByReplacingOccurrencesOfString:str1 withString:[NSString stringWithFormat:@"%@%@%@",ArticleContentHtmlPTag,str1,ArticleContentHtmlPTag]];
+        NSLog(@"%@",searchStr);
+    }
+    NSString *resultStr = searchStr;
+    // 替换匹配的字符串为 searchStr
+    resultStr = [regExp stringByReplacingMatchesInString:searchStr
+                                                 options:NSMatchingReportProgress
+                                                   range:NSMakeRange(0, searchStr.length)
+                                            withTemplate:replacement];
+    NSLog(@"\\nsearchStr = %@\\nresultStr = %@",searchStr,resultStr);
+    
+    [self convert:searchStr];
+    
+}
+
+- (NSString *) convert:(NSString *)input
+{
+    //a pattern for urls - use whatever suits
+      //construct a pattern which matches emphPat OR urlPat
+      //emphPat is first so its two groups are numbered 1 & 2 in the resulting match
+        NSString * regExpStr = @"<img.+?src=[\"'](.+?)[\"'].*?>";
+      //build the re
+      NSError *error = nil;
+    NSRegularExpression *re = [[NSRegularExpression alloc] initWithPattern:regExpStr
+                                                                       options:NSRegularExpressionCaseInsensitive
+                                                                         error:nil];
+    
+      //check for error - omitted
+      //get all the matches - includes both urls and text to be emphasised
+      NSArray *matches = [re matchesInString:input options:0 range:NSMakeRange(0, input.length)];
+      NSInteger offset = 0;//will track the change in size
+      NSMutableString *output = input.mutableCopy;//mutuable copy of input to modify to produce output
+      for (NSTextCheckingResult *aMatch in matches)
+      {
+          NSString *str1 = [input substringWithRange:aMatch.range];
+          NSRange first = [aMatch rangeAtIndex:1];
+          if (first.location!= NSNotFound)
+          {
+              //the first group has been matched => that is the emphPat (which contains the first two groups)
+              //determine the replacement string
+              NSString *replacement = [re replacementStringForResult:aMatch inString:output offset:offset template:[NSString stringWithFormat:@"%@%@%@",ArticleContentHtmlPTag,str1,ArticleContentHtmlPTag]];
+              NSRange whole = aMatch.range;//original range of the match
+              whole.location += offset;//add in the offset to allow for previous replacements
+              offset += replacement.length - whole.length;//modify the offset to allow for the length change caused by this replacement
+              //perform the replacement
+              [output replaceCharactersInRange:whole withString:replacement];
+          }
+      }
+      return output;
 }
 
 - (void)viewWillDisappear:(BOOL)animated{

@@ -127,6 +127,7 @@
 		E23B65FA1F727EDF0092EF97 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B65F31F727EDF0092EF97 /* WKWebViewController.m */; };
 		E23B65FC1F727F0E0092EF97 /* JSCallOC.html in Resources */ = {isa = PBXBuildFile; fileRef = E23B65FB1F727F0E0092EF97 /* JSCallOC.html */; };
 		E23B65FF1F727F460092EF97 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23B65FE1F727F460092EF97 /* JavaScriptCoreViewController.m */; };
+		E258D8BC1FCBB03700F06534 /* lucencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E258D8BB1FCBB03700F06534 /* lucencyViewController.m */; };
 		E26BA1AB1F68C85500E56E33 /* DemoTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA1AA1F68C85500E56E33 /* DemoTextViewController.m */; };
 		E26BA1D11F68CB9D00E56E33 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1AF1F68CB9D00E56E33 /* About.html */; };
 		E26BA1D21F68CB9D00E56E33 /* Alignment.html in Resources */ = {isa = PBXBuildFile; fileRef = E26BA1B01F68CB9D00E56E33 /* Alignment.html */; };
@@ -347,6 +348,8 @@
 		E23B65FB1F727F0E0092EF97 /* JSCallOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCallOC.html; sourceTree = "<group>"; };
 		E23B65FD1F727F460092EF97 /* JavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreViewController.h; sourceTree = "<group>"; };
 		E23B65FE1F727F460092EF97 /* JavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreViewController.m; sourceTree = "<group>"; };
+		E258D8BA1FCBB03700F06534 /* lucencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lucencyViewController.h; sourceTree = "<group>"; };
+		E258D8BB1FCBB03700F06534 /* lucencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lucencyViewController.m; sourceTree = "<group>"; };
 		E26BA1A91F68C85500E56E33 /* DemoTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTextViewController.h; sourceTree = "<group>"; };
 		E26BA1AA1F68C85500E56E33 /* DemoTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTextViewController.m; sourceTree = "<group>"; };
 		E26BA1AF1F68CB9D00E56E33 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
@@ -666,6 +669,8 @@
 				9600A7851C8E6B25002478DD /* SearchDetailViewModel.m */,
 				96F437231B05DB30000D4686 /* SearchDetailViewController.h */,
 				96F437241B05DB30000D4686 /* SearchDetailViewController.m */,
+				E258D8BA1FCBB03700F06534 /* lucencyViewController.h */,
+				E258D8BB1FCBB03700F06534 /* lucencyViewController.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -966,8 +971,9 @@
 				TargetAttributes = {
 					962373A51A6CAE6600ED6815 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = M5EL8HM9AH;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1174,6 +1180,7 @@
 				E26BA1AB1F68C85500E56E33 /* DemoTextViewController.m in Sources */,
 				96F5811F1B25317C009A4910 /* PanliMoneyViewController.m in Sources */,
 				E2E9F2521FB3FE0A0007E077 /* DTTextEditorTestController.m in Sources */,
+				E258D8BC1FCBB03700F06534 /* lucencyViewController.m in Sources */,
 				96A887D81C3F9B12008B99FD /* ToolHomeViewController.m in Sources */,
 				E2DF60F51F6634F800DB12EA /* IYBDebugView.m in Sources */,
 				9696EB271C894EFF004F4F33 /* CustomViewTest.m in Sources */,
@@ -1340,7 +1347,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5EL8HM9AH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JasonBlog/Supporting Files/JasonBlog-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JasonBlog/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1349,7 +1357,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JasonBlog/Class/Components/library",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.jasonblog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leopard.cloud.iYunBaoDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1366,8 +1374,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5EL8HM9AH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JasonBlog/Supporting Files/JasonBlog-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JasonBlog/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1376,7 +1385,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JasonBlog/Class/Components/library",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.jasonblog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leopard.cloud.iYunBaoDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
