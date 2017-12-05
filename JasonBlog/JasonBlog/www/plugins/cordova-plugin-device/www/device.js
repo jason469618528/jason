@@ -50,11 +50,11 @@ function Device() {
 //   exec(function(){}, function(){}, "Device", "goToLastPage", []);
 //   }
    this.goToLastPage = function (value){
-            exec(function(){}, function(){}, "Device", "testClick", [value]);
+            exec(function(){}, function(){}, "Device", "getDeviceInfo", [value]);
    }
                
    this.getMyInfo = function (value){
-    exec(value, function(){}, "Device", "getDeviceInfo",[]);
+    exec(function(){}, function(){}, "Device", "getDeviceInfo",[value]);
    }
                
     channel.onCordovaReady.subscribe(function() {
@@ -95,4 +95,8 @@ module.exports = new Device();
 //  exec(successCallback, errorCallback, "Device", "getDeviceInfo", []);
 //}
 
+               
+//               getMyInfo = function (value){
+//               exec(successCallback, errorCallback, "Device", "getDeviceInfo",[value]);
+//               }
 });

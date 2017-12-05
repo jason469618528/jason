@@ -6,17 +6,20 @@
 //  Copyright © 2017年 PanliMobile. All rights reserved.
 //
 
-#import "lucencyViewController.h"
+#import "LucencyViewController.h"
+#import "LucencyViewModel.h"
 
-@interface lucencyViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface LucencyViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIView *bckView;
 @property (nonatomic, assign) CGFloat alpha;
 
 @property (nonatomic, strong) UITableView *tableView;
 
+@property (nonatomic, strong) LucencyViewModel *viewModel;
+
 @end
 
-@implementation lucencyViewController
+@implementation LucencyViewController
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,15 +35,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = J_COLOR_WHITE;
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(testClick)];
-    
-    self.alpha = 0.0; // 初始化透明度
-    UIView *backgroundView = [[self.navigationController valueForKey:@"_navigationBar"] valueForKey:@"_backgroundView"]; //获取bar背景view
-    backgroundView.backgroundColor = [UIColor whiteColor]; // 颜色
-    backgroundView.alpha = self.alpha; //渐变
-    self.bckView = backgroundView;
-
-    [self.view addSubview:self.tableView];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(testClick)];
+//
+//    self.alpha = 0.0; // 初始化透明度
+//    UIView *backgroundView = [[self.navigationController valueForKey:@"_navigationBar"] valueForKey:@"_backgroundView"]; //获取bar背景view
+//    backgroundView.backgroundColor = [UIColor whiteColor]; // 颜色
+//    backgroundView.alpha = self.alpha; //渐变
+//    self.bckView = backgroundView;
+//
+//    [self.view addSubview:self.tableView];
     
 //    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 //    btn.frame = CGRectMake(0.0, 0.0, 100, 50);
@@ -133,6 +136,13 @@
         }
     }
     return _tableView;
+}
+
+- (LucencyViewModel*)viewModel {
+    if(_viewModel == nil) {
+        _viewModel = [[LucencyViewModel alloc] init];
+    }
+    return _viewModel;
 }
 
 // 递归获取子视图

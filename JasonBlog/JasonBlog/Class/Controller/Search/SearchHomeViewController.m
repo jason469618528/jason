@@ -12,7 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "IYBSlideLabel.h"
-#import "lucencyViewController.h"
+#import "LucencyViewController.h"
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 @interface SearchHomeViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
@@ -309,6 +309,6 @@
 //    loginVC.hidesBottomBarWhenPushed = YES;
 //    [self.navigationController pushViewController:loginVC animated:YES];
     
-    [self easyPushWithClass:[lucencyViewController class]];
+    [self easyPushWithClass:[LucencyViewController class]];
 }
 @end
