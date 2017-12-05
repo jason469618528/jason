@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CDVViewController.h>
 
-@interface lucencyViewController : UIViewController
+@interface LucencyViewController : CDVViewController
 
 @end

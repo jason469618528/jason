@@ -87,4 +87,29 @@
     return CDV_VERSION;
 }
 
+- (void)testClick:(CDVInvokedUrlCommand*)command
+{
+    DLog(@"goToLastPage");
+    DLog(@"goToLastPage");
+    DLog(@"goToLastPage");
+    DLog(@"goToLastPage");
+    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"OC回调过来的值"];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    DLog(@"点击设备信息");
+    NSString *url = [command.arguments objectAtIndex:0];
+    url = [url stringByReplacingOccurrencesOfString:@"file://" withString:@""];
+    DLog(@"%@",url);
+
+
+}
+//
+//- (void)testClick {
+//    DLog(@"testClick");
+//}
+//
+//
+- (void)goToLastPage:(CDVInvokedUrlCommand*)command{
+    DLog(@"goToLastPage");
+}
+
 @end
